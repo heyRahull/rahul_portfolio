@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #1e2327;
+  --off-white: #e5e7eb;
+  --dark-gray: #6b7280;
+  --blue: #6c63ff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+hr {
+  margin: 2rem 0rem;
+}
+
+/** spaces **/
+
+.margin-md {
+  margin: 2rem;
+}
+
+/** container **/
+.container {
+  padding: 0rem 1rem;
+}
+
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+
+/** links **/
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white;
+  display: block;
+  max-width: 140px;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  display: block;
+  max-width: 140px;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+  font-weight: bold;
+}
+
+.nav-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .link {
+  color: white;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+.nav-color {
+  background-color: var(--primary-color);
+}
+
+/** header **/
+
+.hero {
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.hero .hero-img {
+  max-width: 80%;
+  width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.hero .hero-heading {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+  color: var(--blue);
+}
+
+.name-inverted {
+  color: var(--primary-color);
+}
+/** sections **/
+
+.section {
+  padding: 2rem;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.ow {
+  background-color: var(--off-white);
+}
+
+/** footers **/
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+}
+
+.footer .link {
+  color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+/** projects **/
+.showcase-list {
+  padding: 2rem;
+}
+
+/** blogs **/
+.showcase-blog {
+  padding-bottom: 6rem;
+}
+
+.wavy {
+  animation-name: wave-animation;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 100%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.gray-font {
+  color: var(--dark-gray);
+}
+
+.image-center {
+  max-width: 50%;
+  width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.rahul-image {
+  max-width: 50%;
+  width: 250px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+.img-inline {
+  display: inline;
+  display: flex;
+}
+
+.card-btn {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.card-primary {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white;
+  display: block;
+  max-width: 140px;
+  /* margin: 1rem 1rem 1rem 0rem; */
+}
+
+.card-color {
+  background: linear-gradient(to right, #f3f4f6, #bdc3c7);
+}
+
+.project-image {
+  width: 100%;
+  height: 225px;
+  object-fit: contain;
+  /* width: 300px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.certificate_logo {
+  height: 50px;
+  width: 50px;
+}
+
+.certification_name {
+  font-size: 25px;
+  color: #0064b6;
+}
+
+.btn_color {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn_color:hover {
+  background-color: var(--primary-color);
+  color: #0d6efd;
+}
+
+.excerpt {
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .card_column {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .card_individual {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
