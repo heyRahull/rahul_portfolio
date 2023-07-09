@@ -3,6 +3,8 @@ import "../styles.css";
 import pic from "../images/rahul_image.jpg";
 import heroImg from "../images/undraw_Updated_resume_re_q1or.svg";
 import projectImg from "../images/project-image.svg";
+import blogsImg from "../images/blogs_image.svg";
+import certificationImg from "../images/certification-image.svg";
 import htmlIcon from "../icons/html5_image.png";
 import cssIcon from "../icons/css3_icon.png";
 import jsIcon from "../icons/js_icon.jfif";
@@ -28,7 +30,6 @@ const Greet = () => (
         </strong>
       </h1>
     </header>
-
     <section class="section ow">
       <div class="container container-center">
         <h1>
@@ -52,7 +53,6 @@ const Greet = () => (
         </p>
       </div>
     </section>
-
     {/* Technologies section  */}
     <section className="section">
       <div className="container container-center">
@@ -98,7 +98,6 @@ const Greet = () => (
         </ul>
       </div>
     </section>
-
     {/* projects section */}
     <section className="section ow">
       <div className="container container-center">
@@ -115,6 +114,50 @@ const Greet = () => (
         </p>
         <a className="link link-primary" href="/projects.html">
           See Projects
+        </a>
+      </div>
+    </section>
+    {/* blogs sections */}
+    <section className="section">
+      <div className="container container-center">
+        <h1>
+          <strong className="name-inverted">Blogs</strong>
+        </h1>
+        <hr />
+        <img className="image-center" src={blogsImg} alt="Blogs Image" />
+        <p>
+          <strong>
+            I am also working on some technical and non-technical blogs. I like
+            to document my journey of learning.
+          </strong>
+        </p>
+        <a className="link link-secondary" href="/blogs.html">
+          Read Blogs
+        </a>
+      </div>
+    </section>
+
+    {/* certification section */}
+    <section className="section ow">
+      <div className="container container-center">
+        <h1>
+          <strong className="name-inverted">Certifications</strong>
+        </h1>
+        <hr />
+        <img
+          className="image-center"
+          src={certificationImg}
+          alt="Certification Image"
+        />
+        <p>
+          <strong>
+            <br />
+            Discover my accomplished certifications and explore the breadth of
+            my expertise.
+          </strong>
+        </p>
+        <a className="link link-primary" href="/certifications.html">
+          Certifications
         </a>
       </div>
     </section>

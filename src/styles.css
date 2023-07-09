@@ -49,7 +49,7 @@ hr {
 }
 
 .link-secondary {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   border-radius: 0.5rem;
   border: 1px solid var(--primary-color);
   display: block;
