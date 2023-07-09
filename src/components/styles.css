@@ -24,11 +24,11 @@ hr {
 
 /** container **/
 .container {
-  padding: 0rem 1rem;
+  padding: 0rem 1rem !important;
 }
 
 .container-center {
-  max-width: 600px;
+  max-width: 600px !important;
   margin: auto;
 }
 
