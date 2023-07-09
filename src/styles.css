@@ -313,3 +313,7 @@ hr {
     padding-left: 0px !important;
   }
 }
+
+.nav-link:focus {
+  color: white;
+}

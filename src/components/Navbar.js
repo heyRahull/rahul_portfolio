@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => (
   <>
@@ -22,9 +23,9 @@ const Navbar = () => (
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
             <li>
-              <a class="nav-link active" aria-current="page" href="index.html">
+              <Link class="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a class="nav-link" href="projects.html">
@@ -32,9 +33,9 @@ const Navbar = () => (
               </a>
             </li>
             <li>
-              <a class="nav-link" href="blogs.html">
+              <Link class="nav-link" to="/blogs">
                 Blogs
-              </a>
+              </Link>
             </li>
 
             <li class="nav-item dropdown">

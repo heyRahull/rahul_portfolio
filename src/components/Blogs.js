@@ -1,9 +1,17 @@
 import React from "react";
-import Navbar from "./Navbar";
 
 const Blogs = () => (
   <>
-    <Navbar />
+    <h1>Hello Rahul</h1>
+
+    <h1>Hello Rahul</h1>
+    <h1>Hello Rahul</h1>
+    <h1>Hello Rahul</h1>
+    <h1>Hello Rahul</h1>
+    <h1>Hello Rahul</h1>
+    <h1>Hello Rahul</h1>
+    <h1>Hello Rahul</h1>
+    <h1>Hello Rahul</h1>
   </>
 );
 
