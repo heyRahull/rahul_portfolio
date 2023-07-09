@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => (
+const Navbar = (props) => (
   <>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-color">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <Link class="navbar-brand" to="/">
           {" "}
-          &lt; Rahul Agarwal &gt;
-        </a>
+          Rahul Agarwal
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,9 +28,9 @@ const Navbar = () => (
               </Link>
             </li>
             <li>
-              <a class="nav-link" href="projects.html">
+              <Link class="nav-link" to="/projects">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
               <Link class="nav-link" to="/blogs">
@@ -53,9 +53,9 @@ const Navbar = () => (
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="certifications.html">
+                <Link class="dropdown-item" to="/certifications">
                   Certifications
-                </a>
+                </Link>
                 {/* <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a> */}
               </div>
