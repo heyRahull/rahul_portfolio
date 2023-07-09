@@ -40,7 +40,7 @@ const Greet = () => (
             <br />I am really interested into exploring the world of
             web-technology and I have done some projects from the perspective of
             figuring things out myself by tinkering different parts of projects.
-            I am open to all kinds of opportunities that involve growth.
+            I am open to all kinds of opportunities that involve growth..
           </strong>
         </p>
       </div>
