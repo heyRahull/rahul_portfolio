@@ -1,11 +1,18 @@
 import React from "react";
 import "../styles.css";
-// import Navbar from "./Navbar";
 import pic from "../images/rahul_image.jpg";
 import heroImg from "../images/undraw_Updated_resume_re_q1or.svg";
+import projectImg from "../images/project-image.svg";
+import htmlIcon from "../icons/html5_image.png";
+import cssIcon from "../icons/css3_icon.png";
+import jsIcon from "../icons/js_icon.jfif";
+import nodeIcon from "../icons/nodejs1_icon.png";
+import reactIcon from "../icons/react-icon.png";
+import bootstrapIcon from "../icons/bootstrapicon.png";
+import HostIcon from "../icons/web-hosting_icon.jpg";
+import gitIcon from "../icons/git.png";
 const Greet = () => (
   <>
-    {/* <Navbar /> */}
     {/* Hero Area  */}
     <header class="hero">
       <br />
@@ -43,6 +50,72 @@ const Greet = () => (
             I am open to all kinds of opportunities that involve growth..
           </strong>
         </p>
+      </div>
+    </section>
+
+    {/* Technologies section  */}
+    <section className="section">
+      <div className="container container-center">
+        <h1>
+          <strong className="name-inverted">Technologies</strong>
+        </h1>
+        <hr />
+        <ul className="list-non-bullet gray-font">
+          <h3>
+            <strong>
+              <li style={{ display: "inline" }}>HTML5 &emsp;</li>
+              <img src={htmlIcon} width="50" height="50" alt="" />
+              <br />
+              <br />
+              <li style={{ display: "inline" }}>CSS3 &emsp;</li>
+              <img src={cssIcon} width="50" height="50" alt="" />
+              <br />
+              <br />
+              <li style={{ display: "inline" }}>JAVASCRIPT &emsp;</li>
+              <img src={jsIcon} width="50" height="50" alt="" />
+              <br />
+              <br />
+              <li style={{ display: "inline" }}>NODEJS &emsp;</li>
+              <img src={nodeIcon} width="50" height="50" alt="" />
+              <br />
+              <br />
+              <li style={{ display: "inline" }}>REACTJS &emsp;</li>
+              <img src={reactIcon} width="50" height="50" alt="" />
+              <br />
+              <br />
+              <li style={{ display: "inline" }}>BOOTSTRAP &emsp;</li>
+              <img src={bootstrapIcon} width="50" height="50" alt="" />
+              <br />
+              <br />
+              <li style={{ display: "inline" }}>WEB HOSTING &emsp;</li>
+              <img src={HostIcon} width="50" height="50" alt="" />
+              <br />
+              <br />
+              <li style={{ display: "inline" }}>GIT &emsp;</li>
+              <img src={gitIcon} width="50" height="30" alt="" />
+            </strong>
+          </h3>
+        </ul>
+      </div>
+    </section>
+
+    {/* projects section */}
+    <section className="section ow">
+      <div className="container container-center">
+        <h1>
+          <strong className="name-inverted">Projects</strong>
+        </h1>
+        <hr />
+        <img className="image-center" src={projectImg} alt="Project Image" />
+        <p>
+          <strong>
+            <br />I would like to showcase my work and thus, you can see my
+            projects hosted online.
+          </strong>
+        </p>
+        <a className="link link-primary" href="/projects.html">
+          See Projects
+        </a>
       </div>
     </section>
   </>

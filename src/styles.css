@@ -42,7 +42,7 @@ hr {
 .link-primary {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
-  color: white;
+  color: white !important;
   display: block;
   max-width: 140px;
   margin: 1rem 1rem 1rem 0rem;
