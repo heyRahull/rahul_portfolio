@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "../styles.css";
 // import Navbar from "./Navbar";
 import pic from "../images/rahul_image.jpg";
 import heroImg from "../images/undraw_Updated_resume_re_q1or.svg";
@@ -16,7 +16,7 @@ const Greet = () => (
       <h1 class="hero-heading">
         <strong>
           HEY THERE <span class="wavy">👋🏻</span> MYSELF
-          <span class="name-inverted">RAHUL AGARWAL</span>, a
+          <span class="name-inverted"> RAHUL AGARWAL</span>, a
           <span class="name-inverted"> SOFTWARE DEVELOPER</span>
         </strong>
       </h1>
