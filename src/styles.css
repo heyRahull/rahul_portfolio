@@ -329,3 +329,7 @@ hr {
 .hand-cursor {
   cursor: pointer;
 }
+
+.arrow-cursor {
+  cursor: default;
+}

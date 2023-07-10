@@ -59,13 +59,13 @@ const Certifications = () => {
             </button>
             {/* modal  */}
             <div
-              class="modal fade az104"
+              class="modal fade az104 hand-cursor"
               tabindex="-1"
               role="dialog"
               aria-labelledby="myLargeModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-dialog modal-lg modal-dialog-centered arrow-cursor">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">
