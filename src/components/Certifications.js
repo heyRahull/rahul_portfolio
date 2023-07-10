@@ -44,7 +44,7 @@ const Certifications = () => {
             <small>June, 2023</small>
             <a data-toggle="modal" data-target=".az104">
               <img
-                className="project-image"
+                className="project-image hand-cursor"
                 src={az104Image}
                 alt="AZ-104 Certificate"
               />

@@ -325,3 +325,7 @@ hr {
 .certification_img {
   height: 200px;
 }
+
+.hand-cursor {
+  cursor: pointer;
+}
