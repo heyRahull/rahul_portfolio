@@ -317,3 +317,7 @@ hr {
 .nav-link:focus {
   color: white;
 }
+
+.active {
+  color: white;
+}

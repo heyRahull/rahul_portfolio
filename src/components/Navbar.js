@@ -38,9 +38,11 @@ const Navbar = (props) => {
               </li>
               <li>
                 <Link
-                  class="nav-link"
                   to="/projects"
                   onClick={handleMenuItemClick}
+                  className={`nav-link ${
+                    location.pathname === "/projects" ? "active" : ""
+                  }`}
                 >
                   Projects
                 </Link>
