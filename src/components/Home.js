@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles.css";
 import pic from "../images/rahul_image.jpg";
 import heroImg from "../images/undraw_Updated_resume_re_q1or.svg";
@@ -112,9 +113,9 @@ const Greet = () => (
             projects hosted online.
           </strong>
         </p>
-        <a className="link link-primary" href="/projects.html">
+        <Link className="link link-primary" to="/projects">
           See Projects
-        </a>
+        </Link>
       </div>
     </section>
     {/* blogs sections */}
