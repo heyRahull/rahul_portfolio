@@ -321,3 +321,7 @@ hr {
 .active {
   color: white;
 }
+
+.certification_img {
+  height: 200px;
+}
