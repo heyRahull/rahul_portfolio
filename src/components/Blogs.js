@@ -4,31 +4,20 @@ import vanillaJs from "../images/what is vanilla js.jpg";
 import reactBlog from "../images/react-blog.jpeg";
 import dsaBlog from "../images/DSA_blog.png";
 import introvertBlog from "../images/introvert_blog.jpeg";
+import PageIntro from "./PageIntro";
 
 const Blogs = () => {
   return (
     <>
-      <section className="section">
-        <div className="container container-center">
-          <br />
-          <br />
-          <br />
-          <h1>
-            <strong className="name-inverted">Blogs</strong>
-          </h1>
-          <hr />
-          <img className="image-center" src={blogsImage} />
-          <br />
-          <p>
-            <strong>
-              Writing blogs is one of the things that I do. Whenever I learn
-              something new, be it technical or generic, I try to write a blog
-              on it. You can explore this space to read about the various blogs
-              that I have written.
-            </strong>
-          </p>
-        </div>
-      </section>
+      <PageIntro
+        image={blogsImage}
+        name="blogsPage"
+        heading="Blogs"
+        description="Writing blogs is one of the things that I do. Whenever I learn
+        something new, be it technical or generic, I try to write a blog
+        on it. You can explore this space to read about the various blogs
+        that I have written."
+      />
 
       <section className="section">
         <div className="col p-3 d-flex flex-column position-static card_column">
