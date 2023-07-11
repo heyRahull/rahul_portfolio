@@ -2,6 +2,8 @@ import React from "react";
 import certificationImg from "../images/certification-image.svg";
 import az104_logo from "../certificate-images/az104_logo.png";
 import az104Image from "../certificate-images/az-104.jpg";
+import gcp_logo from "../certificate-images/GCP-ACE_logo.png";
+import gcpImage from "../certificate-images/gcp_ace.jpg";
 
 const Certifications = () => {
   return (
@@ -37,8 +39,11 @@ const Certifications = () => {
           <article className="showcase-list container container-center">
             <h1>
               <img className="certificate_logo" src={az104_logo} alt="" />
-              Microsoft Certified : <br />
-              Azure Associate
+              <span>
+                {" "}
+                Microsoft Certified : <br />
+                Azure Associate{" "}
+              </span>
               <span className="certification_name">(Az-104)</span>
             </h1>
             <small>June, 2023</small>
@@ -81,6 +86,64 @@ const Certifications = () => {
                     </button>
                   </div>
                   <img src={az104Image} alt="AZ-104 Certificate" />
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        {/* GCP Certificate  */}
+        <li>
+          <article className="showcase-list container container-center">
+            <h1>
+              <img className="certificate_logo" src={gcp_logo} alt="" />
+              <span> Google Certified : Associate Cloud Engineer </span>
+              <span className="certification_name">(GCP-ACE)</span>
+            </h1>
+            <small>May, 2023</small>
+            <a data-toggle="modal" data-target=".gcpAce">
+              <img
+                className="project-image hand-cursor"
+                src={gcpImage}
+                alt="GCP Certificate"
+              />
+            </a>
+            <button
+              type="button"
+              className="btn btn_color"
+              data-toggle="modal"
+              data-target=".gcpAce"
+            >
+              View Certificate
+            </button>
+            {/* modal  */}
+            <div
+              class="modal fade gcpAce hand-cursor"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered arrow-cursor">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Google Certified : Associate Cloud Engineer
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <img
+                    src={gcpImage}
+                    style={{ height: "460px" }}
+                    alt="GCP Certificate"
+                  />
                 </div>
               </div>
             </div>
