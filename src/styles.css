@@ -333,3 +333,7 @@ hr {
 .arrow-cursor {
   cursor: default;
 }
+
+.gcpModal {
+  height: 460px;
+}
