@@ -11,35 +11,20 @@ import dp900Image from "../certificate-images/dp-900.jpg";
 import az900_logo from "../certificate-images/az900_logo.png";
 import az900Image from "../certificate-images/az-900.jpg";
 import Certificate from "./Certificate";
+import PageIntro from "./PageIntro";
 
 const Certifications = () => {
   return (
     <>
-      <section className="section">
-        <div className="container container-center">
-          <br />
-          <br />
-          <br />
-          <h2 style={{ textAlign: "center" }}>
-            <strong className="name-inverted">MY CERTIFICATES</strong>
-          </h2>
-          <hr />
-          <img
-            className="image-center certification_img"
-            src={certificationImg}
-            alt="Certificates"
-          />
-          <br />
-          <p>
-            <strong>
-              Explore the comprehensive collection of certifications I have
-              earned, showcasing my dedication to personal and professional
-              growth.
-            </strong>
-          </p>
-        </div>
-      </section>
-      <hr />
+      <PageIntro
+        image={certificationImg}
+        name="certicicationPage"
+        heading="MY CERTIFICATES"
+        description="Explore the comprehensive collection of certifications I have
+        earned, showcasing my dedication to personal and professional
+        growth."
+      />
+
       <ul class="list-non-bullet">
         <Certificate
           name=" Microsoft Certified : Azure Associate "

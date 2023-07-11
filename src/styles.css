@@ -337,3 +337,8 @@ hr {
 .gcpModal {
   height: 460px;
 }
+
+.certification_heading {
+  text-align: center;
+  font-size: 2rem;
+}

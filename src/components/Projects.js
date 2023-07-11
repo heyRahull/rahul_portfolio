@@ -21,32 +21,19 @@ import minion1 from "../images/minion-yellow.png";
 import minion2 from "../images/minion-transparent-background-23.png";
 import bananaTalk from "../project-images/Banana_talk.PNG";
 import friendsIcon from "../images/friends-image (4).png";
+import PageIntro from "./PageIntro";
 
 const Projects = () => {
   return (
     <>
-      <section className="section">
-        <div className="container container-center">
-          <br />
-          <br />
-          <br />
-          <h1>
-            <strong className="name-inverted">MY PROJECTS</strong>
-          </h1>
-          <hr />
-          <img className="image-center" src={projectImage} />
-          <br />
-          <p>
-            <strong>
-              You can see live implementation as well as source of some of the
-              projects that I have made as a part of my learning and
-              experimenting with different tech stack.
-            </strong>
-          </p>
-        </div>
-      </section>
-      <hr />
-
+      <PageIntro
+        image={projectImage}
+        name="projectsPage"
+        heading="MY PROJECTS"
+        description="You can see live implementation as well as source of some of the
+        projects that I have made as a part of my learning and
+        experimenting with different tech stack."
+      />
       <ul className="list-non-bullet">
         <li className="ow">
           <article className="showcase-list container container-center">
