@@ -303,11 +303,6 @@ hr {
   overflow: hidden;
 }
 
-.card_individual {
-  padding-right: 0px !important;
-  padding-left: 0px !important;
-}
-
 .nav-link:focus {
   color: white;
 }
@@ -346,6 +341,10 @@ hr {
 
   .gcpModal {
     height: 220px;
+  }
+  .card_individual {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
   }
 }
 
