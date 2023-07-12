@@ -303,15 +303,9 @@ hr {
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
-  .card_column {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-  }
-  .card_individual {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-  }
+.card_individual {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .nav-link:focus {
@@ -341,4 +335,22 @@ hr {
 .certification_heading {
   text-align: center;
   font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .card_column {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .gcpModal {
+    height: 220px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .mobile_navbar_pad {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
