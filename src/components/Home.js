@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles.css";
-import pic from "../images/rahul_image.jpg";
+import pic from "../images/rahul.png";
 import heroImg from "../images/undraw_Updated_resume_re_q1or.svg";
 import projectImg from "../images/project-image.svg";
 import blogsImg from "../images/blogs_image.svg";
