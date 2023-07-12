@@ -337,6 +337,7 @@ hr {
   font-size: 2rem;
 }
 
+/* for mobile device */
 @media (max-width: 767px) {
   .card_column {
     padding-right: 0px !important;
@@ -348,6 +349,7 @@ hr {
   }
 }
 
+/* for mobile and tablet */
 @media (max-width: 1279px) {
   .mobile_navbar_pad {
     padding-left: 10px !important;
