@@ -12,7 +12,7 @@ const Navbar = (props) => {
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-color">
-        <div class="container-fluid">
+        <div class="container-fluid mobile_navbar_pad">
           <Link class="navbar-brand" to="/" onClick={handleMenuItemClick}>
             {" "}
             Rahul Agarwal
