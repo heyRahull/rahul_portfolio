@@ -14,7 +14,7 @@ const Blogs = () => {
         image={blogsImage}
         name="blogsPage"
         heading="Blogs"
-        description="Writing blogs is one of the things that I do. Whenever I learn
+        description=".Writing blogs is one of the things that I do. Whenever I learn
         something new, be it technical or generic, I try to write a blog
         on it. You can explore this space to read about the various blogs
         that I have written."
