@@ -41,7 +41,7 @@ const Greet = () => (
         <p>
           <strong>
             <br />
-            I am a Self-taught programmer, Computer Science graduate, reader,
+            I. am a Self-taught programmer, Computer Science graduate, reader,
             and a thinker. I have completed my Bachelor's and graduated in 2021.
             I am passionate about computers from a young age and always excited
             about the impact of products of technology can have on customers.
