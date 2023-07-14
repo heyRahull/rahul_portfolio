@@ -3,8 +3,9 @@ import projectImage from "../images/project-image.svg";
 import webBootCamp from "../project-images/web dev bootcamp image.jpg";
 import cocktailDb from "../project-images/cocktaildb.PNG";
 import moviesApp from "../project-images/movies__app.PNG";
+import amazonLogo from "../images/amazon-removebg-preview.png";
 import amazonClone from "../project-images/amazone_clone.PNG";
-import netflixLogo from "../images/Netflix logo.png";
+import netflixLogo from "../images/Netflix-Symbol.png";
 import netflixClone from "../project-images/Netflix_clone.PNG";
 import messangerLogo from "../images/messanger-image.png";
 import messangerClone from "../project-images/Messanger_clone.PNG";
@@ -73,7 +74,8 @@ const Projects = () => {
         />
 
         <Project
-          name="🛒 Amazon Clone"
+          logo={amazonLogo}
+          name=" Amazon Clone"
           date="May, 2021"
           image={amazonClone}
           alt="amazon_project_iamge"
@@ -100,7 +102,7 @@ const Projects = () => {
         />
 
         <Project
-          name="Messenger Clone"
+          name=" Messenger Clone"
           date="April, 2021"
           logo={messangerLogo}
           image={messangerClone}
