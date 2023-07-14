@@ -7,7 +7,7 @@ const Project = (props) => {
         <article className="showcase-list container container-center">
           <h1>
             {props.logo && (
-              <img src={props.logo} width="60px" height="40px" alt="" />
+              <img src={props.logo} width="60px" height="60px" alt="" />
             )}
 
             {props.name}
