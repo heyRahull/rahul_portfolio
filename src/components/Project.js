@@ -1,23 +1,29 @@
 import React from "react";
 
-const Project = () => {
+const Project = (props) => {
   return (
     <>
-      <li className="ow">
+      <li>
         <article className="showcase-list container container-center">
-          <h1>🖥️ Web developer Bootcamp Assignments</h1>
-          <small>September, 2022</small>
+          <h1>
+            {props.logo && (
+              <img src={props.logo} width="60px" height="40px" alt="" />
+            )}
+
+            {props.name}
+          </h1>
+          <small>{props.date}</small>
           <img
             className="project-image"
-            src={webBootCamp}
+            src={props.image}
             alt="angelas_bootcamp"
           />
-          <p>
-            While attending the Web developer bootcamp by Angela Yu, I have
-            completed several assignments as capstone projects.
-          </p>
-          <a className="link link-primary" href="angela.html">
+          <p>{props.detail}</p>
+          <a className="link link-primary" href={props.link}>
             Live Projects
+          </a>
+          <a className="link link-secondary" href={props.sourceCode}>
+            View Source
           </a>
         </article>
       </li>

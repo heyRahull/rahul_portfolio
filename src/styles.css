@@ -355,3 +355,7 @@ hr {
     padding-right: 10px !important;
   }
 }
+
+.off_white_at_odd li:nth-child(odd) {
+  background-color: var(--off-white);
+}
