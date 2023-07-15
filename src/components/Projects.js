@@ -1,6 +1,5 @@
 import React from "react";
 import projectImage from "../images/project-image.svg";
-import movieRating from "../project-images/movie_rating_app.PNG";
 import emojipedia from "../project-images/emoji_interpreter.PNG";
 import yodaIcon from "../images/Yoda Image 1.png";
 import yodaTranslator from "../project-images/yoda_translator.PNG";
@@ -37,17 +36,6 @@ const Projects = () => {
             sourceCode={project.sourceCode}
           />
         ))}
-
-        <Project
-          name="🌟 Movies Rating App 🌟"
-          date="February, 2020"
-          image={movieRating}
-          alt="moviesRating_project_iamge"
-          detail="Do you watch movies? You will find some good recommendations for
-          different genres. Made using ReactJS with ❤️"
-          link="https://tf33c.csb.app/"
-          sourceCode="https://github.com/heyRahull/MovieRating_App"
-        />
 
         <Project
           name="😃 Emojipedia 😃"

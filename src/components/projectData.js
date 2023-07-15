@@ -93,6 +93,16 @@ const projectData = [
     link: "https://todo-app-e6f8a.web.app/",
     sourceCode: "https://github.com/heyRahull/todo-app-firebase",
   },
+  {
+    name: "🌟 Movies Rating App 🌟",
+    date: "February, 2020",
+    image: require("../project-images/movie_rating_app.PNG"),
+    alt: "moviesRating_project_iamge",
+    detail:
+      "Do you watch movies? You will find some good recommendations for different genres. Made using ReactJS with ❤️",
+    link: "https://tf33c.csb.app/",
+    sourceCode: "https://github.com/heyRahull/MovieRating_App",
+  },
 ];
 
 export default projectData;
