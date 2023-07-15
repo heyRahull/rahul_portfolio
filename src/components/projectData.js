@@ -83,6 +83,16 @@ const projectData = [
     link: "https://instagram-clone-f5d3a.web.app/",
     sourceCode: "https://github.com/heyRahull/picsogram_app",
   },
+  {
+    name: "📝 ToDo List App 📝",
+    date: "March, 2021",
+    image: require("../project-images/todo_app.PNG"),
+    alt: "todoList_project_iamge",
+    detail:
+      "You can record all your TODOs using this app. This app has the functionality of adding, deleting, and reading tasks. I have used Firebase as the backend for this app.",
+    link: "https://todo-app-e6f8a.web.app/",
+    sourceCode: "https://github.com/heyRahull/todo-app-firebase",
+  },
 ];
 
 export default projectData;

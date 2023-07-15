@@ -1,7 +1,5 @@
 import React from "react";
 import projectImage from "../images/project-image.svg";
-import picsogram from "../project-images/picsogram.PNG";
-import todoApp from "../project-images/todo_app.PNG";
 import movieRating from "../project-images/movie_rating_app.PNG";
 import emojipedia from "../project-images/emoji_interpreter.PNG";
 import yodaIcon from "../images/Yoda Image 1.png";
@@ -39,18 +37,6 @@ const Projects = () => {
             sourceCode={project.sourceCode}
           />
         ))}
-
-        <Project
-          name="📝 ToDo List App 📝"
-          date="March, 2021"
-          image={todoApp}
-          alt="todoList_project_iamge"
-          detail="You can record all your TODOs using this app. This app has the
-          functionality of adding, deleting, and reading tasks. I have used
-          Firebase as the backend for this app."
-          link="https://todo-app-e6f8a.web.app/"
-          sourceCode="https://github.com/heyRahull/todo-app-firebase"
-        />
 
         <Project
           name="🌟 Movies Rating App 🌟"
