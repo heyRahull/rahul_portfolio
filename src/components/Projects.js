@@ -1,16 +1,5 @@
 import React from "react";
 import projectImage from "../images/project-image.svg";
-import webBootCamp from "../project-images/web dev bootcamp image.jpg";
-import cocktailDb from "../project-images/cocktaildb.PNG";
-import moviesApp from "../project-images/movies__app.PNG";
-import amazonLogo from "../images/amazon-removebg-preview.png";
-import amazonClone from "../project-images/amazone_clone.PNG";
-import netflixLogo from "../images/Netflix-Symbol.png";
-import netflixClone from "../project-images/Netflix_clone.PNG";
-import messangerLogo from "../images/messanger-image.png";
-import messangerClone from "../project-images/Messanger_clone.PNG";
-import evernoteLogo from "../images/Evernote-image.png";
-import evernoteClone from "../project-images/evernote_project.PNG";
 import picsogram from "../project-images/picsogram.PNG";
 import todoApp from "../project-images/todo_app.PNG";
 import movieRating from "../project-images/movie_rating_app.PNG";
@@ -23,6 +12,7 @@ import friendsIcon from "../images/friends-image (4).png";
 import friendsProject from "../images/friends.png";
 import PageIntro from "./PageIntro";
 import Project from "./Project";
+import projectData from "./projectData.js";
 
 const Projects = () => {
   return (
@@ -36,97 +26,19 @@ const Projects = () => {
         experimenting with different tech stack."
       />
       <ul className="list-non-bullet off_white_at_odd">
-        <Project
-          name="🖥️ Web developer Bootcamp Assignments"
-          date="September, 2022"
-          image={webBootCamp}
-          alt="angelas_bootcamp_iamge"
-          detail="While attending the Web developer bootcamp by Angela Yu, I have
-          completed several assignments as capstone projects."
-          link="#"
-        />
-
-        <Project
-          name="🍷 Cocktail Db App"
-          date="May, 2021"
-          image={cocktailDb}
-          alt="cocktail_project_iamge"
-          detail="This is a Cocktail Db app built in React.js that displays cocktail
-          images and provides information about each image. The cocktails
-          are fetched and displayed using TheCocktailDB API. I learned
-          concepts such as context API, PureJS, React, and CSS while
-          building this project."
-          link="https://cocktail-db-app.netlify.app/"
-          sourceCode="https://github.com/heyRahull/Cocktauil-Db"
-        />
-
-        <Project
-          name="🎥 Movies App"
-          date="May, 2021"
-          image={moviesApp}
-          alt="movies_project_iamge"
-          detail="This is a Movies app built in React.js that displays movie posters
-          and provides an overview of the movies. The movies are fetched and
-          displayed using the TMDB API. I learned some PureJS and CSS
-          concepts while building this project."
-          link="https://movies-app-rahul.netlify.app/"
-          sourceCode="https://github.com/heyRahull/movies-app"
-        />
-
-        <Project
-          logo={amazonLogo}
-          name=" Amazon Clone"
-          date="May, 2021"
-          image={amazonClone}
-          alt="amazon_project_iamge"
-          detail="This is a clone app of the Amazon Ecommerce Application. It is
-          built using React.js and Firebase. It utilizes React Router to
-          render different pages, and it also uses Context API and User
-          Authentication. The aim of building this app is to understand the
-          different components of an Ecommerce site."
-          link="https://clone-3d1bc.web.app/"
-          sourceCode="https://github.com/heyRahull/Amazon-Clone"
-        />
-
-        <Project
-          name="Netflix Frontend Clone"
-          date="May, 2021"
-          logo={netflixLogo}
-          image={netflixClone}
-          alt="netflix_project_iamge"
-          detail="This is a clone app for the frontend of Netflix. It is built using
-          React.js and Firebase. It makes use of TMDB API, Firestore
-          (database), and Material-UI."
-          link="https://netflix-frontend-f0d8b.web.app/"
-          sourceCode="https://github.com/heyRahull/Netflix-frontend"
-        />
-
-        <Project
-          name=" Messenger Clone"
-          date="April, 2021"
-          logo={messangerLogo}
-          image={messangerClone}
-          alt="messanger_project_iamge"
-          detail="This is a clone app of the Messenger Chat Application. It is built
-          using React.js and Firebase. It makes use of Firestore (database)
-          and Material-UI. The aim of building this app is to understand how
-          a chat app works."
-          link="https://messanger-clone-60be2.web.app/"
-          sourceCode="https://github.com/heyRahull/Messanger-Clone"
-        />
-
-        <Project
-          name=" EverNote Clone"
-          date="April, 2021"
-          logo={evernoteLogo}
-          image={evernoteClone}
-          alt="evernote_project_iamge"
-          detail="This is a clone app of Evernote. It is built using React.js and
-          Firebase. It makes use of Firestore (database), ReactQuill, and
-          Material-UI."
-          link="https://evernote-clone-f5f5b.web.app/"
-          sourceCode="https://github.com/heyRahull/Evernote-clone"
-        />
+        {projectData.map((project, index) => (
+          <Project
+            key={index}
+            name={project.name}
+            date={project.date}
+            logo={project.logo}
+            image={project.image}
+            alt={project.alt}
+            detail={project.detail}
+            link={project.link}
+            sourceCode={project.sourceCode}
+          />
+        ))}
 
         <Project
           name="🖼️ Picsogram App 🖼️"
