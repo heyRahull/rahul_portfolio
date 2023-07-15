@@ -41,18 +41,6 @@ const Projects = () => {
         ))}
 
         <Project
-          name="🖼️ Picsogram App 🖼️"
-          date="March, 2021"
-          image={picsogram}
-          alt="picsogram_project_iamge"
-          detail="This is an app similar to Instagram. It is built using React.js
-          and Firebase. It makes use of storage, Firestore (database), and
-          authentication from Firebase."
-          link="https://instagram-clone-f5d3a.web.app/"
-          sourceCode="https://github.com/heyRahull/picsogram_app"
-        />
-
-        <Project
           name="📝 ToDo List App 📝"
           date="March, 2021"
           image={todoApp}
