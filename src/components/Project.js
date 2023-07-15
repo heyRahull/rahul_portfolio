@@ -13,11 +13,10 @@ const Project = (props) => {
             {props.name}
           </h1>
           <small>{props.date}</small>
-          <img
-            className="project-image"
-            src={props.image}
-            alt="angelas_bootcamp"
-          />
+          {props.image && (
+            <img className="project-image" src={props.image} alt={props.alt} />
+          )}
+
           <p>{props.detail}</p>
           <a className="link link-primary" href={props.link}>
             Live Projects
