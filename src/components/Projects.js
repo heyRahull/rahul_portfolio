@@ -1,6 +1,5 @@
 import React from "react";
 import projectImage from "../images/project-image.svg";
-import emojipedia from "../project-images/emoji_interpreter.PNG";
 import yodaIcon from "../images/Yoda Image 1.png";
 import yodaTranslator from "../project-images/yoda_translator.PNG";
 import minion1 from "../images/minion-yellow.png";
@@ -36,17 +35,6 @@ const Projects = () => {
             sourceCode={project.sourceCode}
           />
         ))}
-
-        <Project
-          name="😃 Emojipedia 😃"
-          date="January, 2021"
-          image={emojipedia}
-          alt="emojipedia_project_iamge"
-          detail="I struggle with understanding the emojis. Do you too? If yes, then
-          see this library of emojis with meaning."
-          link="https://mqyn9.csb.app/"
-          sourceCode="https://github.com/heyRahull/EmojiInterpreterApp"
-        />
 
         <Project
           name=" Yoda Speak"

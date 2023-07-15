@@ -3,7 +3,7 @@ const projectData = [
     name: "🖥️ Web developer Bootcamp Assignments",
     date: "September, 2022",
     image: require("../project-images/web dev bootcamp image.jpg"),
-    alt: "angelas_bootcamp_iamge",
+    alt: "angelas_bootcamp_image",
     detail:
       "While attending the Web developer bootcamp by Angela Yu, I have completed several assignments as capstone projects.",
     link: "#",
@@ -12,7 +12,7 @@ const projectData = [
     name: "🍷 Cocktail Db App",
     date: "May, 2021",
     image: require("../project-images/cocktaildb.PNG"),
-    alt: "cocktail_project_iamge",
+    alt: "cocktail_project_image",
     detail:
       "This is a Cocktail Db app built in React.js that displays cocktail images and provides information about each image. The cocktails are fetched and displayed using TheCocktailDB API. I learned concepts such as context API, PureJS, React, and CSS while building this project.",
     link: "https://cocktail-db-app.netlify.app/",
@@ -22,7 +22,7 @@ const projectData = [
     name: "🎥 Movies App",
     date: "May, 2021",
     image: require("../project-images/movies__app.PNG"),
-    alt: "movies_project_iamge",
+    alt: "movies_project_image",
     detail:
       "This is a Movies app built in React.js that displays movie posters and provides an overview of the movies. The movies are fetched and displayed using the TMDB API. I learned some PureJS and CSS concepts while building this project.",
     link: "https://movies-app-rahul.netlify.app/",
@@ -33,7 +33,7 @@ const projectData = [
     name: " Amazon Clone",
     date: "May, 2021",
     image: require("../project-images/amazone_clone.PNG"),
-    alt: "amazon_project_iamge",
+    alt: "amazon_project_image",
     detail:
       "This is a clone app of the Amazon Ecommerce Application. It is built using React.js and Firebase. It utilizes React Router to render different pages, and it also uses Context API and User Authentication. The aim of building this app is to understand the different components of an Ecommerce site.",
     link: "https://clone-3d1bc.web.app/",
@@ -56,7 +56,7 @@ const projectData = [
     date: "April, 2021",
     logo: require("../images/messanger-image.png"),
     image: require("../project-images/Messanger_clone.PNG"),
-    alt: "messanger_project_iamge",
+    alt: "messanger_project_image",
     detail:
       "This is a clone app of the Messenger Chat Application. It is built using React.js and Firebase. It makes use of Firestore (database) and Material-UI. The aim of building this app is to understand how a chat app works.",
     link: "https://messanger-clone-60be2.web.app/",
@@ -67,7 +67,7 @@ const projectData = [
     date: "April, 2021",
     logo: require("../images/Evernote-image.png"),
     image: require("../project-images/evernote_project.PNG"),
-    alt: "evernote_project_iamge",
+    alt: "evernote_project_image",
     detail:
       "This is a clone app of Evernote. It is built using React.js and Firebase. It makes use of Firestore (database), ReactQuill, and Material-UI.",
     link: "https://evernote-clone-f5f5b.web.app/",
@@ -77,7 +77,7 @@ const projectData = [
     name: "🖼️ Picsogram App 🖼️",
     date: "March, 2021",
     image: require("../project-images/picsogram.PNG"),
-    alt: "picsogram_project_iamge",
+    alt: "picsogram_project_image",
     detail:
       "This is an app similar to Instagram. It is built using React.js and Firebase. It makes use of storage, Firestore (database), and authentication from Firebase.",
     link: "https://instagram-clone-f5d3a.web.app/",
@@ -87,7 +87,7 @@ const projectData = [
     name: "📝 ToDo List App 📝",
     date: "March, 2021",
     image: require("../project-images/todo_app.PNG"),
-    alt: "todoList_project_iamge",
+    alt: "todoList_project_image",
     detail:
       "You can record all your TODOs using this app. This app has the functionality of adding, deleting, and reading tasks. I have used Firebase as the backend for this app.",
     link: "https://todo-app-e6f8a.web.app/",
@@ -97,11 +97,21 @@ const projectData = [
     name: "🌟 Movies Rating App 🌟",
     date: "February, 2020",
     image: require("../project-images/movie_rating_app.PNG"),
-    alt: "moviesRating_project_iamge",
+    alt: "moviesRating_project_image",
     detail:
       "Do you watch movies? You will find some good recommendations for different genres. Made using ReactJS with ❤️",
     link: "https://tf33c.csb.app/",
     sourceCode: "https://github.com/heyRahull/MovieRating_App",
+  },
+  {
+    name: "😃 Emojipedia 😃",
+    date: "January, 2021",
+    image: require("../project-images/emoji_interpreter.PNG"),
+    alt: "emojipedia_project_image",
+    detail:
+      "I struggle with understanding the emojis. Do you too? If yes, then see this library of emojis with meaning.",
+    link: "https://mqyn9.csb.app/",
+    sourceCode: "https://github.com/heyRahull/EmojiInterpreterApp",
   },
 ];
 
