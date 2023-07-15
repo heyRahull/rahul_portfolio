@@ -1,6 +1,6 @@
 import React from "react";
-import projectImage from "../images/project-image.svg";
-import PageIntro from "./PageIntro";
+import projectImage from "../../images/project-image.svg";
+import PageIntro from "../PageIntro";
 import Project from "./Project";
 import projectData from "./projectData.js";
 
