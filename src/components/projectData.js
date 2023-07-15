@@ -113,6 +113,48 @@ const projectData = [
     link: "https://mqyn9.csb.app/",
     sourceCode: "https://github.com/heyRahull/EmojiInterpreterApp",
   },
+  {
+    name: " Yoda Speak",
+    date: "January, 2021",
+    image: require("../project-images/yoda_translator.PNG"),
+    logo: require("../images/Yoda Image 1.png"),
+    alt: "yodaSpeak_project_iamge",
+    detail:
+      "Convert from English to Yoda speak. Yoda is a fictional character in the Star Wars universe. He is a small, green humanoid alien who is powerful with the Force. He has his own language, Yoda often orders sentences as Object-Subject-Verb!",
+    link: "https://yoda-translator-app.netlify.app/",
+    sourceCode: "https://github.com/heyRahull/Yoda-Translator-App",
+  },
+  {
+    name: " Banana Translator",
+    date: "January, 2021",
+    image: require("../project-images/Banana_talk.PNG"),
+    logo: require("../images/minion-yellow.png"),
+    alt: "minion_project_iamge",
+    detail:
+      "Are you a fan of minions? Did you know that the gibberish they say is an actual language? Use this translator app built using translation API to convert your text from English to Minion speak or Banana language.",
+    link: "https://minion-language-app.netlify.app/",
+    sourceCode: "https://github.com/heyRahull/Banana_translator_app",
+  },
+  {
+    name: " Are you a real F.R.I.E.N.D.S fan?",
+    date: "December, 2020",
+    image: require("../images/friends.png"),
+    logo: require("../images/friends-image (4).png"),
+    alt: "friends_image",
+    detail:
+      "Are you also a fan of F.R.I.E.N.D.S series like me? Let's play a quiz and see.",
+    link: "https://replit.com/@rahulagarwal99/FavSeriesQuiz?embed:1&output=1",
+    sourceCode: "https://github.com/heyRahull/Favorite_Series_Quiz",
+  },
+  {
+    name: "👦 How well do you know Me? 👦",
+    date: "December, 2020",
+    alt: "image",
+    detail:
+      "A CLI app built with <strong>nodeJS</strong>. You can send this to your friends and find out who really knows you well.",
+    link: "https://replit.com/@rahulagarwal99/AboutMeQuiz?embed=1&output=1",
+    sourceCode: "https://github.com/heyRahull/About_Me_Quiz",
+  },
 ];
 
 export default projectData;
