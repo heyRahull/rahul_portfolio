@@ -1,6 +1,4 @@
 import React from "react";
-import az104_logo from "../certificate-images/az104_logo.png";
-import az104Image from "../certificate-images/az-104.jpg";
 
 const Certificate = (props) => {
   return (
