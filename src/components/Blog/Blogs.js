@@ -1,9 +1,5 @@
 import React from "react";
 import blogsImage from "../../images/blogs_image.svg";
-import vanillaJs from "../../images/what is vanilla js.jpg";
-import reactBlog from "../../images/react-blog.jpeg";
-import dsaBlog from "../../images/DSA_blog.png";
-import introvertBlog from "../../images/introvert_blog.jpeg";
 import PageIntro from "../PageIntro";
 import Card from "./Card.js";
 import cardData from "./cardData";
@@ -33,48 +29,6 @@ const Blogs = () => {
                 name={card.name}
               />
             ))}
-            {/* <Card
-              excerpt="Deploying a React.js app to Netlify using GitHub provides a seamless workflow for hosting and managing your web application. In this guide, we'll walk through the steps to deploy your React.js app to Netlify, taking advantage of the powerful integration with GitHub. "
-              image="https://i.ytimg.com/vi/B5zka8akZBU/maxresdefault.jpg"
-              link="https://rahul123agarwal99.medium.com/how-to-deploy-react-js-app-to-netlify-using-github-2023-7057dc258ca3"
-              name="Host ReactJs Blog"
-            /> */}
-            {/* <Card
-              excerpt="Vanilla Js or Plain Js or Javascript in Browser. We might get a
-              thought that why learn vanilla JavaScript when you’ve got Angular,
-              React and Node.js? Well, there are several reasons for choosing
-              the vanilla js to learn..."
-              image={vanillaJs}
-              link="https://rahulagarwal.hashnode.dev/vanilla-js-or-plain-js-or-javascript-in-browser"
-              name="vanilla JS"
-            /> */}
-            <Card
-              excerpt="React Js is a library of Javascript. As a beginner it
-              sometimes gets too tough to select from various content that
-              is spread everywhere. So this blog will let you get started
-              with your Reactjs journey..."
-              image={reactBlog}
-              link="https://rahulagarwal.hashnode.dev/creating-your-first-react-app-as-a-beginner"
-              name="React Blog"
-            />
-            <Card
-              excerpt="Data Structures are also important because, they are what
-              you do after you’ve became a computer scientist. They are
-              important to understand how does the code execution takes
-              place inside the computer system..."
-              image={dsaBlog}
-              link="https://medium.com/@rahul123agarwal99/why-are-data-structures-and-algorithms-so-important-in-computer-science-8553d7dfc72b"
-              name="DSA Blog"
-            />
-            <Card
-              excerpt="The myths that people have regarding the term “introvert” is
-              what bothers me more than actually being an introvert. So I
-              just thought of why not sharing my opinion that How it
-              actually feels about being an introvert..."
-              image={introvertBlog}
-              link="https://medium.com/@rahul123agarwal99/how-it-feels-like-to-be-an-introvert-c18ae086abc5"
-              name="Introvert Blog"
-            />
           </div>
         </div>
       </section>

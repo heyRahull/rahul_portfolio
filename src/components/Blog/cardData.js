@@ -13,6 +13,27 @@ const cardData = [
     link: "https://rahulagarwal.hashnode.dev/vanilla-js-or-plain-js-or-javascript-in-browser",
     name: "vanilla JS",
   },
+  {
+    excerpt:
+      "React Js is a library of Javascript. As a beginner it sometimes gets too tough to select from various content that is spread everywhere. So this blog will let you get started with your Reactjs journey...",
+    image: require("../../images/react-blog.jpeg"),
+    link: "https://rahulagarwal.hashnode.dev/creating-your-first-react-app-as-a-beginner",
+    name: "React Blog",
+  },
+  {
+    excerpt:
+      "Data Structures are also important because, they are what you do after you’ve became a computer scientist. They are important to understand how does the code execution takes place inside the computer system...",
+    image: require("../../images/DSA_blog.png"),
+    link: "https://medium.com/@rahul123agarwal99/why-are-data-structures-and-algorithms-so-important-in-computer-science-8553d7dfc72b",
+    name: "DSA Blog",
+  },
+  {
+    excerpt:
+      "The myths that people have regarding the term “introvert” is what bothers me more than actually being an introvert. So I just thought of why not sharing my opinion that How it actually feels about being an introvert...",
+    image: require("../../images/introvert_blog.jpeg"),
+    link: "https://medium.com/@rahul123agarwal99/how-it-feels-like-to-be-an-introvert-c18ae086abc5",
+    name: "Introvert Blog",
+  },
 ];
 
 export default cardData;
