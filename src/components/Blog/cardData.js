@@ -1,6 +1,13 @@
 const cardData = [
   {
     excerpt:
+      "In this post, we will embark on an exciting journey into the world of React.js — a powerful JavaScript library for building interactive and dynamic user interfaces. Whether you are a seasoned developer or a beginner in the world of web development, React.js has something to offer to everyone.",
+    image: "https://i.ytimg.com/vi/n3a2VIju98k/maxresdefault.jpg",
+    link: "https://rahul123agarwal99.medium.com/introduction-to-react-js-building-interactive-user-interfaces-647bd9ce1af3",
+    name: "ReactJs Introdution Blog",
+  },
+  {
+    excerpt:
       "Deploying a React.js app to Netlify using GitHub provides a seamless workflow for hosting and managing your web application. In this guide, we'll walk through the steps to deploy your React.js app to Netlify, taking advantage of the powerful integration with GitHub. ",
     image: "https://i.ytimg.com/vi/B5zka8akZBU/maxresdefault.jpg",
     link: "https://rahul123agarwal99.medium.com/how-to-deploy-react-js-app-to-netlify-using-github-2023-7057dc258ca3",
