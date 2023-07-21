@@ -3,7 +3,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Blogs from "./components/Blogs";
+import Blogs from "./components/Blog/Blogs";
 import Projects from "./components/Project/Projects";
 import Certifications from "./components/Certificate/Certifications";
 import ScrollToTop from "./components/ScrollToTop";
