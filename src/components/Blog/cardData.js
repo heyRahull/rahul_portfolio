@@ -1,8 +1,17 @@
 const cardData = [
   {
     excerpt:
+      "In this post, we will delve into an essential aspect of React.js development — the folder structure. Creating a well-organized and scalable folder structure is crucial for maintaining clarity, improving collaboration, and enhancing the overall development experience.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*YU8y8JfbS83wUgt_KgPiDg.png",
+    link: "https://rahul123agarwal99.medium.com/demystifying-folder-structure-in-react-js-a-guide-to-organizing-your-projects-288773f45afb",
+    name: "React Folder Structure",
+  },
+  {
+    excerpt:
       "In this post, we will embark on an exciting journey into the world of React.js — a powerful JavaScript library for building interactive and dynamic user interfaces. Whether you are a seasoned developer or a beginner in the world of web development, React.js has something to offer to everyone.",
-    image: "https://i.ytimg.com/vi/n3a2VIju98k/maxresdefault.jpg",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*cpFPt6BvAcq34P2M7gToHg.png",
     link: "https://rahul123agarwal99.medium.com/introduction-to-react-js-building-interactive-user-interfaces-647bd9ce1af3",
     name: "ReactJs Introdution Blog",
   },
