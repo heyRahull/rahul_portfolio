@@ -157,9 +157,9 @@ const Greet = () => (
             my expertise.
           </strong>
         </p>
-        <a className="link link-primary" href="/certifications.html">
+        <Link className="link link-primary" to="/certifications">
           Certifications
-        </a>
+        </Link>
       </div>
     </section>
   </>
