@@ -132,9 +132,9 @@ const Greet = () => (
             to document my journey of learning.
           </strong>
         </p>
-        <a className="link link-secondary" href="/blogs.html">
+        <Link className="link link-secondary" to="/blogs">
           Read Blogs
-        </a>
+        </Link>
       </div>
     </section>
 
