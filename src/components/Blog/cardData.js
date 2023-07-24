@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "In this blog, we will explore the fundamentals of components and React Fragments in React.js and understand their significance in modern web development.At the heart of React.js lies the concept of components, which enables developers to create reusable and modular UI elements.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hJojwp4VON5pkj16xNpLBg.png",
+    link: "https://rahul123agarwal99.medium.com/components-in-react-js-building-reusable-and-modular-user-interfaces-cb5922f58627",
+    name: "React Components",
+  },
+  {
+    excerpt:
       "In this post, we will delve into an essential aspect of React.js development — the folder structure. Creating a well-organized and scalable folder structure is crucial for maintaining clarity, improving collaboration, and enhancing the overall development experience.",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*YU8y8JfbS83wUgt_KgPiDg.png",
