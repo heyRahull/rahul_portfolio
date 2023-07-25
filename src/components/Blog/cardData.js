@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "JSX stands for JavaScript XML and is an extension to JavaScript. It allows us to write HTML-like code directly within JavaScript, making it easier to define the structure of our user interfaces. By combining the power of JavaScript with the simplicity of HTML, JSX simplifies the process of creating and managing UI components.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*pFqYpKd4fVbej-ksFAdyDQ.jpeg",
+    link: "https://rahul123agarwal99.medium.com/jsx-in-react-js-simplifying-ui-development-74cad20435c7",
+    name: "JSX in React",
+  },
+  {
+    excerpt:
       "In this blog, we will explore the fundamentals of components and React Fragments in React.js and understand their significance in modern web development.At the heart of React.js lies the concept of components, which enables developers to create reusable and modular UI elements.",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hJojwp4VON5pkj16xNpLBg.png",
