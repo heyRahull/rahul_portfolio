@@ -1,5 +1,5 @@
 import React from "react";
-import blogsImage from "../images/blogs_image.svg";
+import blogsImage from "../images/youtubeTutorial.png";
 import PageIntro from "./PageIntro";
 import PlaylistCard from "./PlaylistCard";
 
@@ -9,11 +9,8 @@ function Youtube() {
       <PageIntro
         image={blogsImage}
         name="blogsPage"
-        heading="Blogs"
-        description="Writing blogs is one of the things that I do. Whenever I learn
-        something new, be it technical or generic, I try to write a blog
-        on it. You can explore this space to read about the various blogs
-        that I have written."
+        heading="YouTube Tutorials"
+        description="Welcome to the YouTube Tutorials page! As a passionate educator and coding enthusiast, I love to share my knowledge with the world. In my free time, I enjoy creating engaging and informative coding tutorials that cater to learners of all levels. "
       />
 
       <section className="section">
@@ -21,9 +18,14 @@ function Youtube() {
           <div className="row mx-0 my-0">
             <PlaylistCard
               playlistId={"PLCVRCLNdg3_v54_rI8kbRrBs9kNymr8uX"}
-              playlistTitle="React JS"
+              playlistTitle="CSS"
+              image="https://i.ytimg.com/vi/RieFzvYfaGM/maxresdefault.jpg"
             />
-            <PlaylistCard playlistId={"PLCVRCLNdg3_vYPLHhfxiVAlLvKKBxAfdj"} />
+            <PlaylistCard
+              playlistId={"PLCVRCLNdg3_vYPLHhfxiVAlLvKKBxAfdj"}
+              playlistTitle="React JS"
+              image="https://i.ytimg.com/vi/n3a2VIju98k/maxresdefault.jpg"
+            />
           </div>
         </div>
       </section>

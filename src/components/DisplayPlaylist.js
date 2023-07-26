@@ -13,17 +13,19 @@ function DisplayPlaylist(props) {
 
   return (
     <>
-      <PageIntro
-        image={blogsImage}
-        name="blogsPage"
-        heading={playlistTitle}
-        description="..Writing blogs is one of the things that I do. Whenever I learn
-            something new, be it technical or generic, I try to write a blog
-            on it. You can explore this space to read about the various blogs
-            that I have written."
-      />
-
-      <section className="section">
+      {/* <PageIntro heading={playlistTitle} /> */}
+      <section className="section playlist_name">
+        <div className="container container-center">
+          <br />
+          <br />
+          <br />
+          <h1>
+            <strong className="name-inverted">{`${playlistTitle} Tutorials`}</strong>
+          </h1>
+          <hr />
+        </div>
+      </section>
+      <section className="section" style={{ paddingTop: "0px" }}>
         <div className="col p-3 d-flex flex-column position-static card_column">
           <div className="row mx-0 my-0">
             <div className="youtube_playlist">
