@@ -371,3 +371,7 @@ hr {
 .youtube_playlist figcaption {
   padding: 16px;
 }
+
+.playlist_name {
+  padding-bottom: 0px !important;
+}
