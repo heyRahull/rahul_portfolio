@@ -9,13 +9,15 @@ function DisplayPlaylist(props) {
   const location = useLocation(); // Get current URL information.
   const searchParams = new URLSearchParams(location.search); //Extract query parameters from URL.
   const playlistId = searchParams.get("playlistId"); // Get the value of 'playlistId' parameter.
+  const playlistTitle = searchParams.get("playlistTitle"); // Get the value of 'playlistTitle' parameter.
+
   return (
     <>
       <PageIntro
         image={blogsImage}
         name="blogsPage"
-        heading="Blogs"
-        description="Writing blogs is one of the things that I do. Whenever I learn
+        heading={playlistTitle}
+        description="..Writing blogs is one of the things that I do. Whenever I learn
             something new, be it technical or generic, I try to write a blog
             on it. You can explore this space to read about the various blogs
             that I have written."

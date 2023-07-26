@@ -17,7 +17,9 @@ function PlaylistCard(props) {
             <div className="d-flex justify-content-between align-items-center">
               <Link
                 className="card-btn card-primary"
-                to={`/displayPlaylist?playlistId=${props.playlistId}`}
+                to={`/displayPlaylist?playlistId=${
+                  props.playlistId
+                }&playlistTitle=${encodeURIComponent(props.playlistTitle)}`}
                 rel="noopener noreferrer"
               >
                 View Playlist

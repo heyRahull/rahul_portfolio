@@ -19,7 +19,10 @@ function Youtube() {
       <section className="section">
         <div className="col p-3 d-flex flex-column position-static card_column">
           <div className="row mx-0 my-0">
-            <PlaylistCard playlistId={"PLCVRCLNdg3_v54_rI8kbRrBs9kNymr8uX"} />
+            <PlaylistCard
+              playlistId={"PLCVRCLNdg3_v54_rI8kbRrBs9kNymr8uX"}
+              playlistTitle="React JS"
+            />
             <PlaylistCard playlistId={"PLCVRCLNdg3_vYPLHhfxiVAlLvKKBxAfdj"} />
           </div>
         </div>
