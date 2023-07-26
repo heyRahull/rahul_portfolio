@@ -7,6 +7,8 @@ import Blogs from "./components/Blog/Blogs";
 import Projects from "./components/Project/Projects";
 import Certifications from "./components/Certificate/Certifications";
 import ScrollToTop from "./components/ScrollToTop";
+import Youtube from "./components/Youtube";
+import DisplayPlaylist from "./components/DisplayPlaylist";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="/youtube" element={<Youtube />} />
+          <Route path="/displayPlaylist" element={<DisplayPlaylist />} />
         </Routes>
         <Footer />
       </Router>

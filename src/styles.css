@@ -359,3 +359,15 @@ hr {
 .off_white_at_odd li:nth-child(odd) {
   background-color: var(--off-white);
 }
+
+.youtube_playlist figure {
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.175);
+  margin: 12px 6px;
+
+  background: linear-gradient(90deg, #f3f4f6, #bdc3c7);
+}
+
+.youtube_playlist figcaption {
+  padding: 16px;
+}
