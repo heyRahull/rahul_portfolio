@@ -29,7 +29,7 @@ function Youtube() {
             <PlaylistCard
               playlistId={"PLCVRCLNdg3_u-LTpRllKWJIFyyjWGvohC"}
               playlistTitle="React JS in Hindi"
-              image="https://i.ytimg.com/vi/n3a2VIju98k/maxresdefault.jpg"
+              image="https://i.ytimg.com/vi/D80n4icoUvk/maxresdefault.jpg"
             />
           </div>
         </div>
