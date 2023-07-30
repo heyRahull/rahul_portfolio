@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "When building applications with ReactJS, understanding the concept of “props” is essential. Props, short for “properties,” allow you to pass data from one component to another within your React application. ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-N2jxUvnDK1TOZFc5ybXsg.png",
+    link: "  https://rahul123agarwal99.medium.com/props-in-reactjs-a-comprehensive-guide-81d8cde44518",
+    name: "Props in React",
+  },
+  {
+    excerpt:
       "JSX stands for JavaScript XML and is an extension to JavaScript. It allows us to write HTML-like code directly within JavaScript, making it easier to define the structure of our user interfaces. By combining the power of JavaScript with the simplicity of HTML, JSX simplifies the process of creating and managing UI components.",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*pFqYpKd4fVbej-ksFAdyDQ.jpeg",
