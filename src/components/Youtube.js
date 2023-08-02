@@ -1,5 +1,5 @@
 import React from "react";
-import blogsImage from "../images/youtubeTutorial.png";
+import YoutubeImage from "../images/youtubeTutorial.png";
 import PageIntro from "./PageIntro";
 import PlaylistCard from "./PlaylistCard";
 
@@ -7,7 +7,7 @@ function Youtube() {
   return (
     <>
       <PageIntro
-        image={blogsImage}
+        image={YoutubeImage}
         name="blogsPage"
         heading="YouTube Tutorials"
         description="Welcome to the YouTube Tutorials page! As a passionate educator and coding enthusiast, I love to share my knowledge with the world. In my free time, I enjoy creating engaging and informative coding tutorials that cater to learners of all levels. "
