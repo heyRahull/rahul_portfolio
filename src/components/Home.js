@@ -162,6 +162,30 @@ const Greet = () => (
         </Link>
       </div>
     </section>
+
+    <section className="section ">
+      <div className="container container-center">
+        <h1>
+          <strong className="name-inverted">YouTube</strong>
+        </h1>
+        <hr />
+        <img
+          className="image-center"
+          src={certificationImg}
+          alt="Certification Image"
+        />
+        <p>
+          <strong>
+            <br />
+            Discover my accomplished certifications and explore the breadth of
+            my expertise.
+          </strong>
+        </p>
+        <Link className="link link-primary" to="/certifications">
+          Certifications
+        </Link>
+      </div>
+    </section>
   </>
 );
 export default Greet;
