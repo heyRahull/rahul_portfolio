@@ -170,11 +170,7 @@ const Greet = () => (
           <strong className="name-inverted">YouTube</strong>
         </h1>
         <hr />
-        <img
-          className="image-center"
-          src={YoutubeImage}
-          alt="Certification Image"
-        />
+        <img className="image-center" src={YoutubeImage} alt="Youtube Image" />
         <p>
           <strong>
             <br />
