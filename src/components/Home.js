@@ -6,6 +6,7 @@ import heroImg from "../images/undraw_Updated_resume_re_q1or.svg";
 import projectImg from "../images/project-image.svg";
 import blogsImg from "../images/blogs_image.svg";
 import certificationImg from "../images/certification-image.svg";
+import YoutubeImage from "../images/youtubeTutorial.png";
 import htmlIcon from "../icons/html5_image.png";
 import cssIcon from "../icons/css3_icon.png";
 import jsIcon from "../icons/js_icon.jfif";
@@ -146,7 +147,7 @@ const Greet = () => (
         </h1>
         <hr />
         <img
-          className="image-center"
+          className="image-center certification_img"
           src={certificationImg}
           alt="Certification Image"
         />
@@ -171,18 +172,19 @@ const Greet = () => (
         <hr />
         <img
           className="image-center"
-          src={certificationImg}
+          src={YoutubeImage}
           alt="Certification Image"
         />
         <p>
           <strong>
             <br />
-            Discover my accomplished certifications and explore the breadth of
-            my expertise.
+            As a passionate educator and coding enthusiast, my YouTube channel
+            is dedicated to creating engaging and informative coding tutorials
+            that cater to learners of all levels.
           </strong>
         </p>
         <Link className="link link-primary" to="/certifications">
-          Certifications
+          YouTube 🎬
         </Link>
       </div>
     </section>
