@@ -3,6 +3,7 @@ import githubIcon from "../icons/github.png";
 import linkedinIcon from "../icons/Linkedin.png";
 import mediumIcon from "../icons/medium.png";
 import gmailIcon from "../icons/gmail1.png";
+import twitterIcon from "../icons/twitter_logo.png";
 
 const Footer = () => (
   <>
@@ -43,7 +44,7 @@ const Footer = () => (
           </a>
           <a
             className="navbar-brand"
-            href="https://medium.com/@rahul123agarwal99"
+            href="https://medium.com/@thehumblecoder"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -62,6 +63,20 @@ const Footer = () => (
             rel="noopener noreferrer"
           >
             <img src={gmailIcon} width="30" height="27" alt="" loading="lazy" />
+          </a>
+          <a
+            className="navbar-brand"
+            href="https://twitter.com/thehumblecoderr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={twitterIcon}
+              width="30"
+              height="27"
+              alt=""
+              loading="lazy"
+            />
           </a>
         </div>
       </nav>
