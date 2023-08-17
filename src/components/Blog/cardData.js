@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "In today’s fast-paced world, effective project management is crucial to ensure that tasks are completed seamlessly and goals are achieved on time. Whether you’re part of a small startup or a large enterprise, managing projects efficiently can be a daunting task. That’s where Jira comes into play ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*zal4ulOx-mCVIGOkJ1lYQQ.png",
+    link: "https://thehumblecoder.medium.com/a-beginners-guide-to-jira-mastering-project-management-ea31db26ce5d",
+    name: "Jira guide for Beginners",
+  },
+  {
+    excerpt:
       "In the world of React development, understanding how to pass methods as props between components is a crucial skill. This technique allows components to communicate and interact effectively, leading to more modular and maintainable code. ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*sGiXMvseAl0y4yn--LyJqg.png",
