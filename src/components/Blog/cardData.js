@@ -3,7 +3,7 @@ const cardData = [
     excerpt:
       "In today’s fast-paced world, effective project management is crucial to ensure that tasks are completed seamlessly and goals are achieved on time. Whether you’re part of a small startup or a large enterprise, managing projects efficiently can be a daunting task. That’s where Jira comes into play ",
     image:
-      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*zal4ulOx-mCVIGOkJ1lYQQ.png",
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*a3R0f0Q0MklZhuoxz05LtQ.png",
     link: "https://thehumblecoder.medium.com/a-beginners-guide-to-jira-mastering-project-management-ea31db26ce5d",
     name: "Jira guide for Beginners",
   },
