@@ -11,7 +11,7 @@ const cardData = [
     excerpt:
       "In the world of React development, understanding how to pass methods as props between components is a crucial skill. This technique allows components to communicate and interact effectively, leading to more modular and maintainable code. ",
     image:
-      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*sGiXMvseAl0y4yn--LyJqg.png",
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*FqWNG047CRxa-Guw7ZgAKQ.png",
     link: "https://thehumblecoder.medium.com/exploring-methods-as-props-in-react-enhancing-component-interaction-4c29f95107e9",
     name: "Method as Props in React",
   },
@@ -19,7 +19,7 @@ const cardData = [
     excerpt:
       "When building applications with ReactJS, understanding the concept of “props” is essential. Props, short for “properties,” allow you to pass data from one component to another within your React application. ",
     image:
-      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-N2jxUvnDK1TOZFc5ybXsg.png",
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ROL4N4wNYC42J1M_roNFXw.png",
     link: "  https://rahul123agarwal99.medium.com/props-in-reactjs-a-comprehensive-guide-81d8cde44518",
     name: "Props in React",
   },
