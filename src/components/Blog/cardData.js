@@ -17,6 +17,22 @@ const cardData = [
   },
   {
     excerpt:
+      "In ReactJS, creating interactive and responsive user interfaces relies heavily on event handling. Events allow components to respond to user interactions, such as clicks, keystrokes, and mouse movements, providing a seamless user experience.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*CQHCm92-h7tnKcADyO0d_g.png",
+    link: "https://thehumblecoder.medium.com/event-handling-in-reactjs-handling-user-interactions-with-finesse-c337ff5b133a",
+    name: "Event Handling in React",
+  },
+  {
+    excerpt:
+      "ReactJS is known for its component-based architecture, enabling developers to build dynamic and interactive user interfaces with ease. Central to this process is the concept of “state.”",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*1O3xonS1XpOSh4sRM6rnPg.png",
+    link: "https://thehumblecoder.medium.com/states-in-reactjs-managing-dynamic-uis-with-ease-1df3715d0d84",
+    name: "State in React",
+  },
+  {
+    excerpt:
       "When building applications with ReactJS, understanding the concept of “props” is essential. Props, short for “properties,” allow you to pass data from one component to another within your React application. ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ROL4N4wNYC42J1M_roNFXw.png",
