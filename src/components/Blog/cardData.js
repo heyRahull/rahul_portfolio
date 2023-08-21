@@ -9,6 +9,14 @@ const cardData = [
   },
   {
     excerpt:
+      "Conditional rendering is a fundamental concept in ReactJS that empowers developers to dynamically display content based on specific conditions. It’s a crucial tool in your toolkit for creating interactive and personalized user interfaces. In this article, we’ll delve .",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*X6TF-fT08rEMYrgI1UEn8Q.png",
+    link: "https://thehumblecoder.medium.com/mastering-conditional-rendering-in-reactjs-453d87e686b4",
+    name: "Mastering Conditional Rendering in ReactJS",
+  },
+  {
+    excerpt:
       "In today’s fast-paced world, effective project management is crucial to ensure that tasks are completed seamlessly and goals are achieved on time. Whether you’re part of a small startup or a large enterprise, managing projects efficiently can be a daunting task. That’s where Jira comes into play ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*a3R0f0Q0MklZhuoxz05LtQ.png",
