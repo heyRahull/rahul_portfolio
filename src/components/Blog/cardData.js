@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "It’s easy to feel like an outsider in a world that applauds the loudest voices, but let’s remember that introverts bring a unique blend of introspection, empathy, and creativity to the table.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*1-Qm3z_1Vk4E-2FHs2XnYw.jpeg",
+    link: "https://thehumblecoder.medium.com/embracing-your-introversion-navigating-success-and-fulfillment-in-an-extroverted-world-ce48462e115a",
+    name: "Embracing Your Introversion",
+  },
+  {
+    excerpt:
       "In today’s fast-paced world, effective project management is crucial to ensure that tasks are completed seamlessly and goals are achieved on time. Whether you’re part of a small startup or a large enterprise, managing projects efficiently can be a daunting task. That’s where Jira comes into play ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*a3R0f0Q0MklZhuoxz05LtQ.png",
