@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "Life’s journey is a roller coaster of highs and lows, and it’s not uncommon to feel like your hard work is going unnoticed or that setbacks are the norm. Many of us find ourselves working tirelessly in our jobs, side hustles, and personal development,",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*AXCWwuPXP5QWqwXeS2Lvbw.jpeg",
+    link: "https://thehumblecoder.medium.com/navigating-tough-times-embracing-the-journey-to-success-587880786133",
+    name: "Navigating Tough Times",
+  },
+  {
+    excerpt:
       "It’s easy to feel like an outsider in a world that applauds the loudest voices, but let’s remember that introverts bring a unique blend of introspection, empathy, and creativity to the table.",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*1-Qm3z_1Vk4E-2FHs2XnYw.jpeg",
