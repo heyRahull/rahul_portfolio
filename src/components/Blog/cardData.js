@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "In React.js. Styling is a critical aspect of creating visually appealing and user-friendly web applications. With React’s component-based architecture, the way we apply styles can greatly impact the overall user experience. ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*2N-Liz4_DONyz_QZiWePbA.png",
+    link: "https://thehumblecoder.medium.com/mastering-css-styling-in-react-js-a-practical-guide-697de390f215",
+    name: "Mastering CSS in ReactJs",
+  },
+  {
+    excerpt:
       "Life’s journey is a roller coaster of highs and lows, and it’s not uncommon to feel like your hard work is going unnoticed or that setbacks are the norm. Many of us find ourselves working tirelessly in our jobs, side hustles, and personal development,",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*AXCWwuPXP5QWqwXeS2Lvbw.jpeg",
