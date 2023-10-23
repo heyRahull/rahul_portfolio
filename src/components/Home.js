@@ -29,6 +29,9 @@ const Greet = () => (
           HEY THERE <span class="wavy">👋🏻</span> MYSELF
           <span class="name-inverted"> RAHUL AGARWAL</span>, a
           <span class="name-inverted"> SOFTWARE DEVELOPER</span>
+          <a href="weixin://scanqrcode" class="share-box__item">
+            wechat
+          </a>
         </strong>
       </h1>
     </header>
