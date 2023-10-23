@@ -30,7 +30,7 @@ const Greet = () => (
           <span class="name-inverted"> RAHUL AGARWAL</span>, a
           <span class="name-inverted"> SOFTWARE DEVELOPER</span>
           <a href="weixin://scanqrcode" class="share-box__item">
-            wechat
+            wechat.
           </a>
         </strong>
       </h1>
