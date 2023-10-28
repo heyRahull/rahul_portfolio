@@ -392,4 +392,10 @@ hr {
 .VIpgJd-ZVi9od-ORHb-OEVmcd {
   top: 56px !important;
 }
+
+@media (max-width: 767px) {
+  .VIpgJd-ZVi9od-ORHb-OEVmcd {
+    visibility: hidden !important;
+  }
+}
 /* Google translate styles end  */
