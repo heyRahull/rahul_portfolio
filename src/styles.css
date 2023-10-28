@@ -375,3 +375,21 @@ hr {
 .playlist_name {
   padding-bottom: 0px !important;
 }
+
+/* Google translate styles start  */
+@media (min-width: 1280px) {
+  .splash_page_translation_desktop {
+    /* position: relative !important; */
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    margin-top: 7px;
+    margin-right: 10px;
+  }
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  top: 56px !important;
+}
+/* Google translate styles end  */

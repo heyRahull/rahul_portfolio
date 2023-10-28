@@ -1,5 +1,6 @@
 import { React, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
+import GoogleTranslate from "./GoogleTranslate";
 
 const Navbar = (props) => {
   const location = useLocation();
@@ -56,7 +57,6 @@ const Navbar = (props) => {
                   Blogs
                 </Link>
               </li>
-
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -99,6 +99,7 @@ const Navbar = (props) => {
                 <a class="dropdown-item" href="#">Something else here</a> */}
                 </div>
               </li>
+              <GoogleTranslate />
             </ul>
           </div>
         </div>
