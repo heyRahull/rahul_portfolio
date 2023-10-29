@@ -1,4 +1,5 @@
 import React from "react";
+import ShareButtons from "./ShareButtons";
 
 const PageIntro = (props) => {
   return (
@@ -28,6 +29,7 @@ const PageIntro = (props) => {
             <strong>{props.description}</strong>
           </p>
         </div>
+        <ShareButtons />
       </section>
       <hr />
     </>
