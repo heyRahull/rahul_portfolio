@@ -36,7 +36,8 @@ const ShareButtons = () => {
             // image: "https://bit.ly/2CMhCMC", // (defaults to og:image or twitter:image)
             // description: "custom text", // (defaults to og:description or twitter:description)
             // title: "custom title", // (defaults to og:title or twitter:title)
-            message: "Please find attached Portfolio of Rahul Agarwal", // (only for email sharing)
+            message:
+              "Please find attached Portfolio of Rahul Agarwal : https://rahul-agarwal-portfolio.netlify.app/", // (only for email sharing)
             subject: "Rahul Agarwal's Portfolio", // (only for email sharing)
             // username: "custom twitter handle", // (only for twitter sharing)
           }}
