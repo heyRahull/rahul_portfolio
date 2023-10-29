@@ -399,3 +399,9 @@ hr {
   }
 }
 /* Google translate styles end  */
+.share-title {
+  text-align: center;
+}
+.share-box {
+  margin-top: 45px;
+}

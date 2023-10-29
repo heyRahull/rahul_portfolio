@@ -15,6 +15,7 @@ import reactIcon from "../icons/react-icon.png";
 import bootstrapIcon from "../icons/bootstrapicon.png";
 import HostIcon from "../icons/web-hosting_icon.jpg";
 import gitIcon from "../icons/git.png";
+import ShareButtons from "./ShareButtons";
 const Greet = () => (
   <>
     {/* Hero Area  */}
@@ -54,6 +55,7 @@ const Greet = () => (
           </strong>
         </p>
       </div>
+      <ShareButtons />
     </section>
     {/* Technologies section  */}
     <section className="section">
