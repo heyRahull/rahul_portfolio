@@ -32,12 +32,12 @@ const ShareButtons = () => {
             // OPTIONAL PARAMETERS
 
             min_count: 10, // (threshold for total share count to be displayed)
-            url: "https://www.sharethis.com", // (defaults to current url)
+            // url: "https://www.sharethis.com", // (defaults to current url)
             image: "https://bit.ly/2CMhCMC", // (defaults to og:image or twitter:image)
             description: "custom text", // (defaults to og:description or twitter:description)
             title: "custom title", // (defaults to og:title or twitter:title)
-            message: "custom email text", // (only for email sharing)
-            subject: "custom email subject", // (only for email sharing)
+            message: "Please find attached Portfolio of Rahul Agarwal", // (only for email sharing)
+            subject: "Rahul Agarwal's Portfolio", // (only for email sharing)
             username: "custom twitter handle", // (only for twitter sharing)
           }}
         />
