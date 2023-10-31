@@ -72,6 +72,8 @@ const Navbar = (props) => {
                     <span style={{ color: "white" }}>YouTube</span>
                   ) : location.pathname === "/displayPlaylist" ? (
                     <span style={{ color: "white" }}>YouTube</span>
+                  ) : location.pathname === "/testimonials" ? (
+                    <span style={{ color: "white" }}>Testimonials</span>
                   ) : (
                     "More"
                   )}
@@ -80,6 +82,13 @@ const Navbar = (props) => {
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
+                  <Link
+                    class="dropdown-item"
+                    to="/testimonials"
+                    onClick={handleMenuItemClick}
+                  >
+                    Testimonials
+                  </Link>
                   <Link
                     class="dropdown-item"
                     to="/certifications"
