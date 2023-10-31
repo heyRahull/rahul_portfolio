@@ -9,6 +9,7 @@ import Certifications from "./components/Certificate/Certifications";
 import ScrollToTop from "./components/ScrollToTop";
 import Youtube from "./components/Youtube";
 import DisplayPlaylist from "./components/DisplayPlaylist";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/youtube" element={<Youtube />} />
           <Route path="/displayPlaylist" element={<DisplayPlaylist />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
         <Footer />
       </Router>
