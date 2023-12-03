@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "React.js, follows a lifecycle that governs the creation, updating, and destruction of components. These lifecycle methods provide developers with precise hooks to execute code at different stages in a component’s existence.  ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-6uJ482Ut9eUBLymjPCCaA.png",
+    link: "https://thehumblecoder.medium.com/understanding-react-js-lifecycle-methods-47c6952d7d20",
+    name: "Understanding React.js Lifecycle Methods",
+  },
+  {
+    excerpt:
       "Forms are the lifeblood of user interaction on the web, facilitating data input and submission. In the realm of React.js, a JavaScript library renowned for its declarative and component-based approach  ",
     image:
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*MXXZypseCXlOL62YCKE7Zg.png",
