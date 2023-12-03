@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "Forms are the lifeblood of user interaction on the web, facilitating data input and submission. In the realm of React.js, a JavaScript library renowned for its declarative and component-based approach  ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*MXXZypseCXlOL62YCKE7Zg.png",
+    link: "https://thehumblecoder.medium.com/mastering-form-handling-in-react-js-addb7602c1d3",
+    name: "Mastering Form Handling in React.js",
+  },
+  {
+    excerpt:
       "In React.js. Styling is a critical aspect of creating visually appealing and user-friendly web applications. With React’s component-based architecture, the way we apply styles can greatly impact the overall user experience. ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*2N-Liz4_DONyz_QZiWePbA.png",
