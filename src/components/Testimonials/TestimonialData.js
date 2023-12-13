@@ -1,6 +1,11 @@
 const TestimonialData = [
   {
     name: "Client Testimony",
+    shortForm: "CustomerAppreciation2",
+    image: require("../../testimonial-images/Customer_Appreciation2.png"),
+  },
+  {
+    name: "Client Testimony",
     shortForm: "CustomerAppreciation1",
     image: require("../../testimonial-images/Customer_Appreciation1.png"),
   },
