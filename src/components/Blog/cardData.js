@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "React Hooks are functions that allow you to use state and other React features in functional components. Traditionally, class components were the go-to for managing state and lifecycle methods.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*AYcZ74y-NuSLx_mBRq5Umw.png",
+    link: "https://thehumblecoder.medium.com/understanding-react-hooks-a-comprehensive-guide-1d15d1386aa7",
+    name: "Understanding React Hooks: A Comprehensive Guide",
+  },
+  {
+    excerpt:
       "React.js, follows a lifecycle that governs the creation, updating, and destruction of components. These lifecycle methods provide developers with precise hooks to execute code at different stages in a component’s existence.  ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-6uJ482Ut9eUBLymjPCCaA.png",
