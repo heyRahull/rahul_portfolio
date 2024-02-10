@@ -41,18 +41,50 @@ const Greet = () => (
         <hr />
         <img class="rahul-image" src={pic} />
         <p>
-          <strong>
-            <br />
-            I am a Self-taught programmer, Computer Science graduate, reader,
-            and a thinker. I have completed my Bachelor's and graduated in 2021.
-            I am passionate about computers from a young age and always excited
-            about the impact of products of technology can have on customers.
-            <br />
-            <br />I am really interested into exploring the world of
-            web-technology and I have done some projects from the perspective of
-            figuring things out myself by tinkering different parts of projects.
-            I am open to all kinds of opportunities that involve growth..
-          </strong>
+          {/* <strong> */}
+          <br />
+          👋 Hi there! I'm a self-taught programmer, content creator and
+          Computer Science engineer based in India, currently leveraging my
+          skills as a software engineer at Tata Consultancy Services.
+          <br />
+          <br /> 💻 With a passion for continuous learning, I expore a diverse
+          range of technologies including frontend & designing tools like
+          React.js, HTML, CSS and JS. Proficient in languages such as C++,
+          Python, and JavaScript, I specialize in OOP, Data Structures,
+          Algorithms, and Software Engineering. Having experience working on
+          Salesforce CRM, SAP BASIS, SAP Solution Manager.
+          <br />
+          <br />
+          🧠 Beyond implementation, I possess a strong mathematical and
+          intuitive understanding of Computer Science concepts, including Cloud
+          Computing and Artificial Intelligence.
+          <br />
+          <br />
+          🛠️ My experience spans system integrations, defect analysis,
+          prevention, and fixing, with a focus on SaaS solutions within the
+          retail domain. I have a track record of success in talent development
+          software, programming, consultation, integration, and support. I'm
+          experienced with collaboration and design tools like Miro,
+          streamlining processes and enhancing team productivity.
+          <br />
+          <br />
+          ⚙️ Proficient in Azure Integration Services, Microsoft applications
+          (Office 365), and Agile Methodology (Scrum, Kanban), I'm adept at
+          using tools like Jira, Confluence, and Miro to streamline processes
+          and drive efficiency.
+          <br />
+          <br />
+          📚 When I'm not coding, you'll find me immersed in books or indulging
+          in binge-worthy shows. I thrive in collaborative environments and
+          excel in troubleshooting technical issues, ensuring security and
+          compliance requirements are met.
+          <br />
+          <br />
+          🚀 I'm always open to new opportunities that foster growth and allow
+          me to contribute my expertise. For me, work is my stage, and every
+          project is a performance. I bring my A-game, dedicating my 100% to
+          make sure the applause is well-earned."
+          {/* </strong> */}
         </p>
       </div>
       <ShareButtons />
