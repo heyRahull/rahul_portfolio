@@ -48,8 +48,8 @@ const Greet = () => (
           skills as a software engineer at Tata Consultancy Services.
           <br />
           <br /> 💻 With a passion for continuous learning, I expore a diverse
-          range of technologies including frontend & designing tools like
-          React.js, HTML, CSS and JS. Proficient in languages such as C++,
+          range of skillset including frontend, UX writing & designing tools
+          like React.js, HTML, CSS and JS. Proficient in languages such as C++,
           Python, and JavaScript, I specialize in OOP, Data Structures,
           Algorithms, and Software Engineering. Having experience working on
           Salesforce CRM, SAP BASIS, SAP Solution Manager.
@@ -60,12 +60,12 @@ const Greet = () => (
           Computing and Artificial Intelligence.
           <br />
           <br />
-          🛠️ My experience spans system integrations, defect analysis,
-          prevention, and fixing, with a focus on SaaS solutions within the
-          retail domain. I have a track record of success in talent development
-          software, programming, consultation, integration, and support. I'm
-          experienced with collaboration and design tools like Miro,
-          streamlining processes and enhancing team productivity.
+          🛠️ My experience spans system integrations, product rollout, defect
+          analysis, prevention, and fixing, with a focus on SaaS solutions
+          within the retail domain. I have a track record of success in talent
+          development software, programming, consultation, integration, and
+          support. I'm experienced with collaboration and design tools like
+          Miro, streamlining processes and enhancing team productivity.
           <br />
           <br />
           ⚙️ Proficient in Azure Integration Services, Microsoft applications
