@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "In the vast ecosystem of React.js, optimizing performance is a critical aspect of building high-quality applications. One of the tools in the React arsenal for achieving performance enhancements is the concept of Pure Components.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*uexmJGtQCTBwcJNx4SZsxw.png",
+    link: "https://thehumblecoder.medium.com/exploring-pure-components-in-react-js-8f00d9ec6a6f",
+    name: "Exploring Pure Components in React.js",
+  },
+  {
+    excerpt:
       "The useEffect hook in React allows you to perform side effects in function components. It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ys1l9Q6WVW5hkGOtIYc7SQ.png",
