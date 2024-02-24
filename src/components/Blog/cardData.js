@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "The useEffect hook in React allows you to perform side effects in function components. It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ys1l9Q6WVW5hkGOtIYc7SQ.png",
+    link: "https://thehumblecoder.medium.com/understanding-the-useeffect-hook-in-react-js-f356712bd44e",
+    name: "Understanding the useEffect Hook in React.js",
+  },
+  {
+    excerpt:
       "React Hooks are functions that allow you to use state and other React features in functional components. Traditionally, class components were the go-to for managing state and lifecycle methods.",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*AYcZ74y-NuSLx_mBRq5Umw.png",
