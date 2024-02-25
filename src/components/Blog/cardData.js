@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "In the world of React development, optimizing performance is often a crucial concern, especially when dealing with complex components or large datasets. One powerful tool in the React developer’s arsenal for achieving performance gains is the useMemo hook. ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*r5WSRad1eWXMFZ7ZkhaVsw.jpeg",
+    link: "https://thehumblecoder.medium.com/mastering-performance-optimization-with-usememo-in-react-96ae95f19139",
+    name: "Mastering Performance Optimization with useMemo in React",
+  },
+  {
+    excerpt:
       "In the vast ecosystem of React.js, optimizing performance is a critical aspect of building high-quality applications. One of the tools in the React arsenal for achieving performance enhancements is the concept of Pure Components.",
     image:
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*uexmJGtQCTBwcJNx4SZsxw.png",
