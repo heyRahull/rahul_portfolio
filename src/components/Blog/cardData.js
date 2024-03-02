@@ -1,6 +1,14 @@
 const cardData = [
   {
     excerpt:
+      "Explore the essential concepts and principles of ReactJS in this latest blog post. Dive into the fundamentals of building interactive and dynamic user interfaces with React, and discover how it revolutionizes frontend development ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*XwAF7CjyQvKBC8y6gGjCmA.png",
+    link: "https://thehumblecoder.medium.com/frontend-fundamentals-forum-e745e2a80473",
+    name: "ReactJs Frontend Fundamentals Forum",
+  },
+  {
+    excerpt:
       "In the world of React development, optimizing performance is often a crucial concern, especially when dealing with complex components or large datasets. One powerful tool in the React developer’s arsenal for achieving performance gains is the useMemo hook. ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*r5WSRad1eWXMFZ7ZkhaVsw.jpeg",
