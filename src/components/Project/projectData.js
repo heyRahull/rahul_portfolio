@@ -1,5 +1,15 @@
 const projectData = [
   {
+    name: "🖥️ Video Streaming Platform",
+    date: "March, 2024",
+    image: require("../../project-images/yt.png"),
+    alt: "app_image",
+    detail:
+      "The application is developed from scratch using ReactJS, Redux, Tailwind CSS, MaterialUI, React Router DOM, and data integrated with APIs. It's a robust, scalable, and industry-level application designed to deliver a seamless video-sharing experience. From dynamic content delivery to personalized suggestions.",
+    link: "https://yt-app-rahul.netlify.app/",
+    sourceCode: "https://github.com/heyRahull/yt-clone",
+  },
+  {
     name: "🖥️ Web developer Bootcamp Assignments",
     date: "September, 2022",
     image: require("../../project-images/web dev bootcamp image.jpg"),
