@@ -1,5 +1,16 @@
 const projectData = [
   {
+    name: "User Authentication - Context Api",
+    date: "May, 2024",
+    image: require("../../project-images/userAuthContextApi.gif"),
+    alt: "app_image",
+    detail:
+      "In this app I have implemented a user authentication/Login functionality using Context Api in ReactJs. Here we are consuming the context using the useContext hook.",
+    link: null,
+    sourceCode:
+      "https://github.com/heyRahull/React-Tutorial/commit/90d608ce74d17e03efab135ad6d86041daba5a03",
+  },
+  {
     name: "🗒️ Todo List - Add Delete Functionality",
     date: "April, 2024",
     image: require("../../project-images/todoAddDelete.png"),
