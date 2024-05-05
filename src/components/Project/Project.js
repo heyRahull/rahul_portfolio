@@ -18,10 +18,16 @@ const Project = (props) => {
           )}
 
           <p>{props.detail}</p>
-          <a className="link link-primary" href={props.link}>
-            Live Projects
-          </a>
-          <a className="link link-secondary" href={props.sourceCode}>
+          {props.link != null && (
+            <a className="link link-primary" href={props.link}>
+              Live Projects
+            </a>
+          )}
+          <a
+            className="link link-secondary"
+            href={props.sourceCode}
+            target="blank"
+          >
             View Source
           </a>
         </article>
