@@ -1,18 +1,33 @@
 const TestimonialData = [
   {
     name: "Client Feedback",
-    shortForm: "CustomerAppreciation3",
-    image: require("../../testimonial-images/client_feedback_mick.png"),
+    shortForm: "CustomerAppreciation6",
+    image: require("../../testimonial-images/client_feedback_Ulrica.png"),
   },
   {
     name: "Client Testimony",
+    shortForm: "CustomerAppreciation5",
+    image: require("../../testimonial-images/Customer_Appreciation1.png"),
+  },
+  {
+    name: "Client Feedback",
+    shortForm: "CustomerAppreciation4",
+    image: require("../../testimonial-images/client_feedback_mick.png"),
+  },
+  {
+    name: "Client Feedback",
+    shortForm: "CustomerAppreciation3",
+    image: require("../../testimonial-images/client_feedback_Abdullah.png"),
+  },
+  {
+    name: "Client Feedback",
     shortForm: "CustomerAppreciation2",
-    image: require("../../testimonial-images/Customer_Appreciation2.png"),
+    image: require("../../testimonial-images/client_feedback_Kristina.png"),
   },
   {
     name: "Client Testimony",
     shortForm: "CustomerAppreciation1",
-    image: require("../../testimonial-images/Customer_Appreciation1.png"),
+    image: require("../../testimonial-images/Customer_Appreciation2.png"),
   },
   {
     name: "TCS On The Spot Award",
