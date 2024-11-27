@@ -1,5 +1,15 @@
 const projectData = [
   {
+    name: "🖥️ Video Streaming Platform",
+    date: "March, 2024",
+    image: require("../../project-images/yt.png"),
+    alt: "app_image",
+    detail:
+      "The application is developed from scratch using ReactJS, Redux, Tailwind CSS, MaterialUI, React Router DOM, and data integrated with APIs. It's a robust, scalable, and industry-level application designed to deliver a seamless video-sharing experience. From dynamic content delivery to personalized suggestions.",
+    link: "https://yt-app-rahul.netlify.app/",
+    sourceCode: "https://github.com/heyRahull/yt-clone",
+  },
+  {
     name: "User Authentication - Context Api",
     date: "May, 2024",
     image: require("../../project-images/userAuthContextApi.gif"),
@@ -19,16 +29,6 @@ const projectData = [
       "I've created a todo list project with add and delete functionality. Easily mark tasks as completed and view them in a separate section for efficient task management.",
     link: "https://todo-sigma-liard.vercel.app/",
     sourceCode: "https://github.com/heyRahull/todo",
-  },
-  {
-    name: "🖥️ Video Streaming Platform",
-    date: "March, 2024",
-    image: require("../../project-images/yt.png"),
-    alt: "app_image",
-    detail:
-      "The application is developed from scratch using ReactJS, Redux, Tailwind CSS, MaterialUI, React Router DOM, and data integrated with APIs. It's a robust, scalable, and industry-level application designed to deliver a seamless video-sharing experience. From dynamic content delivery to personalized suggestions.",
-    link: "https://yt-app-rahul.netlify.app/",
-    sourceCode: "https://github.com/heyRahull/yt-clone",
   },
   {
     name: "🖥️ Web developer Bootcamp Assignments",
