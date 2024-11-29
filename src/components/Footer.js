@@ -26,7 +26,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={githubIcon} width="30" height="30" alt="" />
+            <img src={githubIcon} width="30" height="30" alt="Access my Github Profile" />
           </a>
           <a
             className="navbar-brand"
@@ -38,7 +38,7 @@ const Footer = () => (
               src={linkedinIcon}
               width="30"
               height="30"
-              alt=""
+              alt="Connect with me on Linkedin"
               loading="lazy"
             />
           </a>
@@ -52,7 +52,7 @@ const Footer = () => (
               src={mediumIcon}
               width="30"
               height="30"
-              alt=""
+              alt="Visit my Medium profile"
               loading="lazy"
             />
           </a>
@@ -62,7 +62,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={gmailIcon} width="30" height="27" alt="" loading="lazy" />
+            <img src={gmailIcon} width="30" height="27" alt="Send Email" loading="lazy" />
           </a>
           <a
             className="navbar-brand"
@@ -74,7 +74,7 @@ const Footer = () => (
               src={twitterIcon}
               width="30"
               height="27"
-              alt=""
+              alt="Access my Twitter Profile"
               loading="lazy"
             />
           </a>

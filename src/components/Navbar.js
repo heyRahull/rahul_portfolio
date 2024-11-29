@@ -108,7 +108,7 @@ const Navbar = (props) => {
                 <a class="dropdown-item" href="#">Something else here</a> */}
                 </div>
               </li>
-              <GoogleTranslate />
+              <li><GoogleTranslate /></li>
             </ul>
           </div>
         </div>
