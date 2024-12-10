@@ -6,13 +6,13 @@ const Certificate = (props) => {
       <li className={props.darkbg}>
         <article className="showcase-list container container-center">
           <h1>
-            <img className="certificate_logo" src={props.logo} />
+            <img className="certificate_logo" src={props.logo} alt="certificate logo" />
             <span>{props.name}</span>
             <span className="certification_name">({props.shortForm})</span>
           </h1>
           <small>{props.date}</small>
           <a data-toggle="modal" data-target={`.${props.shortForm}`}>
-            <img className="project-image hand-cursor" src={props.image} />
+            <img className="project-image hand-cursor" src={props.image} alt="certificate image"/>
           </a>
           <button
             type="button"

@@ -16,13 +16,25 @@ import bootstrapIcon from "../icons/bootstrapicon.png";
 import HostIcon from "../icons/web-hosting_icon.jpg";
 import gitIcon from "../icons/git.png";
 import ShareButtons from "./ShareButtons";
+
+const skills = [
+  {name: "HTML5", icon: htmlIcon},    
+  { name: "CSS3", icon: cssIcon},
+  { name: "JAVASCRIPT", icon: jsIcon},
+  { name: "NODEJS", icon: nodeIcon},
+  { name: "REACTJS", icon: reactIcon},
+  { name: "BOOTSTRAP", icon: bootstrapIcon},
+  { name: "WEB HOSTING", icon: HostIcon},
+  { name: "GIT", icon: gitIcon},
+];
+
 const Greet = () => (
   <>
     {/* Hero Area  */}
     <header class="hero">
       <br />
       <br />
-      <img class="hero-img" src={heroImg} />
+      <img class="hero-img" src={heroImg} alt="Home Page Intro Image"/>
       <br />
       <br />
       <h1 class="hero-heading">
@@ -39,7 +51,7 @@ const Greet = () => (
           <strong class="name-inverted">About Me</strong>
         </h1>
         <hr />
-        <img class="rahul-image" src={pic} />
+        <img class="rahul-image" src={pic} alt="Rahul's Image"/>
         <p>
           {/* <strong> */}
           <br />
@@ -96,41 +108,8 @@ const Greet = () => (
           <strong className="name-inverted">Technologies</strong>
         </h1>
         <hr />
-        <ul className="list-non-bullet gray-font">
-          <h3>
-            <strong>
-              <li style={{ display: "inline" }}>HTML5 &emsp;</li>
-              <img src={htmlIcon} width="50" height="50" alt="" />
-              <br />
-              <br />
-              <li style={{ display: "inline" }}>CSS3 &emsp;</li>
-              <img src={cssIcon} width="50" height="50" alt="" />
-              <br />
-              <br />
-              <li style={{ display: "inline" }}>JAVASCRIPT &emsp;</li>
-              <img src={jsIcon} width="50" height="50" alt="" />
-              <br />
-              <br />
-              <li style={{ display: "inline" }}>NODEJS &emsp;</li>
-              <img src={nodeIcon} width="50" height="50" alt="" />
-              <br />
-              <br />
-              <li style={{ display: "inline" }}>REACTJS &emsp;</li>
-              <img src={reactIcon} width="50" height="50" alt="" />
-              <br />
-              <br />
-              <li style={{ display: "inline" }}>BOOTSTRAP &emsp;</li>
-              <img src={bootstrapIcon} width="50" height="50" alt="" />
-              <br />
-              <br />
-              <li style={{ display: "inline" }}>WEB HOSTING &emsp;</li>
-              <img src={HostIcon} width="50" height="50" alt="" />
-              <br />
-              <br />
-              <li style={{ display: "inline" }}>GIT &emsp;</li>
-              <img src={gitIcon} width="50" height="30" alt="" />
-            </strong>
-          </h3>
+        <ul className="list-non-bullet gray-font skills_list">
+            {skills.map(skill => <li>{skill.name} <img src={skill.icon}  alt="image"/><br/></li>)}
         </ul>
       </div>
     </section>

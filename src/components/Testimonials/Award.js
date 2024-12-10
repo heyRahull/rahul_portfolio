@@ -9,7 +9,7 @@ const Award = (props) => {
             <span>{props.name}</span>
           </h1>
           <a data-toggle="modal" data-target={`.${props.shortForm}`}>
-            <img className="project-image hand-cursor" src={props.image} />
+            <img className="project-image hand-cursor" src={props.image} alt="testimonial image"/>
           </a>
           <button
             type="button"
