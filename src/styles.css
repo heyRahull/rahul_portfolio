@@ -390,6 +390,11 @@ hr {
   }
 }
 
+.splash_page_translation_desktop>div,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+  color:#ADADAD!important;
+}
+
 .VIpgJd-ZVi9od-ORHb-OEVmcd {
   top: 56px !important;
 }
@@ -409,4 +414,15 @@ hr {
 
 .testimonial-title {
   text-align: center;
+}
+ul.skills_list >li{
+  display: "inline";
+  font-size: 1.75rem; 
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+ul.skills_list >li>img{
+  margin-left: 1rem;
+  width: 50px;
+  height: 50px;
 }
