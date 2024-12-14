@@ -1,18 +1,23 @@
 const TestimonialData = [
   {
     name: "Client Testimony",
-    shortForm: "CustomerAppreciation11",
+    shortForm: "CustomerAppreciation12",
     image: require("../../testimonial-images/Customer_Appreciation1.png"),
   },
   {
     name: "Client Feedback",
-    shortForm: "CustomerAppreciation10",
+    shortForm: "CustomerAppreciation11",
     image: require("../../testimonial-images/client_feedback_Ulrica.png"),
   },
   {
     name: "Client Feedback",
-    shortForm: "CustomerAppreciation9",
+    shortForm: "CustomerAppreciation10",
     image: require("../../testimonial-images/client_feedback_Nina.png"),
+  },
+  {
+    name: "Client Feedback",
+    shortForm: "CustomerAppreciation9",
+    image: require("../../testimonial-images/client_feedback_Ivan.png"),
   },
   {
     name: "Client Feedback",
