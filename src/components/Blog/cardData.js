@@ -1,6 +1,22 @@
 const cardData = [
   {
     excerpt:
+      "Welcome to Day 2 of the 100 Days of React Challenge! 🎉 Today, we will learn about Props & Children in React by building a User Profile Card.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*8NnvzWcJMvjXuPvaJGyr3Q.jpeg",
+    link: "https://thehumblecoder.medium.com/day-2-understanding-props-children-in-react-building-a-user-profile-card-bb740196325c",
+    name: "🚀 Day 2: Understanding Props & Children in React",
+  },
+  {
+    excerpt:
+      "Welcome to Day 1 of the 100 Days of React Challenge! 🎉 In this series, we will build one React project or concept-based exercise per day, starting from the basics and progressing to advanced topics like context API, Redux, routing, performance optimizations, and more.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*uzXjZ8QikBXCCVG1thAnjg.jpeg",
+    link: "https://thehumblecoder.medium.com/day-1-build-a-simple-react-component-dynamic-greeting-62dfbe2241bc",
+    name: "🚀 Day 1: Build a Simple React Component",
+  },
+  {
+    excerpt:
       "Explore the essential concepts and principles of ReactJS in this latest blog post. Dive into the fundamentals of building interactive and dynamic user interfaces with React, and discover how it revolutionizes frontend development ",
     image:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*XwAF7CjyQvKBC8y6gGjCmA.png",
