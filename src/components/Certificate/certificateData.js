@@ -4,7 +4,7 @@ const certificateData = [
     shortForm: "Az-204",
     date: "September, 2023",
     logo: require("../../certificate-images/az204_logo.png"),
-    image: require("../../certificate-images/az-204.jpg"),
+    image: require("../../certificate-images/Az-204.jpg"),
   },
   {
     name: " Microsoft Certified : Azure Associate ",
