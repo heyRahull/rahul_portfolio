@@ -1,31 +1,37 @@
 import React from "react";
 
 const Certificate = (props) => {
+  const modalId = `modal-${props.id}`;
   return (
     <>
       <li className={props.darkbg}>
         <article className="showcase-list container container-center">
           <h1>
-            <img className="certificate_logo" src={props.logo} alt="certificate logo" />
+            {props.logo && (
+              <img className="certificate_logo" src={props.logo} alt="certificate logo" />
+            )}
             <span>{props.name}</span>
-            <span className="certification_name">({props.shortForm})</span>
+            {props.shortForm && (
+              <span className="certification_name">({props.shortForm})</span>
+            )}
           </h1>
           <small>{props.date}</small>
-          <a data-toggle="modal" data-target={`.${props.shortForm}`}>
+          <a data-toggle="modal" data-target={`#${modalId}`}>
             <img className="project-image hand-cursor" src={props.image} alt="certificate image"/>
           </a>
           <button
             type="button"
             className="btn btn_color"
             data-toggle="modal"
-            data-target={`.${props.shortForm}`}
+            data-target={`#${modalId}`}
           >
             View Certificate
           </button>
           {/* modal  */}
           <div
-            className={`modal fade ${props.shortForm} hand-cursor`}
+            className={`modal fade hand-cursor`}
             tabindex="-1"
+            id={modalId}
             role="dialog"
             aria-labelledby="myLargeModalLabel"
             aria-hidden="true"

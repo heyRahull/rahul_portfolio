@@ -20,10 +20,12 @@ const Certifications = () => {
         {certificateData.map((certifiacte, index) => (
           <Certificate
             key={index}
+            id={index}
             name={certifiacte.name}
             shortForm={certifiacte.shortForm}
             logo={certifiacte.logo}
             image={certifiacte.image}
+            date={certifiacte.date}
           />
         ))}
       </ul>
