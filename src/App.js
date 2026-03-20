@@ -10,6 +10,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Youtube from "./components/Youtube";
 import DisplayPlaylist from "./components/DisplayPlaylist";
 import Testimonials from "./components/Testimonials/Testimonials";
+import LearnReactPage from "./components/LearnReact/LearnReactPage";
+import NotesPage from "./components/Notes/NotesPage";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
           <Route path="/youtube" element={<Youtube />} />
           <Route path="/displayPlaylist" element={<DisplayPlaylist />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/questions" element={<LearnReactPage />} />
+          <Route path="/notes" element={<NotesPage />} />
+
         </Routes>
         <Footer />
       </Router>

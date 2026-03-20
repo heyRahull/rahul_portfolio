@@ -75,6 +75,11 @@ const TestimonialData = [
     image: require("../../testimonial-images/Best_Team_Award.jpg"),
   },
   {
+    name: "Infosys Project Manager Testimony",
+    shortForm: "PMAppreciation1",
+    image: require("../../testimonial-images/Project_Manager_Appreciation.png"),
+  },
+  {
     name: "TCS On The Spot Award",
     shortForm: "onTheSpotAward1",
     image: require("../../testimonial-images/On_The_Spot_Award.jpg"),
