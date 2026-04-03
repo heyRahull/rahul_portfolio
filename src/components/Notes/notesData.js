@@ -8,7 +8,7 @@ const notesData = [
   },
   {
     title: "ReactJs Notes",
-    category: "Architecture",
+    category: "Learning",
     fileName: "system_design.pdf",
     uploadDate: "Feb 2024",
     path: "/notes/system_design.pdf"
