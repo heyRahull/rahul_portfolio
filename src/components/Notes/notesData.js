@@ -7,7 +7,7 @@ const notesData = [
     path: "/notes-docs/Namaste_nodejs.pdf" // Path relative to public folder
   },
   {
-    title: "ReactJs Notes..",
+    title: "ReactJs Notes.",
     category: "Learning",
     fileName: "system_design.pdf",
     uploadDate: "Feb 2024",
