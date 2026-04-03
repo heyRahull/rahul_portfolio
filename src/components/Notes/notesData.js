@@ -1,6 +1,6 @@
 const notesData = [
   {
-    title: "Node Js!",
+    title: "Node Js!!",
     category: "Frontend",
     fileName: "Node Js Notes",
     uploadDate: "March 2024",
