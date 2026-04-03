@@ -1,7 +1,7 @@
 const learnReactData = [
   {
-    title: "1. Form Validation in React!",
-    description: "Implement a reusable hook to fetch data from an API, handling loading states, data, and errors efficiently..",
+    title: "1. Form Validation in React!!!",
+    description: "Implement a reusable hook to fetch data from an API, handling loading states, data, and errors efficiently.",
     code: `const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
