@@ -1,8 +1,14 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import LectureSidebar from "./LectureSidebar";
 import lectureNotesData from "./lectureNotesData";
-
+const stripMatchingHeading = (text, title) => {
+  const escapedTitle = title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const headingRegex = new RegExp(`^#{1,2}\\s*${escapedTitle}\\s*(?:\\n|$)`, "i");
+  return text.replace(headingRegex, "").trim();
+};
 const LecturesPage = () => {
   const navigate = useNavigate();
   const { lectureId } = useParams();
@@ -57,7 +63,11 @@ const LecturesPage = () => {
                       <p>{topic.subTitle}</p>
                     </div>
                   </div>
-                  <p>{topic.description}</p>
+                  <div className="lecture-topic-description">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {stripMatchingHeading(topic.description, topic.title)}
+                    </ReactMarkdown>
+                  </div>
                 </article>
               ))}
             </div>

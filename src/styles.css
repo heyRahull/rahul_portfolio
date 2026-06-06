@@ -343,6 +343,43 @@ hr {
   line-height: 1.75;
 }
 
+.lecture-topic-description {
+  color: #374151;
+  line-height: 1.85;
+}
+
+.lecture-topic-description h1,
+.lecture-topic-description h2,
+.lecture-topic-description h3,
+.lecture-topic-description h4 {
+  margin: 1.25rem 0 0.75rem;
+  font-weight: 700;
+}
+
+.lecture-topic-description ul,
+.lecture-topic-description ol {
+  margin: 0.75rem 0 1rem 1.25rem;
+  color: #334155;
+}
+
+.lecture-topic-description li {
+  margin: 0.35rem 0;
+}
+
+.lecture-topic-description code {
+  background: rgba(148, 163, 184, 0.15);
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.lecture-topic-description pre {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+}
+
 @media (max-width: 992px) {
   .lecture-page-grid {
     grid-template-columns: 1fr;
