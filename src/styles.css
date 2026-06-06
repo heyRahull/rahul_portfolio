@@ -358,12 +358,32 @@ hr {
 
 .lecture-topic-description ul,
 .lecture-topic-description ol {
-  margin: 0.75rem 0 1rem 1.25rem;
+  margin: 0.75rem 0 1rem 1rem;
+  padding-left: 1.15rem;
   color: #334155;
 }
 
 .lecture-topic-description li {
   margin: 0.35rem 0;
+}
+
+@media (max-width: 768px) {
+  .lecture-topic-description ul,
+  .lecture-topic-description ol {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-inline-start: 0 !important;
+    list-style-position: inside !important;
+  }
+
+  .lecture-topic-description li {
+    margin: 0.25rem 0 0.25rem 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .lecture-topic-description li::marker {
+    font-size: 1rem;
+  }
 }
 
 .lecture-topic-description code {
