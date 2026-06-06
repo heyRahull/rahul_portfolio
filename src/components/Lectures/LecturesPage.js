@@ -4,11 +4,45 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import LectureSidebar from "./LectureSidebar";
 import lectureNotesData from "./lectureNotesData";
+
 const stripMatchingHeading = (text, title) => {
   const escapedTitle = title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const headingRegex = new RegExp(`^#{1,2}\\s*${escapedTitle}\\s*(?:\\n|$)`, "i");
   return text.replace(headingRegex, "").trim();
 };
+
+const CodeBlock = ({ node, inline, className, children, ...props }) => {
+  const [copied, setCopied] = useState(false);
+  
+  const handleCopy = () => {
+    const code = String(children).replace(/\n$/, "");
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  if (inline) {
+    return <code className="inline-code">{children}</code>;
+  }
+
+  return (
+    <div className="code-block-wrapper">
+      <div className="code-block-header">
+        <button 
+          className="code-copy-btn" 
+          onClick={handleCopy}
+          title={copied ? "Copied!" : "Copy code"}
+        >
+          {copied ? "✓" : "📋"}
+        </button>
+      </div>
+      <pre className={className}>
+        <code>{children}</code>
+      </pre>
+    </div>
+  );
+};
+
 const LecturesPage = () => {
   const navigate = useNavigate();
   const { lectureId } = useParams();
@@ -64,7 +98,10 @@ const LecturesPage = () => {
                     </div>
                   </div>
                   <div className="lecture-topic-description">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    <ReactMarkdown 
+                      remarkPlugins={[remarkGfm]}
+                      components={{ code: CodeBlock }}
+                    >
                       {stripMatchingHeading(topic.description, topic.title)}
                     </ReactMarkdown>
                   </div>

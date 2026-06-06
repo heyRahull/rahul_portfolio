@@ -393,12 +393,91 @@ hr {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.lecture-topic-description pre {
-  background: #f1f5f9;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  overflow-x: auto;
+.code-block-wrapper {
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #1e293b;
 }
+
+.code-block-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #0f172a;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #334155;
+}
+
+.code-copy-btn {
+  background: transparent;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.35rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.code-copy-btn:hover {
+  background: #1e293b;
+  border-color: #64748b;
+}
+
+.code-copy-btn:active {
+  background: #0f172a;
+}
+
+.code-block-wrapper pre {
+  margin: 0;
+  padding: 1.5rem 1.5rem;
+  overflow-x: hidden;
+  background: #1e293b;
+  color: #e2e8f0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.code-block-wrapper code {
+  background: transparent;
+  color: #e2e8f0;
+  padding: 0;
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: block;
+  line-height: 1.6;
+}
+
+.inline-code {
+  background: rgba(148, 163, 184, 0.15);
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.lecture-topic-description pre {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.lecture-topic-description .code-block-wrapper pre {
+  background: #1e293b !important;
+  padding: 1.5rem 1.5rem !important;
+  overflow-x: hidden !important;
+}
+
 
 @media (max-width: 992px) {
   .lecture-page-grid {
