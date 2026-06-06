@@ -28,7 +28,7 @@ const LectureSidebar = ({ sections, activeLectureId, onSelectLecture }) => {
                 onClick={() => setOpenSectionId(isOpen ? "" : section.sectionId)}
                 type="button"
               >
-                <span>{section.sectionTitle}</span>
+                <span className="lecture-accordion-title">{section.sectionTitle}</span>
                 <ChevronDown size={18} className={isOpen ? "rotate" : ""} />
               </button>
 
