@@ -45,10 +45,6 @@ const LecturesPage = () => {
               <p className="lecture-category">{selectedLecture.sectionTitle}</p>
               <h2>{selectedLecture.title}</h2>
               <p className="lecture-summary">{selectedLecture.summary}</p>
-              <div className="lecture-meta-row">
-                <span>{selectedLecture.instructor}</span>
-                <span>{selectedLecture.uploadDate}</span>
-              </div>
             </div>
 
             <div className="lecture-content-section">

@@ -4,32 +4,263 @@ const lectureNotesData = [
     sectionTitle: "01 - Security",
     items: [
       {
-        id: "security-overview",
-        title: "Security Fundamentals",
-        summary: "Threat modeling, secure design, and web security best practices.",
-        instructor: "Namaste System Design",
+        id: "01-01-important-guidelines",
+        title: "1.1 Important Guidelines",
+        summary: "Security best practices and guidelines.",
+        instructor: "System Design",
         uploadDate: "June 2026",
         sectionTitle: "01 - Security",
         content: [
           {
-            title: "Threat Modeling",
-            subTitle: "Identifying attack surfaces",
-            description: "Define assets, trust boundaries, and threat actors to build secure system designs from the start."
-          },
+            title: "1.1 Important Guidelines",
+            subTitle: "Security topic overview",
+            description: "Overview content placeholder for 1.1 Important Guidelines."
+          }
+        ]
+      },
+      {
+        id: "01-02-security-experience",
+        title: "1.2 Security Experience",
+        summary: "Real security experiences from the lecture.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
           {
-            title: "Application Security",
-            subTitle: "XSS, CSRF, SSRF, and injection mitigation",
-            description: "Learn how to defend web applications using input validation, secure headers, and proper session handling."
-          },
+            title: "1.2 Security Experience",
+            subTitle: "Security experience insights",
+            description: "Content placeholder for 1.2 security experience notes."
+          }
+        ]
+      },
+      {
+        id: "01-03-security-overview",
+        title: "1.3 Security Overview",
+        summary: "Lecture on the security section introduction.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
           {
-            title: "Data Protection",
-            subTitle: "Encryption, tokens, and secure storage",
-            description: "Explore encryption at rest, encryption in transit, secure API keys, and credential management."
+            title: "1.3 Security Overview",
+            subTitle: "Section introduction",
+            description: "Content placeholder for 1.3 security overview."
+          }
+        ]
+      },
+      {
+        id: "01-04-cross-site-scripting-xss",
+        title: "1.4 Cross-site Scripting (XSS)",
+        summary: "XSS attack patterns and mitigation.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.4 Cross-site Scripting (XSS)",
+            subTitle: "XSS protection",
+            description: "Content placeholder for 1.4 XSS topic."
+          }
+        ]
+      },
+      {
+        id: "01-05-iframe-protection",
+        title: "1.5 iFrame Protection",
+        summary: "Preventing iFrame-based attacks.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.5 iFrame Protection",
+            subTitle: "iFrame security",
+            description: "Content placeholder for 1.5 iFrame protection."
+          }
+        ]
+      },
+      {
+        id: "01-06-security-headers",
+        title: "1.6 Security Headers",
+        summary: "Using HTTP security headers.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.6 Security Headers",
+            subTitle: "Headers and policies",
+            description: "Content placeholder for 1.6 security headers."
+          }
+        ]
+      },
+      {
+        id: "01-07-client-side-security",
+        title: "1.7 Client-side Security",
+        summary: "Frontend and browser security patterns.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.7 Client-side Security",
+            subTitle: "Browser-side defenses",
+            description: "Content placeholder for 1.7 client-side security."
+          }
+        ]
+      },
+      {
+        id: "01-08-secure-communication-https",
+        title: "1.8 Secure Communication (HTTPS)",
+        summary: "HTTPS and transport security.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.8 Secure Communication (HTTPS)",
+            subTitle: "Transport layer security",
+            description: "Content placeholder for 1.8 secure communication."
+          }
+        ]
+      },
+      {
+        id: "01-09-dependency-security",
+        title: "1.9 Dependency Security",
+        summary: "Third-party dependency safety.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.9 Dependency Security",
+            subTitle: "Supply chain protection",
+            description: "Content placeholder for 1.9 dependency security."
+          }
+        ]
+      },
+      {
+        id: "01-10-compliance-regulation",
+        title: "1.10 Compliance & Regulation",
+        summary: "Security compliance basics.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.10 Compliance & Regulation",
+            subTitle: "Policy and standards",
+            description: "Content placeholder for 1.10 compliance and regulation."
+          }
+        ]
+      },
+      {
+        id: "01-11-input-validation-and-sanitization",
+        title: "1.11 Input Validation and Sanitization",
+        summary: "Validating and sanitizing user input.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.11 Input Validation and Sanitization",
+            subTitle: "Secure input handling",
+            description: "Content placeholder for 1.11 input validation and sanitization."
+          }
+        ]
+      },
+      {
+        id: "01-12-ssrf",
+        title: "1.12 Server-side Request Forgery (SSRF)",
+        summary: "Preventing SSRF attacks.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.12 Server-side Request Forgery (SSRF)",
+            subTitle: "SSRF defense",
+            description: "Content placeholder for 1.12 SSRF."
+          }
+        ]
+      },
+      {
+        id: "01-13-server-side-javascript-injection",
+        title: "1.13 Server-side JavaScript Injection",
+        summary: "Protecting backend code execution.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.13 Server-side JavaScript Injection",
+            subTitle: "Backend injection protection",
+            description: "Content placeholder for 1.13 server-side JavaScript injection."
+          }
+        ]
+      },
+      {
+        id: "01-14-feature-policy-permissions-policy",
+        title: "1.14 Feature Policy / Permissions-Policy",
+        summary: "Browser feature restrictions.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.14 Feature Policy / Permissions-Policy",
+            subTitle: "Browser feature control",
+            description: "Content placeholder for 1.14 feature policy and permissions-policy."
+          }
+        ]
+      },
+      {
+        id: "01-15-subresource-integrity-sri",
+        title: "1.15 Subresource Integrity (SRI)",
+        summary: "Ensuring third-party script integrity.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.15 Subresource Integrity (SRI)",
+            subTitle: "Third-party script validation",
+            description: "Content placeholder for 1.15 SRI."
+          }
+        ]
+      },
+      {
+        id: "01-16-cors",
+        title: "1.16 Cross-Origin Resource Sharing (CORS)",
+        summary: "CORS configuration and rules.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.16 Cross-Origin Resource Sharing (CORS)",
+            subTitle: "Cross-origin policies",
+            description: "Content placeholder for 1.16 CORS."
+          }
+        ]
+      },
+      {
+        id: "01-17-csrf",
+        title: "1.17 Cross-site Request Forgery (CSRF)",
+        summary: "Protecting against CSRF attacks.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "01 - Security",
+        content: [
+          {
+            title: "1.17 Cross-site Request Forgery (CSRF)",
+            subTitle: "CSRF protection",
+            description: "Content placeholder for 1.17 CSRF."
           }
         ]
       }
     ]
   },
+
   {
     sectionId: "networking",
     sectionTitle: "02 - Networking",
