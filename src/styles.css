@@ -166,6 +166,16 @@ hr {
   padding: 1rem;
 }
 
+.lecture-sidebar-course-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e2327;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #6c63ff;
+  margin-bottom: 1rem;
+}
+
 .lecture-sidebar-top {
   display: none;
   align-items: center;

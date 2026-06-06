@@ -7,6 +7,10 @@ const LectureSidebar = ({ sections, activeLectureId, onSelectLecture }) => {
 
   return (
     <div className={`lecture-sidebar ${isSidebarOpen ? "open" : ""}`}>
+      <div className="lecture-sidebar-course-title">
+       System Design Course
+      </div>
+
       <div className="lecture-sidebar-top">
         <div className="lecture-sidebar-header">Course sections</div>
         <button
