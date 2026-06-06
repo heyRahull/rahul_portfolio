@@ -214,6 +214,171 @@ const lectureNotesData = [
         ]
       }
     ]
+  },
+  {
+    sectionId: "networking",
+    sectionTitle: "02 - Networking",
+    items: [
+      {
+        id: "02-01-networking-fundamentals",
+        title: "2.1 Networking Fundamentals",
+        summary: "Core networking concepts and protocols.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "02 - Networking",
+        content: [{ title: "Networking Fundamentals", subTitle: "Network concepts", description: "Content placeholder for networking fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "testing",
+    sectionTitle: "03 - Testing",
+    items: [
+      {
+        id: "03-01-testing-fundamentals",
+        title: "3.1 Testing Fundamentals",
+        summary: "Introduction to testing strategies.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "03 - Testing",
+        content: [{ title: "Testing Fundamentals", subTitle: "Testing strategies", description: "Content placeholder for testing fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "communication",
+    sectionTitle: "04 - Communication",
+    items: [
+      {
+        id: "04-01-communication-fundamentals",
+        title: "4.1 Communication Fundamentals",
+        summary: "Effective communication skills.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "04 - Communication",
+        content: [{ title: "Communication Fundamentals", subTitle: "Communication skills", description: "Content placeholder for communication fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "database-caching",
+    sectionTitle: "05 - Database and Caching",
+    items: [
+      {
+        id: "05-01-database-caching-fundamentals",
+        title: "5.1 Database and Caching Fundamentals",
+        summary: "Database design and caching strategies.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "05 - Database and Caching",
+        content: [{ title: "Database and Caching Fundamentals", subTitle: "Database and cache concepts", description: "Content placeholder for database and caching fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "logging-monitoring",
+    sectionTitle: "06 - Logging and Monitoring",
+    items: [
+      {
+        id: "06-01-logging-monitoring-fundamentals",
+        title: "6.1 Logging and Monitoring Fundamentals",
+        summary: "Logging and monitoring best practices.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "06 - Logging and Monitoring",
+        content: [{ title: "Logging and Monitoring Fundamentals", subTitle: "Observability concepts", description: "Content placeholder for logging and monitoring fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "performance",
+    sectionTitle: "07 - Performance",
+    items: [
+      {
+        id: "07-01-performance-fundamentals",
+        title: "7.1 Performance Fundamentals",
+        summary: "Performance optimization techniques.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "07 - Performance",
+        content: [{ title: "Performance Fundamentals", subTitle: "Performance optimization", description: "Content placeholder for performance fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "accessibility",
+    sectionTitle: "08 - Accessibility",
+    items: [
+      {
+        id: "08-01-accessibility-fundamentals",
+        title: "8.1 Accessibility Fundamentals",
+        summary: "Building accessible web applications.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "08 - Accessibility",
+        content: [{ title: "Accessibility Fundamentals", subTitle: "Web accessibility principles", description: "Content placeholder for accessibility fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "low-level-design",
+    sectionTitle: "09 - Low level design",
+    items: [
+      {
+        id: "09-01-low-level-design-fundamentals",
+        title: "9.1 Low Level Design Fundamentals",
+        summary: "Object-oriented design patterns and principles.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "09 - Low level design",
+        content: [{ title: "Low Level Design Fundamentals", subTitle: "OOP and design patterns", description: "Content placeholder for low level design fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "high-level-design",
+    sectionTitle: "10 - High Level Design",
+    items: [
+      {
+        id: "10-01-high-level-design-fundamentals",
+        title: "10.1 High Level Design Fundamentals",
+        summary: "System architecture and scalability.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "10 - High Level Design",
+        content: [{ title: "High Level Design Fundamentals", subTitle: "System architecture", description: "Content placeholder for high level design fundamentals." }]
+      }
+    ]
+  },
+  {
+    sectionId: "bonus-masterclass",
+    sectionTitle: "11 - Bonus Masterclass",
+    items: [
+      {
+        id: "11-01-bonus-masterclass",
+        title: "11.1 Bonus Masterclass",
+        summary: "Advanced topics and expert insights.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "11 - Bonus Masterclass",
+        content: [{ title: "Bonus Masterclass", subTitle: "Advanced topics", description: "Content placeholder for bonus masterclass." }]
+      }
+    ]
+  },
+  {
+    sectionId: "bonus-interview-questions",
+    sectionTitle: "12 - Bonus Interview Questions",
+    items: [
+      {
+        id: "12-01-bonus-interview-questions",
+        title: "12.1 Bonus Interview Questions",
+        summary: "Common interview questions and answers.",
+        instructor: "System Design",
+        uploadDate: "June 2026",
+        sectionTitle: "12 - Bonus Interview Questions",
+        content: [{ title: "Bonus Interview Questions", subTitle: "Interview prep", description: "Content placeholder for bonus interview questions." }]
+      }
+    ]
   }
 ];
 
