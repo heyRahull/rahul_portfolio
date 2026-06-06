@@ -802,3 +802,46 @@ ul.skills_list >li>img{
   width: 50px;
   height: 50px;
 }
+
+/* Lecture Detail Page Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .lecture-detail-title {
+    font-size: 1.75rem !important;
+  }
+
+  .lecture-detail-instructor {
+    font-size: 1rem !important;
+  }
+
+  .lecture-detail-description {
+    font-size: 0.95rem !important;
+  }
+
+  .lecture-detail-content-title {
+    font-size: 1.5rem !important;
+  }
+
+  .lecture-detail-topic-card {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .lecture-detail-topic-title {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .lecture-detail-topic-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 0.9rem !important;
+  }
+
+  .lecture-detail-topics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}

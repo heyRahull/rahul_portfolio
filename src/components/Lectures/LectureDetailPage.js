@@ -97,12 +97,18 @@ const styles = {
     color: "#1e2327",
     fontSize: "2.5rem",
     fontWeight: "700",
-    lineHeight: "1.2"
+    lineHeight: "1.2",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    wordBreak: "break-word"
   },
   instructor: {
     margin: "0.5rem 0 1rem 0",
     color: "#6b7280",
-    fontSize: "1.1rem"
+    fontSize: "1.1rem",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    wordBreak: "break-word"
   },
   metaInfo: {
     display: "flex",
@@ -131,7 +137,10 @@ const styles = {
     margin: "1.5rem 0 0 0",
     color: "#6b7280",
     fontSize: "1.05rem",
-    lineHeight: "1.7"
+    lineHeight: "1.7",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    wordBreak: "break-word"
   },
   content: {
     padding: "3rem 0"
@@ -155,13 +164,18 @@ const styles = {
     borderRadius: "0.75rem",
     padding: "1.5rem",
     transition: "box-shadow 0.3s ease, transform 0.3s ease",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.05)"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.05)",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    wordBreak: "break-word"
   },
   topicHeader: {
     display: "flex",
     alignItems: "flex-start",
     gap: "1rem",
-    marginBottom: "1rem"
+    marginBottom: "1rem",
+    minWidth: "0",
+    flexWrap: "wrap"
   },
   topicNumber: {
     display: "flex",
@@ -180,13 +194,19 @@ const styles = {
     margin: "0",
     color: "#1e2327",
     fontSize: "1.1rem",
-    fontWeight: "700"
+    fontWeight: "700",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    wordBreak: "break-word"
   },
   topicContent: {
     margin: "0",
     color: "#6b7280",
     fontSize: "0.95rem",
-    lineHeight: "1.6"
+    lineHeight: "1.6",
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    wordBreak: "break-word"
   },
   footer: {
     backgroundColor: "#f9fafb",
