@@ -7,6 +7,7 @@ import Blogs from "./components/Blog/Blogs";
 import Projects from "./components/Project/Projects";
 import Certifications from "./components/Certificate/Certifications";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import Youtube from "./components/Youtube";
 import DisplayPlaylist from "./components/DisplayPlaylist";
 import Testimonials from "./components/Testimonials/Testimonials";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/lectures/:lectureId?" element={<LecturesPage />} />
         </Routes>
         <Footer />
+        <ScrollToTopButton />
       </Router>
     </div>
   );
