@@ -78,6 +78,8 @@ const Navbar = (props) => {
                     <span style={{ color: "white" }}>Learn React</span>
                   ) : location.pathname === "/notes" ? (
                     <span style={{ color: "white" }}>Notes</span>
+                  ) : location.pathname === "/lectures" ? (
+                    <span style={{ color: "white" }}>Lectures</span>
                   )
                    : (
                     "More"
@@ -121,6 +123,13 @@ const Navbar = (props) => {
                     onClick={handleMenuItemClick}
                   >
                     Notes
+                  </Link>
+                  <Link
+                    class="dropdown-item"
+                    to="/lectures"
+                    onClick={handleMenuItemClick}
+                  >
+                    Lectures
                   </Link>
 
                   {/* <a class="dropdown-item" href="#">Another action</a>

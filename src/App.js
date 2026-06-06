@@ -12,6 +12,7 @@ import DisplayPlaylist from "./components/DisplayPlaylist";
 import Testimonials from "./components/Testimonials/Testimonials";
 import LearnReactPage from "./components/LearnReact/LearnReactPage";
 import NotesPage from "./components/Notes/NotesPage";
+import LecturesPage from "./components/Lectures/LecturesPage";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/questions" element={<LearnReactPage />} />
           <Route path="/notes" element={<NotesPage />} />
-
+          <Route path="/lectures/:lectureId?" element={<LecturesPage />} />
         </Routes>
         <Footer />
       </Router>
