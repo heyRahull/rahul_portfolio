@@ -2,6 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { ExternalLink } from "lucide-react";
 import LectureSidebar from "./LectureSidebar";
 import lectureNotesData from "./lectureNotesData";
 
@@ -92,18 +93,91 @@ const LecturesPage = () => {
                 <article className="lecture-topic-card" key={topic.title + index}>
                   <div className="lecture-topic-heading">
                     <span>{index + 1}</span>
-                    <div>
-                      <h3>{topic.title}</h3>
-                      <p>{topic.subTitle}</p>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+                      <div>
+                        <h3>{topic.title}</h3>
+                        <p>{topic.subTitle}</p>
+                      </div>
+                      {topic.mediumUrl && (
+                        <a
+                          href={topic.mediumUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "0.5rem",
+                            padding: "0.5rem 1rem",
+                            backgroundColor: "#000",
+                            color: "#fff",
+                            textDecoration: "none",
+                            borderRadius: "6px",
+                            fontSize: "0.9rem",
+                            fontWeight: "600",
+                            whiteSpace: "nowrap",
+                            transition: "opacity 0.3s ease"
+                          }}
+                          onMouseEnter={(e) => e.target.style.opacity = "0.8"}
+                          onMouseLeave={(e) => e.target.style.opacity = "1"}
+                          title="Read full article on Medium"
+                        >
+                          Read on Medium
+                          <ExternalLink size={16} />
+                        </a>
+                      )}
                     </div>
                   </div>
                   <div className="lecture-topic-description">
-                    <ReactMarkdown 
-                      remarkPlugins={[remarkGfm]}
-                      components={{ code: CodeBlock }}
-                    >
-                      {stripMatchingHeading(topic.description, topic.title)}
-                    </ReactMarkdown>
+                    {topic.mediumUrl ? (
+                      <div style={{ marginTop: "1rem" }}>
+                        <div style={{
+                          padding: "1.5rem",
+                          backgroundColor: "#f7f7f7",
+                          borderLeft: "4px solid #000",
+                          borderRadius: "6px",
+                          marginBottom: "1rem"
+                        }}>
+                          <p style={{ margin: "0 0 1rem 0", color: "#666", fontSize: "0.95rem" }}>
+                            {topic.description}
+                          </p>
+                          <a
+                            href={topic.mediumUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "0.5rem",
+                              color: "#000",
+                              textDecoration: "none",
+                              fontWeight: "600",
+                              padding: "0.75rem 1.5rem",
+                              border: "2px solid #000",
+                              borderRadius: "6px",
+                              transition: "all 0.3s ease"
+                            }}
+                            onMouseEnter={(e) => {
+                              e.target.style.backgroundColor = "#000";
+                              e.target.style.color = "#fff";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.target.style.backgroundColor = "transparent";
+                              e.target.style.color = "#000";
+                            }}
+                          >
+                            View Full Article on Medium
+                            <ExternalLink size={16} />
+                          </a>
+                        </div>
+                      </div>
+                    ) : (
+                      <ReactMarkdown 
+                        remarkPlugins={[remarkGfm]}
+                        components={{ code: CodeBlock }}
+                      >
+                        {stripMatchingHeading(topic.description, topic.title)}
+                      </ReactMarkdown>
+                    )}
                   </div>
                 </article>
               ))}

@@ -59,7 +59,8 @@ const lectureNotesData = [
           {
             title: "1.4 iFrame Protection",
             subTitle: "iFrame security",
-            description: "Content placeholder for 1.4 iFrame protection."
+            description: "Content placeholder for 1.4 iFrame protection.",
+            mediumUrl: "https://thehumblecoder.medium.com/day-2-understanding-props-children-in-react-building-a-user-profile-card-bb740196325c"
           }
         ]
       },
