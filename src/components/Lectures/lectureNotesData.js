@@ -38,13 +38,11 @@ const lectureNotesData = [
         title: "1.3 Cross-site Scripting (XSS)",
         summary: "Examines XSS attack methods, real-world risks, and concrete defenses for web apps.",
         instructor: "System Design",
-        uploadDate: "June 2026",
         sectionTitle: "01 - Security",
         content: [
           {
             title: "Architectural Definition of XSS",
             subTitle: "Critical client-side vulnerability with injection methods",
-            description: "Content placeholder for 1.3 Cross-site Scripting (XSS).",
             mediumUrl: "https://medium.com/@thehumblecoder/web-security-101-a-deep-dive-into-cross-site-scripting-xss-the-5-deadliest-attack-vectors-c1b711120e66"
           }
         ]
@@ -54,13 +52,11 @@ const lectureNotesData = [
         title: "1.4 iFrame Protection",
         summary: "Preventing iFrame-based attacks.",
         instructor: "System Design",
-        uploadDate: "June 2026",
         sectionTitle: "01 - Security",
         content: [
           {
             title: "1.4 iFrame Protection",
             subTitle: "iFrame security",
-            description: "Content placeholder for 1.4 iFrame protection.",
             mediumUrl: "https://medium.com/@thehumblecoder/web-security-101-mastering-iframe-protection-defenses-55bdf968f63a"
           }
         ]
