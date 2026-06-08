@@ -127,58 +127,6 @@ const LecturesPage = () => {
                       )}
                     </div>
                   </div>
-                  <div className="lecture-topic-description">
-                    {topic.mediumUrl ? (
-                      <div style={{ marginTop: "1rem" }}>
-                        <div style={{
-                          padding: "1.5rem",
-                          backgroundColor: "#f7f7f7",
-                          borderLeft: "4px solid #000",
-                          borderRadius: "6px",
-                          marginBottom: "1rem"
-                        }}>
-                          <p style={{ margin: "0 0 1rem 0", color: "#666", fontSize: "0.95rem" }}>
-                            {topic.description}
-                          </p>
-                          <a
-                            href={topic.mediumUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{
-                              display: "inline-flex",
-                              alignItems: "center",
-                              gap: "0.5rem",
-                              color: "#000",
-                              textDecoration: "none",
-                              fontWeight: "600",
-                              padding: "0.75rem 1.5rem",
-                              border: "2px solid #000",
-                              borderRadius: "6px",
-                              transition: "all 0.3s ease"
-                            }}
-                            onMouseEnter={(e) => {
-                              e.target.style.backgroundColor = "#000";
-                              e.target.style.color = "#fff";
-                            }}
-                            onMouseLeave={(e) => {
-                              e.target.style.backgroundColor = "transparent";
-                              e.target.style.color = "#000";
-                            }}
-                          >
-                            View Full Article on Medium
-                            <ExternalLink size={16} />
-                          </a>
-                        </div>
-                      </div>
-                    ) : (
-                      <ReactMarkdown 
-                        remarkPlugins={[remarkGfm]}
-                        components={{ code: CodeBlock }}
-                      >
-                        {stripMatchingHeading(topic.description, topic.title)}
-                      </ReactMarkdown>
-                    )}
-                  </div>
                 </article>
               ))}
             </div>
