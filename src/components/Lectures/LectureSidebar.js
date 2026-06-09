@@ -5,10 +5,21 @@ const LectureSidebar = ({ sections, activeLectureId, onSelectLecture }) => {
   const [openSectionId, setOpenSectionId] = useState(sections[0]?.sectionId || "");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  // Dynamically calculate the course title based on the IDs present inside the dataset
+  const firstItemId = sections[0]?.items[0]?.id || "";
+  
+  let courseDisplayName = "System Design Course";
+  if (firstItemId.startsWith("rsd-")) {
+    courseDisplayName = "React System Design";
+  } else if (firstItemId.startsWith("node-") || firstItemId.includes("nodesdata")) {
+    courseDisplayName = "Node.js Core Architecture";
+  }
+
   return (
     <div className={`lecture-sidebar ${isSidebarOpen ? "open" : ""}`}>
+      {/* Dynamic Header Badge */}
       <div className="lecture-sidebar-course-title">
-       System Design Course
+        {courseDisplayName}
       </div>
 
       <div className="lecture-sidebar-top">
@@ -44,7 +55,7 @@ const LectureSidebar = ({ sections, activeLectureId, onSelectLecture }) => {
                       className={`lecture-accordion-item ${item.id === activeLectureId ? "active" : ""}`}
                       onClick={() => {
                         onSelectLecture(item.id);
-                        setIsSidebarOpen(false);
+                        setIsSidebarOpen(false); // Close mobile drawer overlay on select
                       }}
                       type="button"
                     >

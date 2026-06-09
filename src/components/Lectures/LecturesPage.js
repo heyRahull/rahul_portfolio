@@ -4,9 +4,33 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ExternalLink } from "lucide-react";
 import LectureSidebar from "./LectureSidebar";
-import lectureNotesData from "./lectureNotesData";
+
+// 1. Core Default Data File
+import frontendSystemDesignData from "./lectureNotesData"; 
+
+// 2. SAFE OPTIONAL IMPORTS FOR DYNAMIC COURSE SWITCHING
+let reactsystemdesignnotesdata = [];
+try {
+  reactsystemdesignnotesdata = require("./reactsystemdesignnotesdata").default || require("./reactsystemdesignnotesdata");
+} catch (e) {
+  reactsystemdesignnotesdata = []; 
+}
+
+let nodesdata = [];
+try {
+  nodesdata = require("./nodesdata").default || require("./nodesdata");
+} catch (e) {
+  nodesdata = []; 
+}
+
+const courseDataRegistry = {
+  frontendSystemDesignData: frontendSystemDesignData,
+  reactsystemdesignnotesdata: reactsystemdesignnotesdata,
+  nodesdata: nodesdata
+};
 
 const stripMatchingHeading = (text, title) => {
+  if (!text || !title) return "";
   const escapedTitle = title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const headingRegex = new RegExp(`^#{1,2}\\s*${escapedTitle}\\s*(?:\\n|$)`, "i");
   return text.replace(headingRegex, "").trim();
@@ -46,12 +70,26 @@ const CodeBlock = ({ node, inline, className, children, ...props }) => {
 
 const LecturesPage = () => {
   const navigate = useNavigate();
-  const { lectureId } = useParams();
+  const { courseId, lectureId } = useParams();
 
-  const allItems = useMemo(
-    () => lectureNotesData.flatMap((section) => section.items.map((item) => ({ ...item, sectionTitle: section.sectionTitle }))),
-    []
-  );
+  // Dynamic Course Swapper matching the active router context parameter
+  const currentCourseData = useMemo(() => {
+    const selectedData = courseDataRegistry[courseId];
+    if (!selectedData || selectedData.length === 0) {
+      return frontendSystemDesignData;
+    }
+    return selectedData;
+  }, [courseId]);
+
+  const allItems = useMemo(() => {
+    if (!currentCourseData || !Array.isArray(currentCourseData)) return [];
+    return currentCourseData.flatMap((section) => 
+      (section.items || []).map((item) => ({ 
+        ...item, 
+        sectionTitle: section.sectionTitle 
+      }))
+    );
+  }, [currentCourseData]);
 
   const defaultLectureId = allItems[0]?.id || "";
   const [selectedLectureId, setSelectedLectureId] = useState(defaultLectureId);
@@ -68,7 +106,8 @@ const LecturesPage = () => {
 
   const handleSelectLecture = (id) => {
     setSelectedLectureId(id);
-    navigate(`/lectures/${id}`);
+    const targetCourse = courseId || "frontendSystemDesignData";
+    navigate(`/lectures/${targetCourse}/${id}`);
   };
 
   return (
@@ -76,20 +115,22 @@ const LecturesPage = () => {
       <section className="lecture-page-section lecture-page-top-space">
         <div className="lecture-page-grid">
           <LectureSidebar
-            sections={lectureNotesData}
+            sections={currentCourseData}
             activeLectureId={selectedLectureId}
             onSelectLecture={handleSelectLecture}
           />
 
           <main className="lecture-main-panel">
+            {/* EXACT MATCH: Headers, layout metadata rows and tags */}
             <div className="lecture-main-header">
               <p className="lecture-category">{selectedLecture.sectionTitle}</p>
               <h2>{selectedLecture.title}</h2>
               <p className="lecture-summary">{selectedLecture.summary}</p>
             </div>
 
+            {/* EXACT MATCH: Core cards and structured content arrays */}
             <div className="lecture-content-section">
-              {selectedLecture.content.map((topic, index) => (
+              {selectedLecture.content?.map((topic, index) => (
                 <article className="lecture-topic-card" key={topic.title + index}>
                   <div className="lecture-topic-heading">
                     <span>{index + 1}</span>
@@ -98,6 +139,8 @@ const LecturesPage = () => {
                         <h3>{topic.title}</h3>
                         <p>{topic.subTitle}</p>
                       </div>
+                      
+                      {/* EXACT MATCH: Inline styles, layout spacing and button placement */}
                       {topic.mediumUrl && (
                         <a
                           href={topic.mediumUrl}
@@ -126,6 +169,16 @@ const LecturesPage = () => {
                         </a>
                       )}
                     </div>
+                  </div>
+
+                  {/* INTEGRATED: Nested Markdown content wrapper positioned correctly below header row */}
+                  <div className="markdown-content" style={{ marginTop: "1.5rem" }}>
+                    <ReactMarkdown 
+                      remarkPlugins={[remarkGfm]}
+                      components={{ code: CodeBlock }}
+                    >
+                      {stripMatchingHeading(topic.description, topic.title)}
+                    </ReactMarkdown>
                   </div>
                 </article>
               ))}

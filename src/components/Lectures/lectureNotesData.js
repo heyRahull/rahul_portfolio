@@ -7,14 +7,12 @@ const lectureNotesData = [
         id: "01-01-web-security-introduction-fundamentals",
         title: "1.1 Web Security ? Introduction & Fundamentals",
         summary: "Foundational frontend security principles, myths, and real-world examples.",
-        instructor: "System Design",
-        uploadDate: "June 2026",
         sectionTitle: "01 - Security",
         content: [
           {
-            title: "Web Security ? Introduction & Fundamentals",
-            subTitle: "Core principles for frontend security",
-            description: "# Web Security ? Introduction & Fundamentals\n\n### 1. The Core Philosophy: Balancing UX & Security\n\n- **Critical Component:** Security is a non-negotiable aspect of software engineering, imperative for junior, senior, and lead developers alike.\n- **The UX Challenge:** Implementing robust security mechanisms must not degrade the User Experience (UX). High-level engineering requires creating a frictionless yet highly secure user journey.\n\n### 2. The Frontend Security Myth\n\n- **The Misconception:** A common industry myth among frontend engineers is that \"Security is solely a backend responsibility.\"\n- **The Reality:** The vast majority of cyber attacks originate or are initiated directly via the client-side (frontend). Because backend APIs implicitly trust the incoming requests from authenticated client applications, any compromise on the frontend can severely jeopardize the entire ecosystem.\n- **The Zero-Trust Model:** Never implicitly trust any user, even if they are authenticated, active session holders, or premium paid customers. Every client interaction should be treated with a defensive, security-first lens.\n\n### 3. Key Pillars of the Frontend Security Roadmap\nTo design architecture that safeguards client-side components, a frontend engineer must master the following core concepts:\n\n- **Network Security (HTTPS):** Ensuring all data in transit is encrypted over secure cryptographic protocols to mitigate network sniffing and man-in-the-middle (MITM) attacks.\n- **Input & Output Sanitization:** Strictly validating and escaping user inputs before parsing them into the document object model (DOM). Modern UI frameworks (like React) inherently handle text escaping, but vulnerabilities arise when raw execution entry points (e.g., `dangerouslySetInnerHTML`) are leveraged carelessly.\n- **Authentication vs. Authorization:** Distinctly managing who the user is (Authentication) and what exact permissions or resource scopes they hold (Authorization).\n- **Dependency Vetting:** Scrutinizing all third-party packages to ensure they do not introduce vulnerabilities or malicious payloads.\n\n### 4. Real-World Examples\n\n**Case Study: E-commerce Password Reset**\nA common oversight occurs when developers store sensitive user data (like reset tokens) in plain-text localStorage. An XSS vector then exfiltrates this token to an attacker, granting full account takeover capability.\n\n**Lesson:** Always hash, encrypt, and store sensitive tokens securely on the backend, never on the client-side in an unencrypted state."
+            title: "The Frontend Security Myth: ",
+            subTitle: "Why Client-Side Defense is Non-Negotiable",
+            mediumUrl: "https://hashnode.com/edit/cmq6d1vw200000cje0z6r3ezf"
           }
         ]
       },
@@ -37,7 +35,6 @@ const lectureNotesData = [
         id: "01-03-cross-site-scripting-xss",
         title: "1.3 Cross-site Scripting (XSS)",
         summary: "Examines XSS attack methods, real-world risks, and concrete defenses for web apps.",
-        instructor: "System Design",
         sectionTitle: "01 - Security",
         content: [
           {

@@ -14,28 +14,18 @@ const NotesPage = () => {
         description="A private directory of my technical research, architecture diagrams, and handwritten notes converted to PDF for quick reference."
       />
       
-      <div className="container container-center">
-        <div style={styles.grid}>
-        {notesData.map((note, index) => (
-          <NoteCard key={index} {...note} />
-        ))}
-      </div>
-      </div>
-      
+      {/* Reusing your blog section's structural grid wrapper */}
+      <section className="section">
+        <div className="col p-3 d-flex flex-column position-static card_column">
+          <div className="row mx-0 my-0">
+            {notesData.map((note, index) => (
+              <NoteCard key={index} {...note} />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
-};
-
-const styles = {
-  grid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-    gap: '20px',
-    marginTop: '2rem',
-    marginBottom : '2rem',
-    width: '100%',
-    maxWidth: '1000px'
-  }
 };
 
 export default NotesPage;

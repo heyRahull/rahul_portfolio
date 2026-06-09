@@ -31,7 +31,7 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/questions" element={<LearnReactPage />} />
           <Route path="/notes" element={<NotesPage />} />
-          <Route path="/lectures/:lectureId?" element={<LecturesPage />} />
+          <Route path="/lectures/:courseId/:lectureId?" element={<LecturesPage />} />
         </Routes>
         <Footer />
         <ScrollToTopButton />
