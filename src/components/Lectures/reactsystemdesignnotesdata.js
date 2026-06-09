@@ -8,12 +8,12 @@ const reactsystemdesignnotesdata = [
         title: "1.1 Course Introduction & Overview",
         summary: "Introduction to production-grade Frontend Architecture principles.",
         sectionTitle: "01 - Architecture Foundations",
+        hashnodeSlug: "the-frontend-security-myth",
         content: [
           {
             title: "Course Introduction & Frontend Architecture",
             subTitle: "Setting up core paradigms for scalable React applications",
             mediumUrl: "https://hashnode.com/edit/cmq6d1vw200000cje0z6r3ezf",
-            // description: "# Course Introduction & Frontend Architecture\n\n- **Objective:** Bridge the gap between building small feature components and designing massive, modular codebase systems.\n- **Key Areas:** Code maintainability, system resilience, layout performance, and optimization strategy."
           }
         ]
       },

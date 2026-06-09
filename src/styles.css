@@ -894,3 +894,24 @@ ul.skills_list >li>img{
     gap: 1.5rem !important;
   }
 }
+
+/* Ensure images and tables don't exceed container width */
+.lecture-content-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lecture-content-section pre {
+  max-width: 100%;
+  overflow-x: auto; /* Adds a scrollbar if the code is too long */
+  white-space: pre-wrap; /* Forces long lines to wrap */
+  word-wrap: break-word;
+}
+
+/* Force long words/links to break */
+.lecture-content-section {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
