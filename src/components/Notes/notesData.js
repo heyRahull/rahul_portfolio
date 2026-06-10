@@ -4,7 +4,7 @@ const notesData = [
     category: "Advanced React",
     excerpt: "Deep dive into production-grade React architecture. Learn feature-based structures, service abstraction layers, compound components, monorepos, and state topology optimization rules perfect for frontend interviews.",
     // 1. By declaring courseId, NoteCard automatically uses React Router to open your interactive sidebar notes workspace
-    courseId: "reactsystemdesignnotesdata", 
+    courseId: "reactsystemdesignnotesdata/cmq6d1vw200000cje0z6r3ezf", 
     image: require("../../images/react_system_design_notes_card.png"), // Replace with any preferred image asset reference
     path: "" 
   },
