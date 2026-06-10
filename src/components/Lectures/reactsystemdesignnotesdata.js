@@ -4,7 +4,7 @@ const reactsystemdesignnotesdata = [
     sectionTitle: "01 - Architecture Foundations",
     items: [
       {
-        id: "rsd-01-course-introduction",
+        id: "cmq6d1vw200000cje0z6r3ezf",
         title: "1.1 Course Introduction & Overview",
         summary: "Introduction to production-grade Frontend Architecture principles.",
         sectionTitle: "01 - Architecture Foundations",

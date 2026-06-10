@@ -21,9 +21,9 @@ const NoteCard = (props) => {
             <span className="badge bg-secondary style-tag" style={{ fontSize: '0.75rem' }}>
               {props.category}
             </span>
-            <small className="text-muted" style={{ fontSize: '0.8rem' }}>
+            {/* <small className="text-muted" style={{ fontSize: '0.8rem' }}>
               {props.uploadDate}
-            </small>
+            </small> */}
           </div>
           
           <h4 className="card-title" style={{ fontSize: '1.2rem', fontWeight: '700', color: '#1e2327' }}>

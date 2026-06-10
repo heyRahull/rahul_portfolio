@@ -916,27 +916,7 @@ ul.skills_list >li>img{
   word-break: break-word;
 }
 
-/* Style the parsed RSS content */
-.rss-content-wrapper h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.rss-content-wrapper p {
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
-  color: #374151; /* A readable dark gray */
-}
-
-.rss-content-wrapper ul {
-  list-style-type: disc;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-.rss-content-wrapper strong {
-  font-weight: 600;
-  color: #111;
-}
+.lecture-content-section h1, 
+.lecture-content-section h2 { margin-top: 20px; margin-bottom: 10px; }
+.lecture-content-section p { margin-bottom: 15px; }
+.lecture-content-section ul { list-style-type: disc; margin-left: 20px; }

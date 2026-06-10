@@ -4,7 +4,7 @@ const lectureNotesData = [
     sectionTitle: "01 - Security",
     items: [
       {
-        id: "01-01-web-security-introduction-fundamentals",
+        id: "cmq6d1vw200000cje0z6r3ezf",
         title: "1.1 Web Security ? Introduction & Fundamentals",
         summary: "Foundational frontend security principles, myths, and real-world examples.",
         sectionTitle: "01 - Security",
