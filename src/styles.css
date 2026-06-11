@@ -1564,6 +1564,9 @@ label {
     margin-top: 7px;
     margin-right: 10px;
   }
+  .goog-te-combo{
+    padding : 0px 2px 0px 2px !important;
+  }
 }
 
 .splash_page_translation_desktop>div,
