@@ -143,7 +143,7 @@ hr {
 }
 
 .lecture-page-section {
-  padding: 4.5rem 0 4rem;
+  padding: 4.5rem 1rem 4rem;
   background-color: var(--off-white);
 }
 
@@ -157,6 +157,17 @@ hr {
   gap: 2rem;
   max-width: 1200px;
   margin: auto;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+}
+
+/* Sidebar Collapsed State */
+.lecture-page-grid.sidebar-collapsed {
+  grid-template-columns: 1fr;
+}
+
+.lecture-page-grid.sidebar-collapsed .lecture-sidebar {
+  display: none;
 }
 
 .lecture-sidebar {
@@ -164,6 +175,30 @@ hr {
   border: 1px solid #e5e7eb;
   border-radius: 1rem;
   padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Scrollbar styling for sidebar */
+.lecture-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lecture-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.lecture-sidebar::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 10px;
+}
+
+.lecture-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #5b54e8;
 }
 
 .lecture-sidebar-course-title {
@@ -174,6 +209,57 @@ hr {
   text-align: center;
   border-bottom: 2px solid #6c63ff;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.lecture-sidebar-collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6c63ff;
+  font-size: 1.2rem;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.lecture-sidebar-collapse-btn:hover {
+  color: #5b54e8;
+  transform: scale(1.1);
+}
+
+.lecture-sidebar-open-btn {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  z-index: 500;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.lecture-sidebar-open-btn:hover {
+  background: #5b54e8;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+  transform: scale(1.1);
+}
+
+.lecture-sidebar-open-btn:active {
+  transform: scale(0.95);
 }
 
 .lecture-sidebar-top {
@@ -270,25 +356,60 @@ hr {
   border: 1px solid #e5e7eb;
   border-radius: 1rem;
   padding: 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar styling for main panel */
+.lecture-main-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lecture-main-panel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.lecture-main-panel::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 10px;
+}
+
+.lecture-main-panel::-webkit-scrollbar-thumb:hover {
+  background: #5b54e8;
 }
 
 .lecture-main-header {
   margin-bottom: 2rem;
+  background: linear-gradient(135deg, #6c63ff 0%, #5b54e8 100%);
+  padding: 2.5rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.15);
 }
 
 .lecture-category {
   display: inline-block;
   color: white;
-  background: #6c63ff;
-  padding: 0.45rem 0.85rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .lecture-main-header h2 {
-  margin: 1rem 0 0.75rem;
-  color: var(--primary-color);
+  margin: 1rem 0 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .lecture-summary {
@@ -492,11 +613,15 @@ hr {
 @media (max-width: 992px) {
   .lecture-page-grid {
     grid-template-columns: 1fr;
+    height: auto;
+    overflow: visible;
   }
 
   .lecture-sidebar {
     padding: 1rem 0.75rem;
     border-radius: 1rem;
+    height: auto;
+    overflow: visible;
   }
 
   .lecture-sidebar-top {
@@ -525,6 +650,23 @@ hr {
 
   .lecture-main-panel {
     padding: 1.5rem;
+    height: auto;
+    overflow: visible;
+  }
+
+  /* Hide desktop collapse button on mobile */
+  .lecture-sidebar-collapse-btn {
+    display: none !important;
+  }
+
+  /* Hide desktop sidebar open button on mobile */
+  .lecture-sidebar-open-btn {
+    display: none !important;
+  }
+
+  .lecture-main-header {
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    padding: 2rem 1.5rem;
   }
 }
 
@@ -788,6 +930,21 @@ hr {
 @media (max-width: 767px) {
   .VIpgJd-ZVi9od-ORHb-OEVmcd {
     visibility: hidden !important;
+  }
+
+  /* Mobile-specific heading adjustments */
+  .lecture-main-header {
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem !important;
+    padding: 1.5rem 1rem !important;
+  }
+
+  .lecture-main-header h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .lecture-category {
+    font-size: 0.75rem !important;
+    padding: 0.35rem 0.75rem !important;
   }
 }
 /* Google translate styles end  */

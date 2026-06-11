@@ -2,7 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ChevronRight } from "lucide-react";
 import LectureSidebar from "./LectureSidebar";
 import { fetchPostFromGitHub } from "../../utils/githubFetcher";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -61,6 +61,11 @@ const LecturesPage = () => {
     allItems[0]?.id || "",
   );
   const [externalContent, setExternalContent] = useState("");
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(() => {
+    // Initialize from localStorage, default to false (sidebar open)
+    const saved = localStorage.getItem("lecturesSidebarCollapsed");
+    return saved ? JSON.parse(saved) : false;
+  });
 
   const selectedLecture = useMemo(
     () => allItems.find((item) => item.id === selectedLectureId) || allItems[0],
@@ -70,6 +75,11 @@ const LecturesPage = () => {
   useEffect(() => {
     if (lectureId) setSelectedLectureId(lectureId);
   }, [lectureId]);
+
+  useEffect(() => {
+    // Persist sidebar collapsed state to localStorage
+    localStorage.setItem("lecturesSidebarCollapsed", JSON.stringify(isSidebarCollapsed));
+  }, [isSidebarCollapsed]);
 
   useEffect(() => {
     if (lectureId) {
@@ -92,13 +102,26 @@ const LecturesPage = () => {
 
   return (
     <section className="lecture-page-section lecture-page-top-space">
-      <div className="lecture-page-grid">
+      <div className={`lecture-page-grid ${isSidebarCollapsed ? "sidebar-collapsed" : ""}`}>
         <LectureSidebar
           sections={currentCourseData}
           activeLectureId={selectedLectureId}
           onSelectLecture={handleSelectLecture}
+          isSidebarCollapsed={isSidebarCollapsed}
+          onToggleSidebar={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
         />
         <main className="lecture-main-panel">
+          {/* Sidebar toggle button - visible only on desktop when sidebar is collapsed */}
+          {isSidebarCollapsed && (
+            <button
+              className="lecture-sidebar-open-btn"
+              onClick={() => setIsSidebarCollapsed(false)}
+              type="button"
+              title="Open sidebar"
+            >
+              <ChevronRight size={20} />
+            </button>
+          )}
           <div className="lecture-main-header">
             <p className="lecture-category">{selectedLecture?.sectionTitle}</p>
             <h2>{selectedLecture?.title}</h2>

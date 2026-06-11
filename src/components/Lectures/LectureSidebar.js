@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 
-const LectureSidebar = ({ sections, activeLectureId, onSelectLecture }) => {
+const LectureSidebar = ({ 
+  sections, 
+  activeLectureId, 
+  onSelectLecture,
+  isSidebarCollapsed,
+  onToggleSidebar 
+}) => {
   const [openSectionId, setOpenSectionId] = useState(sections[0]?.sectionId || "");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -17,9 +23,19 @@ const LectureSidebar = ({ sections, activeLectureId, onSelectLecture }) => {
 
   return (
     <div className={`lecture-sidebar ${isSidebarOpen ? "open" : ""}`}>
-      {/* Dynamic Header Badge */}
+      {/* Dynamic Header Badge with Collapse Button */}
       <div className="lecture-sidebar-course-title">
-        {courseDisplayName}
+        <span>{courseDisplayName}</span>
+        {/* Desktop collapse button - only visible on desktop */}
+        <button
+          className="lecture-sidebar-collapse-btn"
+          onClick={onToggleSidebar}
+          type="button"
+          title={isSidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+          style={{ display: window.innerWidth < 992 ? "none" : "flex" }}
+        >
+          {isSidebarCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
+        </button>
       </div>
 
       <div className="lecture-sidebar-top">
