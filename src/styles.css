@@ -46,6 +46,14 @@ hr {
   display: block;
   max-width: 140px;
   margin: 1rem 1rem 1rem 0rem;
+  transition: all 250ms ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.link-primary:hover {
+  background-color: #2d3748;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .link-secondary {
@@ -55,6 +63,14 @@ hr {
   display: block;
   max-width: 140px;
   margin: 1rem 1rem 1rem 0rem;
+  transition: all 250ms ease;
+}
+
+.link-secondary:hover {
+  background-color: var(--primary-color);
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 /** look into BEM naming convention for CSS **/
@@ -95,6 +111,11 @@ hr {
 
 .navigation .link {
   color: white;
+  transition: all 200ms ease;
+}
+
+.navigation .link:hover {
+  color: #6c63ff;
 }
 
 .navigation .link-active {
@@ -102,7 +123,8 @@ hr {
 }
 
 .nav-color {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #1e2327 0%, #2d3748 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /** header **/
@@ -786,11 +808,35 @@ hr {
   color: white;
   display: block;
   max-width: 140px;
-  /* margin: 1rem 1rem 1rem 0rem; */
+  transition: all 250ms ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-primary:hover {
+  background-color: #2d3748;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .card-color {
   background: linear-gradient(to right, #f3f4f6, #bdc3c7);
+}
+
+/* Card shadows and hover effects */
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 250ms ease;
+  border-radius: 0.75rem;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.card-body {
+  padding: 1.5rem;
 }
 
 .project-image {
