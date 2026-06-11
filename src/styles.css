@@ -161,6 +161,20 @@ hr {
   outline-offset: 2px;
 }
 
+/* Remove underline from buttons with link class */
+.link.btn::after,
+.btn.link::after,
+.btn-primary::after,
+.btn-secondary::after,
+.btn-ghost::after,
+.link-primary::after,
+.link-secondary::after,
+.nav-link::after,
+.card-primary::after,
+.btn_color::after {
+  display: none !important;
+}
+
 .link-primary {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
@@ -173,9 +187,11 @@ hr {
 }
 
 .link-primary:hover {
-  background-color: #2d3748;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  background-color: #1a1f24;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .link-secondary {
@@ -189,10 +205,11 @@ hr {
 }
 
 .link-secondary:hover {
-  background-color: var(--primary-color);
+  background-color: #1a1f24;
   color: white !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+  text-decoration: none !important;
 }
 
 /** BUTTON SYSTEM - Phase 2 **/
@@ -228,9 +245,11 @@ hr {
 }
 
 .btn-primary:hover {
-  background-color: #2d3748;
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  background-color: #1a1f24;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+  color: white;
+  text-decoration: none !important;
 }
 
 .btn-primary:active {
@@ -246,10 +265,11 @@ hr {
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-color);
+  background-color: #1a1f24;
   color: white;
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+  text-decoration: none !important;
 }
 
 .btn-ghost {
@@ -259,8 +279,11 @@ hr {
 }
 
 .btn-ghost:hover {
-  background-color: var(--bg-lighter);
-  box-shadow: var(--shadow-sm);
+  background-color: #1a1f24;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  color: white;
+  transform: translateY(-3px);
+  text-decoration: none !important;
 }
 
 /* Button sizes */
@@ -1289,9 +1312,11 @@ label {
 }
 
 .card-primary:hover {
-  background-color: #2d3748;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  background-color: #1a1f24;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+  text-decoration: none !important;
+  color: white;
 }
 
 /* Card System - Phase 2 */
@@ -1407,9 +1432,11 @@ label {
 }
 
 .btn_color:hover {
-  background-color: #2d3748;
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  background-color: #1a1f24;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+  color: white;
+  text-decoration: none !important;
 }
 
 .btn_color:active {
@@ -1441,9 +1468,11 @@ label {
 }
 
 .nav-link:hover {
-  color: var(--blue);
-  background-color: rgba(108, 99, 255, 0.1);
-  transform: translateY(-2px);
+  color: white;
+  background-color: #1a1f24;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(108, 99, 255, 0.3);
+  transform: translateY(-3px);
+  text-decoration: none !important;
 }
 
 .nav-link:focus {
