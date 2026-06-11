@@ -1,10 +1,10 @@
 const reactsystemdesignnotesdata = [
   {
     sectionId: "module-1-architecture-foundations",
-    sectionTitle: "01 - Architecture Foundations",
+    sectionTitle: "01 - React System Design Foundations",
     items: [
       {
-        id: "cmq6d1vw200000cje0z6r3ezf",
+        id: "cmq9ktldg00000bhy8nc6ctwp",
         title: "1.1 Course Introduction & Overview",
         summary: "Introduction to production-grade Frontend Architecture principles.",
         sectionTitle: "01 - Architecture Foundations",
@@ -18,7 +18,7 @@ const reactsystemdesignnotesdata = [
         ]
       },
       {
-        id: "rsd-02-folder-structures",
+        id: "cmq9dxi7c00030bjgfowr78nk",
         title: "1.2 Codebase Folder Structure Strategies",
         summary: "Layered Architecture vs. Feature-Based vs. Hybrid approaches.",
         sectionTitle: "01 - Architecture Foundations",
@@ -26,12 +26,11 @@ const reactsystemdesignnotesdata = [
           {
             title: "Layered vs Feature vs Hybrid structures",
             subTitle: "Organizing modern React frameworks for large scale teams",
-            description: "# Codebase Folder Structure Strategies\n\n### 1. Layered Architecture\nOrganizing files strictly by tech stack layers (e.g., `/components`, `/hooks`, `/services`). Great for small apps but increases scrolling fatigue as features scale.\n\n### 2. Feature-Based Structure\nGrouping assets together based on localized product domains (e.g., `/features/auth`, `/features/billing`). Highly isolated, easy to refactor.\n\n### 3. Hybrid Strategy\nCombining global layers for shared utilities alongside dedicated localized sub-feature modules."
           }
         ]
       },
       {
-        id: "rsd-03-naming-conventions",
+        id: "cmq9duz6j00010bjg4my66p5v",
         title: "1.3 Naming Conventions & Documentation",
         summary: "Best practices for explicit nomenclature and workspace clarity.",
         sectionTitle: "01 - Architecture Foundations",
@@ -39,18 +38,11 @@ const reactsystemdesignnotesdata = [
           {
             title: "Naming Conventions & Documentation",
             subTitle: "Clean code rules for collaborative software environments",
-            description: "# Naming Conventions & Documentation Best Practices\n\n- **Component Files:** PascalCase naming formats (e.g., `PrimaryButton.jsx`).\n- **Utility Functions:** camelCase formats (e.g., `calculateCartTotal.js`).\n- **Documentation:** Incorporating robust Markdown documentation details alongside components to reduce onboarding friction."
           }
         ]
-      }
-    ]
-  },
-  {
-    sectionId: "module-2-network-routing",
-    sectionTitle: "02 - Data Layer & Routing Architecture",
-    items: [
+      },
       {
-        id: "rsd-04-api-architecture",
+        id: "cmq9b0xs400000bhpf901bkt5",
         title: "2.1 API Architecture & Service Layers",
         summary: "Abstracting global data fetch operations out of UI components.",
         sectionTitle: "02 - Data Layer & Routing Architecture",
@@ -58,7 +50,6 @@ const reactsystemdesignnotesdata = [
           {
             title: "API Architecture & Service Layer Setup",
             subTitle: "Isolating network requests into decoupled interface clients",
-            description: "# API Architecture & Service Layer\n\n- **Concept:** Components shouldn't make raw `fetch` or `axios` queries directly inside `useEffect` blocks.\n- **Abstraction Layer:** Create a centralized `/services` client folder module that standardizes headers, interceptors, and response formats."
           }
         ]
       },
@@ -100,13 +91,7 @@ const reactsystemdesignnotesdata = [
             description: "# Error Handling in React Router | 404, Protected Routes, Suspense\n\n- **Protected Routes:** Implement higher-order security components or loader gates to guard authenticated layout segments.\n- **Suspense Fallbacks:** Build smooth skeletons or spinners to keep user engagement intact during sub-bundle loads."
           }
         ]
-      }
-    ]
-  },
-  {
-    sectionId: "module-3-component-design-patterns",
-    sectionTitle: "03 - Component Design & Core Flows",
-    items: [
+      },
       {
         id: "rsd-08-core-component-architecture",
         title: "3.1 Modern Data Flows & Component Hierarchies",
@@ -145,13 +130,7 @@ const reactsystemdesignnotesdata = [
             description: "# Smart vs. Dumb Components in React | Advanced React js\n\n- **Smart Component:** Orchestrates context states or tracking processes.\n- **Dumb Component:** Completely reusable across varying micro-features because it lacks side-effect actions or specific feature contexts."
           }
         ]
-      }
-    ]
-  },
-  {
-    sectionId: "module-4-advanced-patterns",
-    sectionTitle: "04 - Advanced Interface Construction Patterns",
-    items: [
+      },
       {
         id: "rsd-11-composite-components",
         title: "4.1 Composite Components Pattern",
@@ -203,13 +182,7 @@ const reactsystemdesignnotesdata = [
             description: "# Custom Hooks Design Pattern in React & Separation of Concerns\n\n- **Separation of Concerns:** Keep component files lightweight by shifting your data-fetching and formatting loops into custom react state wrappers (e.g., `useUserData`)."
           }
         ]
-      }
-    ]
-  },
-  {
-    sectionId: "module-5-state-monorepos",
-    sectionTitle: "05 - State Topologies & Workspace Monorepos",
-    items: [
+      },
       {
         id: "rsd-15-monorepo-architecture",
         title: "5.1 Monorepo Architecture Workspace",
@@ -276,7 +249,7 @@ const reactsystemdesignnotesdata = [
         ]
       }
     ]
-  }
+  },
 ];
 
 export default reactsystemdesignnotesdata;
