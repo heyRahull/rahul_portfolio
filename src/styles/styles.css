@@ -1554,7 +1554,7 @@ label {
 }
 
 /* Google translate styles start  */
-@media (min-width: 1280px) {
+@media (min-width: 1025px) {
   .splash_page_translation_desktop {
     /* position: relative !important; */
     position: absolute !important;
