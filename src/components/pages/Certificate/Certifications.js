@@ -1,5 +1,5 @@
 import React from "react";
-import certificationImg from "../../../images/certification-image.svg";
+import certificationImg from "../../../assets/images/certification-image.svg";
 import Certificate from "./Certificate";
 import PageIntro from "../../common/PageIntro";
 import certificateData from "../../../data/certificateData";

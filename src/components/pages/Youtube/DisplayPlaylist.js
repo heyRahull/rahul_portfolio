@@ -14,8 +14,6 @@ function DisplayPlaylist(props) {
       <section className="section playlist_name">
         <div className="container container-center">
           <br />
-          <br />
-          <br />
           <h1>
             <strong className="name-inverted">{`${playlistTitle} Tutorials`}</strong>
           </h1>

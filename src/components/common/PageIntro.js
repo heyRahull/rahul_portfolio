@@ -7,8 +7,6 @@ const PageIntro = (props) => {
       <section className="section">
         <div className="container container-center">
           <br />
-          <br />
-          <br />
           <h1
             className={`${
               props.name == "certicicationPage" ? "certification_heading" : ""

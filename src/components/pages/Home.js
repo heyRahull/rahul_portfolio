@@ -33,9 +33,7 @@ const Greet = () => (
     {/* Hero Area  */}
     <header class="hero">
       <br />
-      <br />
       <img class="hero-img" src={heroImg} alt="Home Page Intro Image"/>
-      <br />
       <br />
       <h1 class="hero-heading">
         <strong>
