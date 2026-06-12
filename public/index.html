@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -30,18 +33,37 @@
     <script
       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
       async
+      defer
+      onError="console.log('Google Translate failed to load')"
     ></script>
     <script type="text/javascript">
+      let googleTranslateInitialized = false;
+      
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            layout:
-              window.google.translate.TranslateElement.InlineLayout.VERTICAL,
-          },
-          "google_translate_element"
-        );
+        try {
+          if (window.google && window.google.translate && !googleTranslateInitialized) {
+            new google.translate.TranslateElement(
+              {
+                pageLanguage: "en",
+                layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL,
+              },
+              "google_translate_element"
+            );
+            googleTranslateInitialized = true;
+          }
+        } catch (e) {
+          console.error("Google Translate initialization error:", e);
+        }
       }
+      
+      // Fallback initialization if callback doesn't fire
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          if (!googleTranslateInitialized && window.google && window.google.translate) {
+            googleTranslateElementInit();
+          }
+        }, 1000);
+      });
     </script>
     <!-- Google translate api code end -->
   </head>

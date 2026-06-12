@@ -1599,6 +1599,44 @@ label {
   }
 }
 /* Google translate styles end  */
+
+/* Protect navbar from Google Translate style injection */
+.navbar {
+  background: linear-gradient(135deg, #1e2327 0%, #2d3748 100%) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.nav-color {
+  background: linear-gradient(135deg, #1e2327 0%, #2d3748 100%) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar-dark {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 700 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.navbar-brand:hover {
+  color: #6c63ff !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.nav-link:hover {
+  color: #6c63ff !important;
+}
+
+/* Protect Google Translate container from collapsing */
+
+
 .share-title {
   text-align: center;
 }
