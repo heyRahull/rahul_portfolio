@@ -2,18 +2,18 @@ import React, { useMemo, useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { ExternalLink, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import LectureSidebar from "./LectureSidebar";
 import { fetchPostFromGitHub } from "../../../utils/githubFetcher";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-import frontendSystemDesignData from "./lectureNotesData";
+import frontendSystemDesignData from "../../../data/lectureNotesData";
 
 // Keep these imports exactly as you had them originally
 let reactsystemdesignnotesdata = [];
 try {
-  reactsystemdesignnotesdata = require("./reactsystemdesignnotesdata").default;
+  reactsystemdesignnotesdata = require("../../../data/reactSystemDesignNotesData").default;
 } catch (e) {
   reactsystemdesignnotesdata = [];
 }

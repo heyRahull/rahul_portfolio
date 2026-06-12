@@ -1,8 +1,8 @@
 import React from "react";
-import certificationImg from "../../images/certification-image.svg";
+import certificationImg from "../../../images/certification-image.svg";
 import Certificate from "./Certificate";
-import PageIntro from "../PageIntro";
-import certificateData from "./certificateData";
+import PageIntro from "../../common/PageIntro";
+import certificateData from "../../../data/certificateData";
 
 const Certifications = () => {
   return (

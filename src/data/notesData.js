@@ -5,7 +5,7 @@ const notesData = [
     excerpt: "Deep dive into production-grade React architecture. Learn feature-based structures, service abstraction layers, compound components, monorepos, and state topology optimization rules perfect for frontend interviews.",
     // 1. By declaring courseId, NoteCard automatically uses React Router to open your interactive sidebar notes workspace
     courseId: "reactsystemdesignnotesdata/cmq6d1vw200000cje0z6r3ezf", 
-    image: require("../../images/react_system_design_notes_card.png"), // Replace with any preferred image asset reference
+    image: require("../assets/images/react_system_design_notes_card.png"), // Replace with any preferred image asset reference
     path: "" 
   },
   {
@@ -21,7 +21,7 @@ const notesData = [
     category: "Backend",
     excerpt: "Mastering the Node.js event loop, thread pool management, streams, buffers, and asynchronous V8 engine runtimes. Built specifically to handle scalable system design workflows.",
     courseId: "", // Leaving this empty prompts NoteCard to seamlessly switch to a View PDF file target!
-    image: require("../../images/nodejs_notes_card.png"), // Utilizing your local default design asset
+    image: require("../assets/images/nodejs_notes_card.png"), // Utilizing your local default design asset
     path: "/notes-docs/Namaste_nodejs.pdf"// Path to your static public file asset
   }
 ];

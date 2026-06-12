@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles.css";
-import pic from "../images/rahul.png";
-import heroImg from "../images/undraw_Updated_resume_re_q1or.svg";
-import projectImg from "../images/project-image.svg";
-import blogsImg from "../images/blogs_image.svg";
-import certificationImg from "../images/certification-image.svg";
-import YoutubeImage from "../images/youtubeTutorial.png";
-import htmlIcon from "../icons/html5_image.png";
-import cssIcon from "../icons/css3_icon.png";
-import jsIcon from "../icons/js_icon.jfif";
-import nodeIcon from "../icons/nodejs1_icon.png";
-import reactIcon from "../icons/react-icon.png";
-import bootstrapIcon from "../icons/bootstrapicon.png";
-import HostIcon from "../icons/web-hosting_icon.jpg";
-import gitIcon from "../icons/git.png";
-import ShareButtons from "./ShareButtons";
+import "../../styles/styles.css";
+import pic from "../../assets/images/rahul.png";
+import heroImg from "../../assets/images/undraw_Updated_resume_re_q1or.svg";
+import projectImg from "../../assets/images/project-image.svg";
+import blogsImg from "../../assets/images/blogs_image.svg";
+import certificationImg from "../../assets/images/certification-image.svg";
+import YoutubeImage from "../../assets/images/youtubeTutorial.png";
+import htmlIcon from "../../assets/icons/html5_image.png";
+import cssIcon from "../../assets/icons/css3_icon.png";
+import jsIcon from "../../assets/icons/js_icon.jfif";
+import nodeIcon from "../../assets/icons/nodejs1_icon.png";
+import reactIcon from "../../assets/icons/react-icon.png";
+import bootstrapIcon from "../../assets/icons/bootstrapicon.png";
+import HostIcon from "../../assets/icons/web-hosting_icon.jpg";
+import gitIcon from "../../assets/icons/git.png";
+import ShareButtons from "../common/ShareButtons";
 
 const skills = [
   {name: "HTML5", icon: htmlIcon},    

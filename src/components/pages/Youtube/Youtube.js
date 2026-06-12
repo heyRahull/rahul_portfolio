@@ -1,6 +1,6 @@
 import React from "react";
-import YoutubeImage from "../images/youtubeTutorial.png";
-import PageIntro from "./PageIntro";
+import YoutubeImage from "../../../images/youtubeTutorial.png";
+import PageIntro from "../../common/PageIntro";
 import PlaylistCard from "./PlaylistCard";
 
 function Youtube() {

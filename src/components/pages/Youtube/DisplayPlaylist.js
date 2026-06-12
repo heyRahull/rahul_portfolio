@@ -1,8 +1,5 @@
 import React from "react";
 import YouTubePlaylist from "@codesweetly/react-youtube-playlist";
-import blogsImage from "../images/blogs_image.svg";
-import PageIntro from "./PageIntro";
-import PlaylistCard from "./PlaylistCard";
 import { useLocation } from "react-router-dom";
 
 function DisplayPlaylist(props) {

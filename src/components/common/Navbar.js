@@ -1,5 +1,6 @@
 import { React, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 import GoogleTranslate from "./GoogleTranslate";
 
 const Navbar = (props) => {
@@ -65,21 +66,43 @@ const Navbar = (props) => {
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
+                  style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
                 >
                   {location.pathname === "/certifications" ? (
-                    <span style={{ color: "white" }}>Certifications</span>
+                    <>
+                      <span style={{ color: "white" }}>Certifications</span>
+                      <ChevronDown size={18} color="white" />
+                    </>
                   ) : location.pathname === "/youtube" ? (
-                    <span style={{ color: "white" }}>YouTube</span>
+                    <>
+                      <span style={{ color: "white" }}>YouTube</span>
+                      <ChevronDown size={18} color="white" />
+                    </>
                   ) : location.pathname === "/displayPlaylist" ? (
-                    <span style={{ color: "white" }}>YouTube</span>
+                    <>
+                      <span style={{ color: "white" }}>YouTube</span>
+                      <ChevronDown size={18} color="white" />
+                    </>
                   ) : location.pathname === "/testimonials" ? (
-                    <span style={{ color: "white" }}>Testimonials</span>
+                    <>
+                      <span style={{ color: "white" }}>Testimonials</span>
+                      <ChevronDown size={18} color="white" />
+                    </>
                   ) : location.pathname === "/questions" ? (
-                    <span style={{ color: "white" }}>Learn React</span>
+                    <>
+                      <span style={{ color: "white" }}>Learn React</span>
+                      <ChevronDown size={18} color="white" />
+                    </>
                   ) : location.pathname === "/notes" ? (
-                    <span style={{ color: "white" }}>Notes</span>
+                    <>
+                      <span style={{ color: "white" }}>Notes</span>
+                      <ChevronDown size={18} color="white" />
+                    </>
                   ) : (
-                    "More"
+                    <>
+                      More
+                      <ChevronDown size={18} color="white" />
+                    </>
                   )}
                 </a>
                 <div

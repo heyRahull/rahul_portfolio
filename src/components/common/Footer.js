@@ -1,9 +1,9 @@
 import React from "react";
-import githubIcon from "../icons/github.png";
-import linkedinIcon from "../icons/Linkedin.png";
-import mediumIcon from "../icons/medium.png";
-import gmailIcon from "../icons/gmail1.png";
-import twitterIcon from "../icons/twitter_logo.png";
+import githubIcon from "../../assets/icons/github.png";
+import linkedinIcon from "../../assets/icons/Linkedin.png";
+import mediumIcon from "../../assets/icons/medium.png";
+import gmailIcon from "../../assets/icons/gmail1.png";
+import twitterIcon from "../../assets/icons/twitter_logo.png";
 
 const Footer = () => (
   <>

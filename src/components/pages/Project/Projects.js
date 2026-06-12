@@ -1,8 +1,8 @@
 import React from "react";
-import projectImage from "../../images/project-image.svg";
-import PageIntro from "../PageIntro";
+import projectImage from "../../../assets/images/project-image.svg";
+import PageIntro from "../../common/PageIntro";
 import Project from "./Project";
-import projectData from "./projectData.js";
+import projectData from "../../../data/projectData.js";
 
 const Projects = () => {
   return (

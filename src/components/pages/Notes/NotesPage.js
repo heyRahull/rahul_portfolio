@@ -1,8 +1,8 @@
 import React from 'react';
-import PageIntro from "../PageIntro";
-import projectImage from "../../images/project-image.svg";
+import PageIntro from "../../common/PageIntro";
+import projectImage from "../../../images/project-image.svg";
 import NoteCard from "./NoteCard";
-import notesData from "./notesData";
+import notesData from "../../../data/notesData";
 
 const NotesPage = () => {
   return (

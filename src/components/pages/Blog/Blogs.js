@@ -1,8 +1,8 @@
 import React from "react";
-import blogsImage from "../../images/blogs_image.svg";
-import PageIntro from "../PageIntro";
+import blogsImage from "../../../assets/images/blogs_image.svg";
+import PageIntro from "../../common/PageIntro";
 import Card from "./Card.js";
-import cardData from "./cardData";
+import cardData from "../../../data/blogData.js";
 
 const Blogs = () => {
   return (

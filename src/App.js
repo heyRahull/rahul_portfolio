@@ -1,19 +1,19 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Blogs from "./components/Blog/Blogs";
-import Projects from "./components/Project/Projects";
-import Certifications from "./components/Certificate/Certifications";
-import ScrollToTop from "./components/ScrollToTop";
-import ScrollToTopButton from "./components/ScrollToTopButton";
-import Youtube from "./components/Youtube";
-import DisplayPlaylist from "./components/DisplayPlaylist";
-import Testimonials from "./components/Testimonials/Testimonials";
-import LearnReactPage from "./components/LearnReact/LearnReactPage";
-import NotesPage from "./components/Notes/NotesPage";
-import LecturesPage from "./components/Lectures/LecturesPage";
+import Home from "./components/pages/Home";
+import Navbar from "./components/common/Navbar";
+import Footer from "./components/common/Footer";
+import Blogs from "./components/pages/Blog/Blogs";
+import Projects from "./components/pages/Project/Projects";
+import Certifications from "./components/pages/Certificate/Certifications";
+import ScrollToTop from "./components/common/ScrollToTop";
+import ScrollToTopButton from "./components/common/ScrollToTopButton";
+import Youtube from "./components/pages/Youtube/Youtube";
+import DisplayPlaylist from "./components/pages/Youtube/DisplayPlaylist";
+import Testimonials from "./components/pages/Testimonials/Testimonials";
+import LearnReactPage from "./components/pages/LearnReact/LearnReactPage";
+import NotesPage from "./components/pages/Notes/NotesPage";
+import LecturesPage from "./components/pages/Lectures/LecturesPage";
 
 function App() {
   return (

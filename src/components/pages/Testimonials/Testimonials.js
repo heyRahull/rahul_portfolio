@@ -1,8 +1,8 @@
 import React from "react";
-import certificationImg from "../../images/certification-image.svg";
+import certificationImg from "../../../images/certification-image.svg";
 import Award from "./Award";
-import PageIntro from "../PageIntro";
-import TestimonialData from "./TestimonialData";
+import PageIntro from "../../common/PageIntro";
+import TestimonialData from "../../../data/testimonialData";
 
 const Testimonials = () => {
   return (

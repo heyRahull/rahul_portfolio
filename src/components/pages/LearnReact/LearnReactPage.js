@@ -1,8 +1,8 @@
 import React from 'react';
-import PageIntro from "../PageIntro";
-import projectImage from "../../images/project-image.svg";
+import PageIntro from "../../common/PageIntro";
+import projectImage from "../../../images/project-image.svg";
 import QuestionAccordion from "./QuestionAccordion";
-import learnReactData from "./learnReactData";
+import learnReactData from "../../../data/learnReactData";
 
 const LearnReactPage = () => {
   return (
