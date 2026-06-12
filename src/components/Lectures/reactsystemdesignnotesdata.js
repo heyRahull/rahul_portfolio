@@ -43,7 +43,7 @@ const reactsystemdesignnotesdata = [
       },
       {
         id: "cmq9b0xs400000bhpf901bkt5",
-        title: "2.1 API Architecture & Service Layers",
+        title: "1.4 API Architecture & Service Layers",
         summary: "Abstracting global data fetch operations out of UI components.",
         sectionTitle: "02 - Data Layer & Routing Architecture",
         content: [
@@ -54,8 +54,8 @@ const reactsystemdesignnotesdata = [
         ]
       },
       {
-        id: "rsd-05-centralized-errors",
-        title: "2.2 Centralized API Error Handling",
+        id: "cmqafjev300000cj6291h6cdq",
+        title: "1.5 Centralized API Error Handling",
         summary: "Implementing globally managed catch middleware and toast hooks.",
         sectionTitle: "02 - Data Layer & Routing Architecture",
         content: [

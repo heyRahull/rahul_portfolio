@@ -31,7 +31,9 @@ const courseDataRegistry = {
 };
 
 const cleanMarkdown = (content) => {
-  let cleaned = content.replace(/^---[\s\S]*?---/, "").trim();
+  // Remove YAML frontmatter only if it's properly delimited with newlines
+  // This prevents removing horizontal dividers (---) that appear in the content
+  let cleaned = content.replace(/^---\n[\s\S]*?\n---\n/, "").trim();
   cleaned = cleaned
     .replace(/!\[\]\(https:\/\/cdn\.hashnode\.com\/[\s\S]*?\)/g, "")
     .trim();

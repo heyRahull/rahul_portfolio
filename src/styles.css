@@ -108,10 +108,10 @@ strong {
 }
 
 hr {
-  margin: var(--spacing-2xl) 0;
+  margin: var(--spacing-md) 0;
   border: none;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-color) 10%, var(--border-color) 90%, transparent);
+  height: 2px!important;
+  background: var(--blue);
 }
 
 /** spaces **/
