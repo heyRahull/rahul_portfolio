@@ -649,17 +649,23 @@ label {
   background-color: var(--off-white);
 }
 
+@media(max-width: 767px){
+  .lecture-page-section {
+    padding: 0;
+  }
+}
+
 .lecture-page-top-space {
-  padding-top: 5.5rem;
+  padding-top: 4rem;
 }
 
 .lecture-page-grid {
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 1rem;
+  max-width: 1250px;
   margin: auto;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 80px);
   overflow: hidden;
 }
 
@@ -851,6 +857,16 @@ label {
   color: inherit;
   opacity: 0.8;
   font-size: 0.85rem;
+}
+
+@media(max-width: 767px){
+  .lecture-main-panel {
+    border-radius: 0px!important;
+  }
+
+  .lecture-main-header {
+    border-radius: 0px!important;
+  }
 }
 
 .lecture-main-panel {
@@ -1121,7 +1137,7 @@ label {
   }
 
   .lecture-sidebar {
-    padding: 1rem 0.75rem;
+    padding: 1rem 1.75rem;
     border-radius: 1rem;
     height: auto;
     overflow: visible;
@@ -1784,4 +1800,4 @@ ul.skills_list >li:hover img {
 .lecture-content-section h1, 
 .lecture-content-section h2 { margin-top: 20px; margin-bottom: 10px; }
 .lecture-content-section p { margin-bottom: 15px; }
-.lecture-content-section ul { list-style-type: disc; margin-left: 20px; }
+.lecture-content-section ul { list-style-type: disc; }
