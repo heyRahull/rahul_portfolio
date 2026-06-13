@@ -2,6 +2,41 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Local Development Setup
+
+### Prerequisites
+1. **Clone the repository**
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+### Environment Setup (Required for Lectures feature)
+The Lectures page fetches blog posts from GitHub. To avoid API rate limiting:
+
+1. **Copy the example environment file:**
+   ```bash
+   cp .env.local.example .env.local
+   ```
+
+2. **Add your GitHub token** to `.env.local`:
+   - Generate a token at: https://github.com/settings/tokens
+   - Create a new token (classic) with `public_repo` scope
+   - Set expiration to "No expiration"
+   - Copy the token value
+   - Replace `your_github_token_here` in `.env.local` with your actual token
+
+3. **Start the development server:**
+   ```bash
+   npm start
+   ```
+
+**Why the token?**
+- Without token: GitHub API limits you to 60 requests/hour → Lectures fail after clicking ~60 items
+- With token: Limit increases to 5,000 requests/hour → No issues for normal usage
+
+**Note:** `.env.local` is in `.gitignore` for security. It won't be committed to GitHub.
+
 ## Available Scripts
 
 In the project directory, you can run:
