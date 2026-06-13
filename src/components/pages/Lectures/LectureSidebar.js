@@ -6,7 +6,9 @@ const LectureSidebar = ({
   activeLectureId, 
   onSelectLecture,
   isSidebarCollapsed,
-  onToggleSidebar 
+  onToggleSidebar,
+  itemTitles = {},
+  itemSummaries = {}
 }) => {
   const [openSectionId, setOpenSectionId] = useState(sections[0]?.sectionId || "");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -75,8 +77,8 @@ const LectureSidebar = ({
                       }}
                       type="button"
                     >
-                      <span>{item.title}</span>
-                      <small>{item.summary}</small>
+                      <span>{itemTitles[item.id] || item.title || "Loading..."}</span>
+                      <small>{itemSummaries[item.id] || item.summary || "Loading..."}</small>
                     </button>
                   ))}
                 </div>

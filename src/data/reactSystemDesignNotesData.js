@@ -54,49 +54,19 @@ const reactsystemdesignnotesdata = [
         summary: "Deep dive into state-driven containers versus standard input prop consumers."
       },
       {
-        id: "rsd-11-composite-components",
-        title: "4.1 Composite Components Pattern",
+        id: "cmqc7rf1l00000ajh6sz5dtjl",
+        title: "1.11 Smart vs Dumb Components in React",
         summary: "Crafting highly flexible elements that cooperate implicitly through context."
       },
       {
-        id: "rsd-12-controlled-uncontrolled",
-        title: "4.2 Controlled vs. Uncontrolled Components",
+        id: "cmqc7wqkr00000akle3oq2q27",
+        title: "1.12 Composable Components in React",
         summary: "Evaluating state management overhead against bare DOM performance metrics."
       },
       {
-        id: "rsd-13-atomic-design",
-        title: "4.3 Atomic Design Pattern",
+        id: "cmqc8030600000bi306dm66rm",
+        title: "1.13 Controlled vs Uncontrolled Components",
         summary: "Deconstructing UI layouts into explicit Atoms, Molecules, and Organisms."
-      },
-      {
-        id: "rsd-14-custom-hooks",
-        title: "4.4 Custom Hooks Design Pattern",
-        summary: "Isolating reusable business code sequences away from visual display nodes."
-      },
-      {
-        id: "rsd-15-monorepo-architecture",
-        title: "5.1 Monorepo Architecture Workspace",
-        summary: "Coordinating multi-package projects under shared compilation workflows."
-      },
-      {
-        id: "rsd-16-polyrepo-architecture",
-        title: "5.2 Polyrepo Architecture & Infrastructure Trades",
-        summary: "Analyzing performance overhead across independent code asset vaults."
-      },
-      {
-        id: "rsd-17-barrel-files",
-        title: "5.3 Barrel Files & Path Aliases",
-        summary: "Optimizing nested project require paths using tidy index configurations."
-      },
-      {
-        id: "rsd-18-env-variables",
-        title: "5.4 Environment Variables Architecture",
-        summary: "Managing stage injection files across Dev, Staging, and Production builds."
-      },
-      {
-        id: "rsd-19-local-vs-global-state",
-        title: "5.5 Local vs. Global State Choice Topology",
-        summary: "Evaluating lightweight Context structures against complex performance stores like Redux."
       }
     ]
   },

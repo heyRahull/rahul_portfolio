@@ -40,6 +40,38 @@ const cleanMarkdown = (content) => {
   return cleaned;
 };
 
+const parseYAMLFrontmatter = (content) => {
+  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!match) return {};
+  
+  const frontmatter = match[1];
+  const lines = frontmatter.split('\n');
+  const data = {};
+  
+  lines.forEach(line => {
+    const colonIndex = line.indexOf(':');
+    if (colonIndex === -1) return;
+    
+    const key = line.substring(0, colonIndex).trim();
+    let value = line.substring(colonIndex + 1).trim();
+    value = value.replace(/^["']|["']$/g, '');
+    
+    if (key) data[key] = value;
+  });
+  
+  return data;
+};
+
+const extractSummary = (content) => {
+  const cleaned = cleanMarkdown(content);
+  const lines = cleaned.split('\n').filter(line => line.trim());
+  // Get first 2 lines and join them
+  const summaryLines = lines.slice(0, 2).join(' ');
+  // Trim to max 150 chars and add "..."
+  const summary = summaryLines.substring(0, 55);
+  return summary.length < summaryLines.length ? summary + '...' : summary;
+};
+
 const LecturesPage = () => {
   const navigate = useNavigate();
   const { courseId, lectureId } = useParams();
@@ -63,6 +95,9 @@ const LecturesPage = () => {
     allItems[0]?.id || "",
   );
   const [externalContent, setExternalContent] = useState("");
+  const [lectureTitle, setLectureTitle] = useState("");
+  const [itemTitles, setItemTitles] = useState({});
+  const [itemSummaries, setItemSummaries] = useState({});
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(() => {
     // Initialize from localStorage, default to false (sidebar open)
     const saved = localStorage.getItem("lecturesSidebarCollapsed");
@@ -87,15 +122,53 @@ const LecturesPage = () => {
     if (lectureId) {
       setExternalContent("Loading content...");
       fetchPostFromGitHub(lectureId) // Pass the ID from URL directly
-        .then((markdown) => setExternalContent(cleanMarkdown(markdown)))
+        .then((markdown) => {
+          // Extract title from YAML frontmatter
+          const frontmatter = parseYAMLFrontmatter(markdown);
+          setLectureTitle(frontmatter.title || "Untitled");
+          
+          // Clean and set content
+          setExternalContent(cleanMarkdown(markdown));
+        })
         .catch((err) => {
           console.error("GitHub Fetch Error:", err);
+          setLectureTitle("Error Loading Title");
           setExternalContent(
             "### Error\nCould not load content for this lecture.",
           );
         });
     }
   }, [lectureId]); // Re-run whenever the lectureId in the URL changes
+
+  // Fetch titles and summaries for all items in the sidebar
+  useEffect(() => {
+    if (allItems.length === 0) return;
+
+    const fetchAllTitlesAndSummaries = async () => {
+      const titles = {};
+      const summaries = {};
+      
+      // Fetch all titles and summaries in parallel using Promise.all
+      const promises = allItems.map(async (item) => {
+        try {
+          const markdown = await fetchPostFromGitHub(item.id);
+          const frontmatter = parseYAMLFrontmatter(markdown);
+          titles[item.id] = frontmatter.title || "Untitled";
+          summaries[item.id] = extractSummary(markdown);
+        } catch (err) {
+          console.error(`Failed to fetch data for ${item.id}:`, err);
+          titles[item.id] = item.title || "Untitled";
+          summaries[item.id] = item.summary || "No summary available";
+        }
+      });
+      
+      await Promise.all(promises);
+      setItemTitles(titles);
+      setItemSummaries(summaries);
+    };
+
+    fetchAllTitlesAndSummaries();
+  }, [allItems]);
 
   const handleSelectLecture = (id) => {
     setSelectedLectureId(id);
@@ -111,6 +184,8 @@ const LecturesPage = () => {
           onSelectLecture={handleSelectLecture}
           isSidebarCollapsed={isSidebarCollapsed}
           onToggleSidebar={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+          itemTitles={itemTitles}
+          itemSummaries={itemSummaries}
         />
         <main className="lecture-main-panel">
           {/* Sidebar toggle button - visible only on desktop when sidebar is collapsed */}
@@ -126,7 +201,7 @@ const LecturesPage = () => {
           )}
           <div className="lecture-main-header">
             <p className="lecture-category">{selectedLecture?.sectionTitle}</p>
-            <h2>{selectedLecture?.title}</h2>
+            <h2>{lectureTitle || "Loading..."}</h2>
           </div>
           <div className="lecture-content-section">
             <ReactMarkdown
