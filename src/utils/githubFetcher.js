@@ -10,9 +10,17 @@ export const fetchPostFromGitHub = async (lectureId) => {
   
   const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filename}`;
   
-  const response = await fetch(url, {
-    headers: { 'Accept': 'application/vnd.github.v3.raw' }
-  });
+  // Add GitHub token for authentication (required to avoid rate limiting)
+  const token = process.env.REACT_APP_GITHUB_TOKEN;
+  const headers = {
+    'Accept': 'application/vnd.github.v3.raw'
+  };
+  
+  if (token) {
+    headers['Authorization'] = `token ${token}`;
+  }
+  
+  const response = await fetch(url, { headers });
 
   if (!response.ok) {
     return "# Content Coming Soon\nPlease check if the file exists on GitHub with the correct ID.";
