@@ -67,7 +67,31 @@ const reactsystemdesignnotesdata = [
         id: "cmqc8030600000bi306dm66rm",
         title: "1.13 Controlled vs Uncontrolled Components",
         summary: "Deconstructing UI layouts into explicit Atoms, Molecules, and Organisms."
-      }
+      },
+      {
+        id: "cmqjodanb00000chwbp52epta"
+      },
+      {
+        id: "cmqjok4sg000104l5dowagzt7"
+      },
+      {
+        id: "cmqjoq4ae00000bj85lyk5wcq"
+      },
+      {
+        id: "cmqjosz9300000bjna9scf0rg"
+      },
+      {
+        id: "cmqjovas300000bjc5bcca1ja"
+      },
+      {
+        id: "cmqjoxqyq00000bjc4dpbajw0"
+      },
+      {
+        id: "cmqjozvz000000cjbdw7ie0jo"
+      },
+      {
+        id: "cmqjp1tyg00000cjb55zw0lof"
+      },
     ]
   },
 ];
