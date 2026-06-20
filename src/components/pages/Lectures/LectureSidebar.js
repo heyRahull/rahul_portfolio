@@ -8,18 +8,20 @@ const LectureSidebar = ({
   isSidebarCollapsed,
   onToggleSidebar,
   itemTitles = {},
-  itemSummaries = {}
+  itemSummaries = {},
+  courseId = ""
 }) => {
   const [openSectionId, setOpenSectionId] = useState(sections[0]?.sectionId || "");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // Dynamically calculate the course title based on the IDs present inside the dataset
-  const firstItemId = sections[0]?.items[0]?.id || "";
-  
+  // Dynamically calculate the course title based on courseId or section data
   let courseDisplayName = "System Design Course";
-  if (firstItemId.startsWith("rsd-")) {
+  
+  if (courseId === "reactsystemdesignnotesdata") {
     courseDisplayName = "React System Design";
-  } else if (firstItemId.startsWith("node-") || firstItemId.includes("nodesdata")) {
+  } else if (courseId === "reactInterviewExpData") {
+    courseDisplayName = "React Interview Experience";
+  } else if (courseId === "nodesdata") {
     courseDisplayName = "Node.js Core Architecture";
   }
 

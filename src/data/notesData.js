@@ -23,6 +23,14 @@ const notesData = [
     courseId: "", // Leaving this empty prompts NoteCard to seamlessly switch to a View PDF file target!
     image: require("../assets/images/nodejs_notes_card.png"), // Utilizing your local default design asset
     path: "/notes-docs/Namaste_nodejs.pdf"// Path to your static public file asset
+  },
+  {
+    title: "React Interview Experience",
+    category: "Interview Prep",
+    excerpt: "Real-world React interview questions, problem-solving approaches, and technical discussions based on actual interview experiences. Perfect for preparing for React technical interviews.",
+    courseId: "reactInterviewExpData/cmqlz2yhv00000cjfgf187jwj",
+    image: require("../assets/images/nodejs_notes_card.png"),
+    path: ""
   }
 ];
 

@@ -9,25 +9,14 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import frontendSystemDesignData from "../../../data/lectureNotesData";
-
-// Keep these imports exactly as you had them originally
-let reactsystemdesignnotesdata = [];
-try {
-  reactsystemdesignnotesdata = require("../../../data/reactSystemDesignNotesData").default;
-} catch (e) {
-  reactsystemdesignnotesdata = [];
-}
-let nodesdata = [];
-try {
-  nodesdata = require("./nodesdata").default;
-} catch (e) {
-  nodesdata = [];
-}
+import reactsystemdesignnotesdata from "../../../data/reactSystemDesignNotesData";
+import reactInterviewExpData from "../../../data/reactInterviewExpData";
 
 const courseDataRegistry = {
   frontendSystemDesignData: frontendSystemDesignData,
   reactsystemdesignnotesdata: reactsystemdesignnotesdata,
-  nodesdata: nodesdata,
+  reactInterviewExpData: reactInterviewExpData,
+  // nodesdata: nodesdata,
 };
 
 const cleanMarkdown = (content) => {
@@ -186,6 +175,7 @@ const LecturesPage = () => {
           onToggleSidebar={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
           itemTitles={itemTitles}
           itemSummaries={itemSummaries}
+          courseId={courseId}
         />
         <main className="lecture-main-panel">
           {/* Sidebar toggle button - visible only on desktop when sidebar is collapsed */}
