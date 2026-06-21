@@ -9,6 +9,9 @@ const backendChaiAurCodeData = [
           {
             id: "cmqnh8hjv000004kz262d5qz6",
           },
+          {
+            id: "cmqnpgqgh00000bkr1yj9f5mz",
+          },
         ]
       },
     ];
