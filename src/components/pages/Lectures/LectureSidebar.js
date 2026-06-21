@@ -23,6 +23,8 @@ const LectureSidebar = ({
     courseDisplayName = "React Interview Experience";
   } else if (courseId === "nodesdata") {
     courseDisplayName = "Node.js Core Architecture";
+  }else if (courseId === "backendChaiAurCodeData") {
+    courseDisplayName = "Backend Course";
   }
 
   return (

@@ -11,11 +11,13 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import frontendSystemDesignData from "../../../data/lectureNotesData";
 import reactsystemdesignnotesdata from "../../../data/reactSystemDesignNotesData";
 import reactInterviewExpData from "../../../data/reactInterviewExpData";
+import backendChaiAurCodeData from "../../../data/backendChaiAurCodeData";
 
 const courseDataRegistry = {
   frontendSystemDesignData: frontendSystemDesignData,
   reactsystemdesignnotesdata: reactsystemdesignnotesdata,
   reactInterviewExpData: reactInterviewExpData,
+  backendChaiAurCodeData: backendChaiAurCodeData,
   // nodesdata: nodesdata,
 };
 

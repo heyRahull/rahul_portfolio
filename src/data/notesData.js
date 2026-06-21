@@ -31,6 +31,14 @@ const notesData = [
     courseId: "reactInterviewExpData/cmqlz2yhv00000cjfgf187jwj",
     image: require("../assets/images/nodejs_notes_card.png"),
     path: ""
+  },
+  {
+    title: "Backend Course",
+    category: "Backend",
+    excerpt: "A comprehensive backend course covering Node.js, Express, MongoDB, and RESTful API design. Learn to build scalable and efficient server-side applications. Perfect for mastering backend development concepts and acing backend interviews.",
+    courseId: "backendChaiAurCodeData/cmqnh780r00000cjfcqz1f92d", 
+    image: require("../assets/images/backend_course_card.png"), 
+    path: ""// Path to your static public file asset
   }
 ];
 
