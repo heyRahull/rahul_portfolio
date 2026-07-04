@@ -4,6 +4,9 @@ const backendChaiAurCodeData = [
         sectionTitle: "01 - Backend Course",
         items: [
           {
+            id: "cmr644qvd00000akp276o1acy",
+          },
+          {
             id: "cmr4uvznu00000akl5v3eh2tv",
           },
           {
