@@ -5,7 +5,7 @@ const backendChaiAurCodeData = [
         items: [
           {
             id: "cmrnkdw9s00010ai4gp3j17h4",   
-          }
+          },
           {
             id: "cmrgdp53z00010af4gu88cp24",
           },
